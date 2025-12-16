@@ -119,7 +119,7 @@ By default `tile_staging_buffer_size` is set to `64` in the settings below. Valu
 16gb can use tile_staging_buffer_size = 64
 ```
 
-You will need to correct the value for `tile_staging_buffer_size` after copying and pasting the values into the `Settings_common.ini`.`
+You will need to correct the value for `tile_staging_buffer_size` after copying and pasting the values into the `Settings_common.ini`.
 
 Find and replace the `feedback_streamer_settings` and `streaming_buffer_size` settings with the settings below:
 
