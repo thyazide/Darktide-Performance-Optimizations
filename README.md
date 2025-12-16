@@ -120,6 +120,30 @@ By default `tile_staging_buffer_size` is set to `64` in the settings below. Valu
 ```
 
 You will need to correct the value for `tile_staging_buffer_size` after copying and pasting the values into the `Settings_common.ini`.`
+
+Find and replace the `feedback_streamer_settings` and `streaming_buffer_size` settings with the settings below:
+
+```
+feedback_streamer_settings = {  
+        feedback_buffer_size = 16  
+        max_age_out_tiles_per_frame = 16  
+        max_streaming_tiles_per_frame = 16  
+        max_texture_pool_size = 1024  
+        max_write_feedback_threshold = 0.009  
+        min_write_feedback_threshold = 0.005  
+        staging_buffer_size = 8  
+        threaded_streamer = true  
+        tile_age_out_time_ms = 5000  
+        tile_staging_buffer_size = 64  
+  
+streaming_buffer_size = 128  
+streaming_max_open_streams = 32  
+streaming_texture_pool_size = 1024  
+surface_properties = "application_settings/global"  
+texture_streamer_settings = {  
+        streaming_buffer_size = 128  
+        streaming_texture_pool_size = 1024
+```
 # Target file `Win32_settings.ini`
 
 ```
