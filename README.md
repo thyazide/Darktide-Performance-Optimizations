@@ -149,7 +149,7 @@ texture_streamer_settings = {
 # Target file `Win32_settings.ini`
 
 ```
-*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\bundle\application_settings|
+*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\bundle\application_settings/
 ```
 
 Find and replace the `renderer` settings with the settings below:
