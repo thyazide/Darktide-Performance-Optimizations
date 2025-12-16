@@ -1,9 +1,5 @@
-# Darktide-Performance-Optimizations
-In-game settings, mods, ini edits, and dll replacements for darktide.
+# Darktide Performance Optimizations 
 
-# PlasmaGunLagFix Temporary mod fix for in-game issue
-
-[PlasmaGunLagFix]( https://www.nexusmods.com/warhammer40kdarktide/mods/666)
 # Launcher Skip 
 [Launcher Skip](https://www.nexusmods.com/warhammer40kdarktide/mods/131) - instructions for usage taken from the nexus mods page below.
 
