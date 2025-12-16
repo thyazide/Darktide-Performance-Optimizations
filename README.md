@@ -105,7 +105,7 @@ Particle Type = Nurgle Goo
 Tabbing and spacing are important when editing these files or the game will not work. These changes will need to be reapplied after every game update. They need to be done manually, as these files are updated by Fatshark after each patch/hotfix. If something gets broken, you can always [run an integrity check on the game in Steam](https://help.steampowered.com/en/faqs/view/0C48-FCBD-DA71-93EB), doing so will remove any changes you’ve made and disable mods. You’ll need to re-run the `toogle_darktide_mods.bat`, re-edit the INI files and the `launcher.exe.config` once the integrity check has completed. Or you can restore the original settings, they are included at the bottom of this document.  
 
 These settings work for AMD and Nvidia users.
-# # Target file Settings_common.ini
+# Target file Settings_common.ini
 
 `*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\bundle\application_settings`
 
