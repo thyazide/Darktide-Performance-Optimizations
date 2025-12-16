@@ -109,6 +109,8 @@ These settings work for AMD and Nvidia users.
 
 `*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\bundle\application_settings`
 
+Tabbing and spacing are important when editing these files or the game will not work. These changes will need to be reapplied after every game update. They need to be done manually, as these files are changed after each update by Fatshark.
+
 By default `tile_staging_buffer_size` is set to `64` in the settings below. Values lower than 64 can cause rubbery looking textures on enemies until the texture fully loads. Here are suggestions for the value based on the amount of ram your card has. If your card has `16gb` of ram or higher you can use `16`, `32`, or `64`. Here are some suggestions for values based on ram. You’ll need to adjust these settings based on your own experience in-game. 
 
 ```
@@ -172,16 +174,14 @@ renderer = {
 *\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\launcher
 ```
 
+This will extend the amount of memory available in game to mods.
+
 Find and replace the `ExeArgs` lines with the settings below:
 
 ```
 <setting name="ExeArgs" serializeAs="String">  
        <value>--bundle-dir ../bundle --ini settings --lua-heap-mb-size 2048</value>
 ```
-
-This will extend the amount of memory available in game to mods.
-
-Note: Tabbing and spacing are important when editing these files or the game will not work. These changes will need to be reapplied after every game update. They need to be done manually, as these files are changed after each update by Fatshark.
 # Nvidia App Settings      
 
 ```
