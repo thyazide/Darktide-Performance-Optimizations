@@ -105,42 +105,21 @@ Particle Type = Nurgle Goo
 Tabbing and spacing are important when editing these files or the game will not work. These changes will need to be reapplied after every game update. They need to be done manually, as these files are updated by Fatshark after each patch/hotfix. If something gets broken, you can always [run an integrity check on the game in Steam](https://help.steampowered.com/en/faqs/view/0C48-FCBD-DA71-93EB), doing so will remove any changes you’ve made and disable mods. You’ll need to re-run the `toogle_darktide_mods.bat`, re-edit the INI files and the `launcher.exe.config` once the integrity check has completed. Or you can restore the original settings, they are included at the bottom of this document.  
 
 These settings work for AMD and Nvidia users.
-# Target file `Settings_common.ini`
+# # Target file Settings_common.ini
+
+`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\bundle\application_settings`
+
+By default `tile_staging_buffer_size` is set to `64` in the settings below. Values lower than 64 can cause rubbery looking textures on enemies until the texture fully loads. Here are suggestions for the value based on the amount of ram your card has. If your card has `16gb` of ram or higher you can use `16`, `32`, or `64`. Here are some suggestions for values based on ram. You’ll need to adjust these settings based on your own experience in-game. 
 
 ```
-*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\bundle\application_settings|
+8gb can use tile_staging_buffer_size = 4  
+10gb can use tile_staging_buffer_size = 8  
+11gb can use tile_staging_buffer_size = 8  
+12gb can use tile_staging_buffer_size = 16  
+16gb can use tile_staging_buffer_size = 64
 ```
 
-Find and replace the `feedback_streamer_settings` and `streaming_buffer_size` settings with the settings below:
-
-```
-feedback_streamer_settings = {
-        feedback_buffer_size = 16
-        max_age_out_tiles_per_frame = 16
-        max_streaming_tiles_per_frame = 16
-        max_texture_pool_size = 1024
-        max_write_feedback_threshold = 0.009
-        min_write_feedback_threshold = 0.005
-        staging_buffer_size = 8
-        threaded_streamer = true
-        tile_age_out_time_ms = 5000
-        tile_staging_buffer_size = 64
-        
-streaming_buffer_size = 128
-streaming_max_open_streams = 32
-streaming_texture_pool_size = 1024
-surface_properties = "application_settings/global"
-texture_streamer_settings = {
-        streaming_buffer_size = 128
-        streaming_texture_pool_size = 1024
-```
-
-Cards with 16gb of ram can use 16, 32, or 64 depending on your preference, values lower than 64 will cause rubbery looking textures on enemies until the texture fully loads. The default in the code above is set to 64. 
-
-Cards with `12gb` of ram should use `tile_staging_buffer_size = 16`
-
-Cards with `8gb - 11gb` of ram should use `tile_staging_buffer_size = 4`
-
+You will need to correct the value for `tile_staging_buffer_size` after copying and pasting the values into the `Settings_common.ini`.`
 # Target file `Win32_settings.ini`
 
 ```
@@ -163,9 +142,6 @@ renderer = {
                ray_tracing = true  
                screen_resolution = [ 1920 1080 ]
 ```
-
-
-
 # Target file `Launcher.exe.config`
 
 ```
