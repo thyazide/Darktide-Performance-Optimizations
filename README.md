@@ -1,4 +1,22 @@
-# Darktide Performance Optimizations 
+# Darktide Performance Optimizations
+
+# Table of Contents
+
+- [[#Forward about mods]]
+- [[#Mod installation instructions]]
+- [[#Commonly used Archive programs]]
+- [[#Necessary Mods]]
+- [[#Launcher Skip]]
+- [[#INI file edits to optimize the game engine]]
+- [[#Target file `Settings_common.ini`]]
+- [[#Target file `Win32_settings.ini`]]
+- [[#Target file `Launcher.exe.config`]]
+- [[#Nvidia App Settings]]
+- [[#In-Game settings]]
+- [[#Direct Storage DLL Update]]
+- [[#Original settings for edited files]]
+- [[#List of attributions]]
+# Forward about mods
 
 Mods are not required, but are highly advisable as they can provide a sizable performance gain over all. You can skip them and go directly to the INI edits and other changes in this document. Though as I advise their use,  instructions for installing/enabling them are front and center. 
 # Mod installation instructions
@@ -47,7 +65,7 @@ Then double click the `toggle_darktide_mods.bat`, this will enable mods. This wi
 
 **Linux specific:** 
 If you are on linux you can use [dtkit-patch](https://github.com/manshanko/dtkit-patch) to enable mods. Extract the archive into the Darktide folder (`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`), make it executable. Then double click it, or run the file from the terminal of your choice to enable mods.  
-# Commonly used Archive programs: 
+# Commonly used Archive programs
 
 - [Winrar](https://www.win-rar.com/download.html?&L=0)
 - [Peazip](https://peazip.github.io/)
@@ -122,7 +140,7 @@ Remove Blocking Sound Effect = off
 ```
 Particle Type = Nurgle Goo
 ```
-# Launcher Skip 
+# Launcher Skip
 [Launcher Skip](https://www.nexusmods.com/warhammer40kdarktide/mods/131) - instructions for usage taken from the nexus mods page below.
 
 **Usage**
@@ -235,7 +253,7 @@ Find and replace the `ExeArgs` lines with the settings below:
 <setting name="ExeArgs" serializeAs="String">  
        <value>--bundle-dir ../bundle --ini settings --lua-heap-mb-size 2048</value>
 ```
-# Nvidia App Settings      
+# Nvidia App Settings
 
 ```
 1. Open Nvidia App settings
@@ -282,6 +300,17 @@ Gibbing = on
 Enemy Wounds = on
 Ragdoll Interactions = on
 ```
+# Direct Storage DLL Update
+
+Update the direct storage dll files
+
+1. Download the [Direct Storage Nupkg](https://www.nuget.org/api/v2/package/Microsoft.Direct3D.DirectStorage/1.3.0)
+2. Open it with [Peazip](https://peazip.github.io/index.html) 
+3. Inside the archive open `/native/bin/x64/`
+4. Extract `dstorage.dll` and `dstoragecore.dll` to some where you can locate it later
+5. Open the darktide binaries folder `*/steam/steamapps/common/Warhammer 40,000 DARKTIDE/binaries/`
+6. Find `dstoragecore.dll` and `dstorage.dll`, back them up else where in case you wish to undo these changes (or run a [file integrity verification in steam](https://help.steampowered.com/en/faqs/view/0C48-FCBD-DA71-93EB), note this will disable mods, so you will need to re-enable them using the batch file in the root darktide folder  `*/steam/steamapps/common/Warhammer 40,000 DARKTIDE/`).
+7. Copy the `dstoragecore.dll` and `dstorage.dll` files from where you placed them earlier and place them into `*/steam/steamapps/common/Warhammer 40,000 DARKTIDE/binaries/`
 # Original settings for edited files
 
 Original settings from `win32_settings.ini`
@@ -324,17 +353,6 @@ texture_streamer_settings = {
    streaming_buffer_size = 64  
    streaming_texture_pool_size = 512
 ```
-# Direct Storage DLL Update 
-
-Update the direct storage dll files
-
-1. Download the [Direct Storage Nupkg](https://www.nuget.org/api/v2/package/Microsoft.Direct3D.DirectStorage/1.3.0)
-2. Open it with [Peazip](https://peazip.github.io/index.html) 
-3. Inside the archive open `/native/bin/x64/`
-4. Extract `dstorage.dll` and `dstoragecore.dll` to some where you can locate it later
-5. Open the darktide binaries folder `*/steam/steamapps/common/Warhammer 40,000 DARKTIDE/binaries/`
-6. Find `dstoragecore.dll` and `dstorage.dll`, back them up else where in case you wish to undo these changes (or run a [file integrity verification in steam](https://help.steampowered.com/en/faqs/view/0C48-FCBD-DA71-93EB), note this will disable mods, so you will need to re-enable them using the batch file in the root darktide folder  `*/steam/steamapps/common/Warhammer 40,000 DARKTIDE/`).
-7. Copy the `dstoragecore.dll` and `dstorage.dll` files from where you placed them earlier and place them into `*/steam/steamapps/common/Warhammer 40,000 DARKTIDE/binaries/`
 # List of attributions
 
 Some attributions may not appear within the body of the document as I have time to write my own version of them. I am keeping them here for posterity.
@@ -358,3 +376,4 @@ Some attributions may not appear within the body of the document as I have time 
 - [Granular Settings](https://www.nexusmods.com/warhammer40kdarktide/mods/38) -Skwuruhl
 - [Zealot Fire Particle Swap](https://www.nexusmods.com/warhammer40kdarktide/mods/230) -JCaleb
 - Direct storage dll update -pttgo
+
