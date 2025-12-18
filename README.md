@@ -1,39 +1,61 @@
 # Darktide Performance Optimizations 
 
-# Launcher Skip 
-[Launcher Skip](https://www.nexusmods.com/warhammer40kdarktide/mods/131) - instructions for usage taken from the nexus mods page below.
+Mods are not required, but are highly advisable as they can provide a sizable performance gain over all. You can skip them and go directly to the INI edits and other changes in this document. Though as I advise their use,  instructions for installing/enabling them are front and center. 
+# Mod installation instructions
 
-**Usage**
-1. Copy LauncherSkip.exe to your launcher folder. By default:  
-- Steam:   
-`C:\Program Files (x86)\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\launcher` 
- 
--  Game Pass:   
-`C:\XboxGames\Warhammer 40,000- Darktide\Content\launcher`  
-1. Create shortcut/s:  
-  a) Right-click LauncherSkip.exe and select an option:  
-	- Start menu: "Pin to Start"
-	- Taskbar: "Pin to taskbar"
-	- Desktop: "Send to" -> "Desktop (create shortcut)"  
- b) Copy LauncherSkip.exe, navigate to any folder, then right-click and select "Paste shortcut".  
-It will not try to start Steam/Game Pass for you so they need to already be running. This is not a DMF mod and does not need to be copied to your mods folder.  
+These instructions are fairly abstract as the programs you can use to extract the archives and the operating systems individuals choose to use are varied. Though it should be easy enough to follow if you are somewhat familiar with the process of extracting archives. If you have any questions or issue please feel free to contact me either through [Github](https://github.com/thyazide/Darktide-Performance-Optimizations/issues), or via the [Darktide Discord](https://discord.gg/darktide), or the [Darktide Modding Discord]((<https://discord.gg/rKYWtaDx4D>).
 
-**Original launcher**
+There are other ways of handling mod support in Darktide, [Vortex](https://www.nexusmods.com/about/vortex) for example, can be used to install and manage mods, this is simply the way I handle them personally. 
 
-The original launcher has deliberately been left alone, so simply launch the game from Steam/Game Pass (without the shortcut) to view it.  
-  
-If you want to completely replace it, rename the original launcher to `Launcher-original.exe`, and `LauncherSkip.exe` to `Launcher.exe` (and replace any shortcuts to `LauncherSkip.exe`). You will need to redo this each time the game updates or you run "Verify integrity of game files" in Steam. 
+**Instructions:**
+
+Create a [Nexus Mods Account](https://users.nexusmods.com/register), or not, downloads will be slower and capped if you do not. 
+
+Download [Darktide Mod Loader](https://www.nexusmods.com/warhammer40kdarktide/mods/19)
+
+Download [Darktide Mod Framework](https://www.nexusmods.com/warhammer40kdarktide/mods/8)
+
+Use the extraction program of your choice to extract Darktide Mod Loader (referred to as DML from here on out). To your Darktide folder:
+
+`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`
+
+ Do the same with the Darktide Mod Framework (referred to as DML from here on out). Your Darktide folder: 
+
+`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`
+
+Download [Auto Mod Loading and Ordering](https://www.nexusmods.com/warhammer40kdarktide/mods/246) (referred to as AML from here on out).
+
+Extract it to the mods folder that was created by the DMF archive:
+
+`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods\`
+
+Tell your archive program to overwrite any existing files, as AML is a patch for DML that enables mods to be automatically loaded by the game on start up. 
+
+Once AML is installed you can simply download and extract any mods you wish into the mods folder: 
+
+`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods\`
+
+They will be automatically sorted and listed in the game's mod settings page. 
+
+When DML is updated at any point after the initial install is finished you will need to download and re-apply AML in the mods folder to re-enable AML so mods can be loaded automatically. 
+
+To enable mods after installing DMF, DML, and AML open the Darktide folder:
+
+`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`
+
+Then double click the `toggle_darktide_mods.bat`, this will enable mods. This will need to be repeated after each patch to re-enable mods. Also if you need to disable mods at any time you can double click the batch file again and follow the on screen prompt to disable them. 
+
+**Linux specific:** 
+If you are on linux you can use [dtkit-patch](https://github.com/manshanko/dtkit-patch) to enable mods. Extract the archive into the Darktide folder (`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`), make it executable. Then double click it, or run the file from the terminal of your choice to enable mods.  
+# Commonly used Archive programs: 
+
+[Winrar](https://www.win-rar.com/download.html?&L=0)
+[Peazip](https://peazip.github.io/)
+[7-Zip](https://www.7-zip.org/download.html)
+[Windows native extraction](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5)
+[Ark for KDE](https://apps.kde.org/ark/)
+[File-Roller for Gnome](https://flathub.org/en/apps/org.gnome.FileRoller)
 # Necessary Mods
-
-[Guide for installing darktide mods from /u/ruderalis1 on reddit.](https://old.reddit.com/r/DarkTide/comments/11cod2i/guide_how_to_install_mods_in_darktide_w_gifs/) - Re-run `toggle_darktide_mods.bat` after any game update. 
-
-[Alternate guide for installing mods.](https://youtu.be/xQtXFlxPiho) - Youtube guide. 
-
-[Darktide Mod Loader](https://www.nexusmods.com/warhammer40kdarktide/mods/19) - Install first, allows darktide mods to be enabled. Install instructions on the mod page.
-
-[Darktide Mod Framework](https://www.nexusmods.com/warhammer40kdarktide/mods/8) - The framework for using mods in game, installation instructions are on mod page.
-
-[Auto Mod Loading and Ordering](https://www.nexusmods.com/warhammer40kdarktide/mods/246) - A mod for the darktide mod framework, it generates the mod_load_order.txt file automatically on launch. Making installing and using mods easier. 
 
 [Impact VFX Limiter](https://www.nexusmods.com/warhammer40kdarktide/mods/424) - Allows the user to limit the maximum amount of flesh/armor impact VFX and surface impact VFX that can be played per frame for better performance.  
   
@@ -78,8 +100,8 @@ Shield AoE Radius (blue) = 255
 [Memory Leak Fix](https://www.nexusmods.com/warhammer40kdarktide/mods/406) - Helps by trimming the memory space used by mods to keep it from reaching critical mass as quickly and causing crashing.
 
 ```
-GC Pause Time - 1.0
-GC step multiple - 5.0
+GC Pause Time = 1.0
+GC step multiple = 5.0
 ```
 
 [Clean Force Blocking](https://www.nexusmods.com/warhammer40kdarktide/mods/104) - Removes Psyker shield vfx.
@@ -100,12 +122,35 @@ Remove Blocking Sound Effect = off
 ```
 Particle Type = Nurgle Goo
 ```
+# Launcher Skip 
+[Launcher Skip](https://www.nexusmods.com/warhammer40kdarktide/mods/131) - instructions for usage taken from the nexus mods page below.
+
+**Usage**
+1. Copy LauncherSkip.exe to your launcher folder. By default:  
+- Steam:   
+`C:\Program Files (x86)\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\launcher` 
+ 
+-  Game Pass:   
+`C:\XboxGames\Warhammer 40,000- Darktide\Content\launcher`  
+1. Create shortcut/s:  
+  a) Right-click LauncherSkip.exe and select an option:  
+	- Start menu: "Pin to Start"
+	- Taskbar: "Pin to taskbar"
+	- Desktop: "Send to" -> "Desktop (create shortcut)"  
+ b) Copy LauncherSkip.exe, navigate to any folder, then right-click and select "Paste shortcut".  
+It will not try to start Steam/Game Pass for you so they need to already be running. This is not a DMF mod and does not need to be copied to your mods folder.  
+
+**Original launcher**
+
+The original launcher has deliberately been left alone, so simply launch the game from Steam/Game Pass (without the shortcut) to view it.  
+  
+If you want to completely replace it, rename the original launcher to `Launcher-original.exe`, and `LauncherSkip.exe` to `Launcher.exe` (and replace any shortcuts to `LauncherSkip.exe`). You will need to redo this each time the game updates or you run "Verify integrity of game files" in Steam. 
 # INI file edits to optimize the game engine
 
 Tabbing and spacing are important when editing these files or the game will not work. These changes will need to be reapplied after every game update. They need to be done manually, as these files are updated by Fatshark after each patch/hotfix. If something gets broken, you can always [run an integrity check on the game in Steam](https://help.steampowered.com/en/faqs/view/0C48-FCBD-DA71-93EB), doing so will remove any changes you’ve made and disable mods. You’ll need to re-run the `toogle_darktide_mods.bat`, re-edit the INI files and the `launcher.exe.config` once the integrity check has completed. Or you can restore the original settings, they are included at the [bottom of this document](https://github.com/thyazide/Darktide-Performance-Optimizations#original-settings-for-edited-files).  
 
 These settings work for AMD and Nvidia users.
-# Target file Settings_common.ini
+# Target file `Settings_common.ini`
 
 `*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\bundle\application_settings`
 
@@ -126,7 +171,7 @@ Here are some suggestions for values based on ram. You’ll need to adjust these
 10gb can use tile_staging_buffer_size = 8  
 11gb can use tile_staging_buffer_size = 8  
 12gb can use tile_staging_buffer_size = 16  
-16gb can use tile_staging_buffer_size = 64
+16gb can use tile_staging_buffer-_size = 64
 ```
 
 You will need to correct the value for `tile_staging_buffer_size` after copying and pasting the values into the `Settings_common.ini`.
@@ -182,7 +227,7 @@ renderer = {
 *\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\launcher
 ```
 
-This will extend the amount of memory available in game to mods.
+This will extend the amount of memory- available in game to mods.
 
 Find and replace the `ExeArgs` lines with the settings below:
 
@@ -291,6 +336,8 @@ Update the direct storage dll files
 6. Find `dstoragecore.dll` and `dstorage.dll`, back them up else where in case you wish to undo these changes (or run a [file integrity verification in steam](https://help.steampowered.com/en/faqs/view/0C48-FCBD-DA71-93EB), note this will disable mods, so you will need to re-enable them using the batch file in the root darktide folder  `*/steam/steamapps/common/Warhammer 40,000 DARKTIDE/`).
 7. Copy the `dstoragecore.dll` and `dstorage.dll` files from where you placed them earlier and place them into `*/steam/steamapps/common/Warhammer 40,000 DARKTIDE/binaries/`
 # List of attributions
+
+Some attributions may not appear within the body of the document as I have time to write my own version of them. I am keeping them here for posterity.
 
 - [How to fix AMD GPU stutters and improve clarirty | Streaming settings config fix - Performance Feedback - Fatshark Forums](https://forums.fatsharkgames.com/t/how-to-fix-amd-gpu-stutters-and-improve-clarirty-streaming-settings-config-fix/108373) -Vizra
 - [Fullscreen Optimisations are not enabled for Darktide (fix included) - Performance Feedback - Fatshark Forums](https://forums.fatsharkgames.com/t/fullscreen-optimisations-are-not-enabled-for-darktide-fix-included/103471) -Vizra
