@@ -49,12 +49,12 @@ Then double click the `toggle_darktide_mods.bat`, this will enable mods. This wi
 If you are on linux you can use [dtkit-patch](https://github.com/manshanko/dtkit-patch) to enable mods. Extract the archive into the Darktide folder (`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`), make it executable. Then double click it, or run the file from the terminal of your choice to enable mods.  
 # Commonly used Archive programs: 
 
-[Winrar](https://www.win-rar.com/download.html?&L=0)
-[Peazip](https://peazip.github.io/)
-[7-Zip](https://www.7-zip.org/download.html)
-[Windows native extraction](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5)
-[Ark for KDE](https://apps.kde.org/ark/)
-[File-Roller for Gnome](https://flathub.org/en/apps/org.gnome.FileRoller)
+- [Winrar](https://www.win-rar.com/download.html?&L=0)
+- [Peazip](https://peazip.github.io/)
+- [7-Zip](https://www.7-zip.org/download.html)
+- [Windows native extraction](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5)
+- [Ark for KDE](https://apps.kde.org/ark/)
+- [File-Roller for Gnome](https://flathub.org/en/apps/org.gnome.FileRoller)
 # Necessary Mods
 
 [Impact VFX Limiter](https://www.nexusmods.com/warhammer40kdarktide/mods/424) - Allows the user to limit the maximum amount of flesh/armor impact VFX and surface impact VFX that can be played per frame for better performance.  
