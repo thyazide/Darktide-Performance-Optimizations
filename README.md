@@ -2,20 +2,20 @@
 
 # Table of Contents
 
-- [[#Forward about mods]]
-- [[#Mod installation instructions]]
-- [[#Commonly used Archive programs]]
-- [[#Necessary Mods]]
-- [[#Launcher Skip]]
-- [[#INI file edits to optimize the game engine]]
-- [[#Target file `Settings_common.ini`]]
-- [[#Target file `Win32_settings.ini`]]
-- [[#Target file `Launcher.exe.config`]]
-- [[#Nvidia App Settings]]
-- [[#In-Game settings]]
-- [[#Direct Storage DLL Update]]
-- [[#Original settings for edited files]]
-- [[#List of attributions]]
+- [Foward about mods](https://github.com/thyazide/Darktide-Performance-Optimizations#forward-about-mods)
+- [Mod installation instructions](https://github.com/thyazide/Darktide-Performance-Optimizations#mod-installation-instructions)
+- [Commonly used Archive programs](https://github.com/thyazide/Darktide-Performance-Optimizations#commonly-used-archive-programs)
+- [Necessary Mods](https://github.com/thyazide/Darktide-Performance-Optimizations#necessary-mods)
+- [Launcher Skip](https://github.com/thyazide/Darktide-Performance-Optimizations#launcher-skip)
+- [INI file edits to optimize the game engine](https://github.com/thyazide/Darktide-Performance-Optimizations#ini-file-edits-to-optimize-the-game-engine)
+- [Target file `Settings_common.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#target-file-settings_commonini)
+- [Target file `Win32_settings.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#target-file-win32_settingsini)
+- [Target file `Launcher.exe.config`](https://github.com/thyazide/Darktide-Performance-Optimizations#target-file-launcherexeconfig)
+- [Nvidia App Settings](https://github.com/thyazide/Darktide-Performance-Optimizations#nvidia-app-settings)
+- [In-Game settings](https://github.com/thyazide/Darktide-Performance-Optimizations#in-game-settings)
+- [Original settings for edited files](https://github.com/thyazide/Darktide-Performance-Optimizations#in-game-settings)
+- [Direct Storage DLL Update](https://github.com/thyazide/Darktide-Performance-Optimizations#direct-storage-dll-update)
+- [List of attributions](https://github.com/thyazide/Darktide-Performance-Optimizations#list-of-attributions)
 # Forward about mods
 
 Mods are not required, but are highly advisable as they can provide a sizable performance gain over all. You can skip them and go directly to the INI edits and other changes in this document. Though as I advise their use,  instructions for installing/enabling them are front and center. 
