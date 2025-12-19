@@ -366,24 +366,37 @@ texture_streamer_settings = {
 ```
 
 # File locations
+
 Darktide base folder: 
-`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`
-	Default installation folder for Steam.  
-	Location of `toggle_darktide_mods.bat` and `dtkit-patch`
+
+```
+*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\
+```
+	- Default installation folder for Steam.  
+	- Location of `toggle_darktide_mods.bat` and `dtkit-patch`
 
 Darktide Launcher folder: 
-`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\launcher\`
-	The game launcher folder. 
-	Location of `Launcher.exe.config`
+
+```
+*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\launcher\
+```
+	- The game launcher folder. 
+	- Location of `Launcher.exe.config`
 
 Darktide mods folder:
-`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods\`
-	Mod folders/files.
+
+```
+*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods\
+```
+	- Mod folders/files.
 
 Darktide application_settings folder: 
-`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\bundle\application_settings\`
-	Stores INI files that govern settings for the game engine. 
-	Location of `Settings_common.ini` and `Win32_settings.ini`.
+
+```
+*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\bundle\application_settings\
+```
+	- Stores INI files that govern settings for the game engine. 
+	- Location of `Settings_common.ini` and `Win32_settings.ini`.
 # List of attributions
 
 Some attributions may not appear within the body of the document as I have time to write my own version of them. I am keeping them here for posterity.
@@ -408,3 +421,4 @@ Some attributions may not appear within the body of the document as I have time 
 - [Zealot Fire Particle Swap](https://www.nexusmods.com/warhammer40kdarktide/mods/230) -JCaleb
 - Direct storage dll update -pttgo
 
+https://github.com/thyazide/Darktide-Performance-Optimizations#file-locations
