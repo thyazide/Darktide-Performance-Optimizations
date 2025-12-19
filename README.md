@@ -180,7 +180,7 @@ These settings work for AMD and Nvidia users.
 
 Tabbing and spacing are important when editing these files or the game will not work. These changes will need to be reapplied after every game update. They need to be done manually, as these files are changed after each update by Fatshark.
 
-By default `tile_staging_buffer_size` is set to `64` in the settings below. Values lower than 64 can cause rubbery looking textures on enemies until the texture fully loads. Here are suggestions for the value based on the amount of ram your card has. If your card has `16gb` of ram or higher you can use `16`, `32`, or `64`. 
+By default `tile_staging_buffer_size` is set to `64` in the settings below. Values lower than 64 can cause rubbery looking textures on enemies until the texture fully loads. Here are suggestions for the value based on the amount of ram your card has. 
 
 Valid values for `tile_staging_buffer_size`: 
 
