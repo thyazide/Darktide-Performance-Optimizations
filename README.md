@@ -413,10 +413,11 @@ Darktide application_settings folder:
 
 Some attributions may not appear within the body of the document as I have time to write my own version of them. I am keeping them here for posterity.
 
-- [How to fix AMD GPU stutters and improve clarirty | Streaming settings config fix - Performance Feedback - Fatshark Forums](https://forums.fatsharkgames.com/t/how-to-fix-amd-gpu-stutters-and-improve-clarirty-streaming-settings-config-fix/108373) -Vizra
+- [How to fix AMD GPU stutters and improve clarity | Streaming settings config fix - Performance Feedback - Fatshark Forums](https://forums.fatsharkgames.com/t/how-to-fix-amd-gpu-stutters-and-improve-clarirty-streaming-settings-config-fix/108373) -Vizra
 - [Fullscreen Optimisations are not enabled for Darktide (fix included) - Performance Feedback - Fatshark Forums](https://forums.fatsharkgames.com/t/fullscreen-optimisations-are-not-enabled-for-darktide-fix-included/103471) -Vizra
 - [Better FPS & Graphic Options - Darktide Performance Guide](https://www.youtube.com/watch?v=tJ11KfVsG_c) -ItalianSpartacus
 - [https://discord.gg/rKYWtaDx4D](https://discord.gg/rKYWtaDx4D) -Darktide modding Discord
+- [DMF Docs offical mod installation guide](https://dmf-docs.darkti.de/#/installing-mods)
 - [Guide for installing darktide mods from /u/ruderalis1 on reddit.](https://old.reddit.com/r/DarkTide/comments/11cod2i/guide_how_to_install_mods_in_darktide_w_gifs/) -ruderalis1
 - [Install Darktide Mods Fast](https://youtu.be/xQtXFlxPiho) -Janotil
 - [Darktide Mod Loader](https://www.nexusmods.com/warhammer40kdarktide/mods/19) -Aussiemon
