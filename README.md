@@ -13,7 +13,10 @@
 	- [Target file `Launcher.exe.config`](https://github.com/thyazide/Darktide-Performance-Optimizations#target-file-launcherexeconfig)
 - [Nvidia App Settings](https://github.com/thyazide/Darktide-Performance-Optimizations#nvidia-app-settings)
 - [In-Game settings](https://github.com/thyazide/Darktide-Performance-Optimizations#in-game-settings)
-- [Original settings for edited files](https://github.com/thyazide/Darktide-Performance-Optimizations#original-settings-for-edited-files)
+- [Default settings for edited files](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-for-edited-files)
+	- [Default settings `win32_settings.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-win32_settingsini) 
+	- [Default settings `settings_common.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-settings_commonini)
+	- [Default settings `Launcher.exe.config`](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-launcherexeconfig)
 - [Direct Storage DLL Update](https://github.com/thyazide/Darktide-Performance-Optimizations#direct-storage-dll-update)
 - [List of attributions](https://github.com/thyazide/Darktide-Performance-Optimizations#list-of-attributions)
 # Forward about mods
@@ -313,7 +316,7 @@ Update the direct storage dll files
 7. Copy the `dstoragecore.dll` and `dstorage.dll` files from where you placed them earlier and place them into `*/steam/steamapps/common/Warhammer 40,000 DARKTIDE/binaries/`
 # Default settings for edited files
 
-# Default settings from `win32_settings.ini`
+# Default settings `win32_settings.ini`
 
 ```
 renderer = {
@@ -331,7 +334,7 @@ renderer = {
         streaming_buffer_size = 64  
         streaming_texture_pool_size = 512
 ```
-# Default settings from `settings_common.ini` 
+# Default settings `settings_common.ini` 
 
 ```
 feedback_streamer_settings = {  
@@ -354,7 +357,7 @@ texture_streamer_settings = {
    streaming_buffer_size = 64  
    streaming_texture_pool_size = 512
 ```
-# Default settings from `Launcher.exe.config`
+# Default settings `Launcher.exe.config`
 
 ```
       <setting name="ExeArgs" serializeAs="String">
