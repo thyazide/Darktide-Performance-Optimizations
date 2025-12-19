@@ -151,11 +151,13 @@ Particle Type = Nurgle Goo
 
 **Usage**
 1. Copy LauncherSkip.exe to your launcher folder. By default:  
+
 - Steam:   
-`C:\Program Files (x86)\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\launcher` 
+`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\launcher` 
  
 -  Game Pass:   
-`C:\XboxGames\Warhammer 40,000- Darktide\Content\launcher`  
+`*\XboxGames\Warhammer 40,000- Darktide\Content\launcher`
+
 1. Create shortcut/s:  
   a) Right-click LauncherSkip.exe and select an option:  
 	- Start menu: "Pin to Start"
