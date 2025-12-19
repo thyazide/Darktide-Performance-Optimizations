@@ -47,17 +47,17 @@ There are other ways of handling mod support in Darktide, [Vortex](https://www.n
 
 	Tell your archive program to overwrite any existing files, as AML is a patch for DML that enables mods to be automatically loaded by the game on start up. 
 
-4. Once AML is installed you can simply download and extract any mods you wish into the mods folder: 
-
-	`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods\`
-
-	They will be automatically sorted and listed in the game's mod settings page. 
-
-5. To enable mods after installing DMF, DML, and AML open the Darktide folder:
+4. To enable mods after installing DMF, DML, and AML open the Darktide folder:
 
 	`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`
 
 	Then double click the `toggle_darktide_mods.bat`, this will enable mods. This will need to be repeated after each patch to re-enable mods. Also if you need to disable mods at any time you can double click the batch file again and follow the on screen prompt to disable them. 
+
+5. Once AML is installed you can simply download and extract any mods you wish into the mods folder: 
+
+	`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods\`
+
+	They will be automatically sorted and listed in the game's mod settings page. 
 
 **AML notes:**
 If DML is updated at any point after the initial install is finished you will need to download and extract AML into the mods folder to re-enable AML so mods can be loaded automatically. 
@@ -66,7 +66,7 @@ If DML is updated at any point after the initial install is finished you will ne
 If you are on linux you can use [dtkit-patch](https://github.com/manshanko/dtkit-patch) to enable mods. Extract the archive into the Darktide folder (`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`), make it executable. Then double click it, or run the file from the terminal of your choice to enable mods.  
 
 [DMF Docs official mod installation guide](https://dmf-docs.darkti.de/#/installing-mods) 
-**Video guide** - [Install Darktide Mods Fast](https://youtu.be/xQtXFlxPiho)
+[Install Darktide Mods Fast](https://youtu.be/xQtXFlxPiho) - **Video guide** 
 
 # Commonly used Archive programs
 
