@@ -370,8 +370,8 @@ texture_streamer_settings = {
 You can open the Darktide base folder via the steam library:
 1. Open Steam 
 2. Click Library at the top of the page
-3. On the left, right-click on "Warhammer 40,000: Darktide"
-4. Click properties
+3. On the left in your list of games, right-click on "Warhammer 40,000: Darktide"
+4. Click Properties
 5. Click Installed files 
 6. On the right, click "Browse"
 
