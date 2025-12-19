@@ -35,7 +35,7 @@ There are other ways of handling mod support in Darktide, [Vortex](https://www.n
 
 	- Download [Darktide Mod Loader](https://www.nexusmods.com/warhammer40kdarktide/mods/19) (referred to as DML from here on out)
 	- Download [Darktide Mod Framework](https://www.nexusmods.com/warhammer40kdarktide/mods/8) (referred to as DMF from here on out)
-	- Download [Auto Mod Loading and Ordering](https://www.nexusmods.com/warhammer40kdarktide/mods/246) (referred to as AML from here on out).
+	- Download [Auto Mod Loading and Ordering](https://www.nexusmods.com/warhammer40kdarktide/mods/246) (referred to as AML from here on out)
 
 2. Use the [Archive program of your choice](https://github.com/thyazide/Darktide-Performance-Optimizations#commonly-used-archive-programs) to extract DML and DMF to your Darktide folder:
 
