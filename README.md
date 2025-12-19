@@ -179,7 +179,7 @@ These settings work for AMD and Nvidia users.
 
 Tabbing and spacing are important when editing these files or the game will not work. These changes will need to be reapplied after every game update. They need to be done manually, as these files are changed after each update by Fatshark.
 
-By default `tile_staging_buffer_size` is set to `64` in the settings below. Values lower than 64 can cause rubbery looking textures on enemies until the texture fully loads. Here are suggestions for the value based on the amount of ram your card has. 
+By default `tile_staging_buffer_size` is set to `64` in the settings below. Values lower than 64 can cause rubbery looking textures on enemies until the texture fully loads. Here are suggestions for the value based on the amount of VRAM your videocard has. 
 
 Valid values for `tile_staging_buffer_size`: 
 
@@ -187,7 +187,7 @@ Valid values for `tile_staging_buffer_size`:
 4, 8, 16, 32, 64
 ```
 
-Here are some suggestions for values based on ram. You’ll need to adjust these settings based on your own experience in-game:
+Here are some suggestions for values based on VRAM. You’ll need to adjust these settings based on your own experience in-game:
 
 ```
 8gb can use tile_staging_buffer_size = 4  
@@ -207,7 +207,7 @@ feedback_streamer_settings = {
         max_age_out_tiles_per_frame = 16  
         max_streaming_tiles_per_frame = 16  
         max_texture_pool_size = 1024  
-        max_write_feedback_threshold = 0.009  
+        max_write_feedback_threshold = 0.009 
         min_write_feedback_threshold = 0.005  
         staging_buffer_size = 8  
         threaded_streamer = true  
@@ -430,4 +430,5 @@ Some attributions may not appear within the body of the document as I have time 
 - [Granular Settings](https://www.nexusmods.com/warhammer40kdarktide/mods/38) -Skwuruhl
 - [Zealot Fire Particle Swap](https://www.nexusmods.com/warhammer40kdarktide/mods/230) -JCaleb
 - Direct storage DLL update -pttgo
+
 
