@@ -2,7 +2,7 @@
 
 # Table of Contents
 
-- [Foward about mods](https://github.com/thyazide/Darktide-Performance-Optimizations#forward-about-mods)
+- [Forward about mods](https://github.com/thyazide/Darktide-Performance-Optimizations#forward-about-mods)
 - [Mod installation instructions](https://github.com/thyazide/Darktide-Performance-Optimizations#mod-installation-instructions)
 - [Commonly used Archive programs](https://github.com/thyazide/Darktide-Performance-Optimizations#commonly-used-archive-programs)
 - [Necessary Mods](https://github.com/thyazide/Darktide-Performance-Optimizations#necessary-mods)
@@ -13,11 +13,11 @@
 	- [Target file `Launcher.exe.config`](https://github.com/thyazide/Darktide-Performance-Optimizations#target-file-launcherexeconfig)
 - [Nvidia App Settings](https://github.com/thyazide/Darktide-Performance-Optimizations#nvidia-app-settings)
 - [In-Game settings](https://github.com/thyazide/Darktide-Performance-Optimizations#in-game-settings)
+-  [Direct Storage DLL Update](https://github.com/thyazide/Darktide-Performance-Optimizations#direct-storage-dll-update)
 - [Default settings for edited files](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-for-edited-files)
 	- [Default settings `win32_settings.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-win32_settingsini) 
 	- [Default settings `settings_common.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-settings_commonini)
 	- [Default settings `Launcher.exe.config`](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-launcherexeconfig)
-- [Direct Storage DLL Update](https://github.com/thyazide/Darktide-Performance-Optimizations#direct-storage-dll-update)
 - [List of attributions](https://github.com/thyazide/Darktide-Performance-Optimizations#list-of-attributions)
 # Forward about mods
 
