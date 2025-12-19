@@ -31,46 +31,43 @@ There are other ways of handling mod support in Darktide, [Vortex](https://www.n
 
 **Instructions:**
 
-Create a [Nexus Mods Account](https://users.nexusmods.com/register), or not, downloads will be slower and capped if you do not. 
+1. Create a [Nexus Mods Account](https://users.nexusmods.com/register), or not, downloads will be slower and capped if you do not. 
 
-Download [Darktide Mod Loader](https://www.nexusmods.com/warhammer40kdarktide/mods/19)
+	- Download [Darktide Mod Loader](https://www.nexusmods.com/warhammer40kdarktide/mods/19) (referred to as DML from here on out)
+	- Download [Darktide Mod Framework](https://www.nexusmods.com/warhammer40kdarktide/mods/8) (referred to as DMF from here on out)
+	- Download [Auto Mod Loading and Ordering](https://www.nexusmods.com/warhammer40kdarktide/mods/246) (referred to as AML from here on out).
 
-Download [Darktide Mod Framework](https://www.nexusmods.com/warhammer40kdarktide/mods/8)
+2. Use the extraction program of your choice to extract DML and DMF to your Darktide folder:
 
-Use the extraction program of your choice to extract Darktide Mod Loader (referred to as DML from here on out). To your Darktide folder:
+	`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`
 
-`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`
+3. Extract AML to: 
 
- Do the same with the Darktide Mod Framework (referred to as DML from here on out). Your Darktide folder: 
+	`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods\`
 
-`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`
+	Tell your archive program to overwrite any existing files, as AML is a patch for DML that enables mods to be automatically loaded by the game on start up. 
 
-Download [Auto Mod Loading and Ordering](https://www.nexusmods.com/warhammer40kdarktide/mods/246) (referred to as AML from here on out).
+4. Once AML is installed you can simply download and extract any mods you wish into the mods folder: 
 
-Extract it to the mods folder that was created by the DMF archive:
+	`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods\`
 
-`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods\`
+	They will be automatically sorted and listed in the game's mod settings page. 
 
-Tell your archive program to overwrite any existing files, as AML is a patch for DML that enables mods to be automatically loaded by the game on start up. 
+5. To enable mods after installing DMF, DML, and AML open the Darktide folder:
 
-Once AML is installed you can simply download and extract any mods you wish into the mods folder: 
+	`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`
 
-`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods\`
+	Then double click the `toggle_darktide_mods.bat`, this will enable mods. This will need to be repeated after each patch to re-enable mods. Also if you need to disable mods at any time you can double click the batch file again and follow the on screen prompt to disable them. 
 
-They will be automatically sorted and listed in the game's mod settings page. 
-
-When DML is updated at any point after the initial install is finished you will need to download and re-apply AML in the mods folder to re-enable AML so mods can be loaded automatically. 
-
-To enable mods after installing DMF, DML, and AML open the Darktide folder:
-
-`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`
-
-Then double click the `toggle_darktide_mods.bat`, this will enable mods. This will need to be repeated after each patch to re-enable mods. Also if you need to disable mods at any time you can double click the batch file again and follow the on screen prompt to disable them. 
+**AML notes:**
+If DML is updated at any point after the initial install is finished you will need to download and extract AML into the mods folder to re-enable AML so mods can be loaded automatically. 
 
 **Linux specific:** 
 If you are on linux you can use [dtkit-patch](https://github.com/manshanko/dtkit-patch) to enable mods. Extract the archive into the Darktide folder (`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`), make it executable. Then double click it, or run the file from the terminal of your choice to enable mods.  
 
+[DMF Docs official mod installation guide](https://dmf-docs.darkti.de/#/installing-mods) 
 **Video guide** - [Install Darktide Mods Fast](https://youtu.be/xQtXFlxPiho)
+
 # Commonly used Archive programs
 
 - [Winrar](https://www.win-rar.com/download.html?&L=0)
@@ -414,11 +411,11 @@ Darktide application_settings folder:
 Some attributions may not appear within the body of the document as I have time to write my own version of them. I am keeping them here for posterity.
 
 - [How to fix AMD GPU stutters and improve clarity | Streaming settings config fix - Performance Feedback - Fatshark Forums](https://forums.fatsharkgames.com/t/how-to-fix-amd-gpu-stutters-and-improve-clarirty-streaming-settings-config-fix/108373) -Vizra
-- [Fullscreen Optimisations are not enabled for Darktide (fix included) - Performance Feedback - Fatshark Forums](https://forums.fatsharkgames.com/t/fullscreen-optimisations-are-not-enabled-for-darktide-fix-included/103471) -Vizra
+- [Fullscreen Optimizations are not enabled for Darktide (fix included) - Performance Feedback - Fatshark Forums](https://forums.fatsharkgames.com/t/fullscreen-optimisations-are-not-enabled-for-darktide-fix-included/103471) -Vizra
 - [Better FPS & Graphic Options - Darktide Performance Guide](https://www.youtube.com/watch?v=tJ11KfVsG_c) -ItalianSpartacus
-- [https://discord.gg/rKYWtaDx4D](https://discord.gg/rKYWtaDx4D) -Darktide modding Discord
-- [DMF Docs offical mod installation guide](https://dmf-docs.darkti.de/#/installing-mods)
-- [Guide for installing darktide mods from /u/ruderalis1 on reddit.](https://old.reddit.com/r/DarkTide/comments/11cod2i/guide_how_to_install_mods_in_darktide_w_gifs/) -ruderalis1
+- [Darktide modding Discord](https://discord.gg/rKYWtaDx4D)
+- [DMF Docs official mod installation guide](https://dmf-docs.darkti.de/#/installing-mods)
+- [Guide for installing Darktide mods from /u/ruderalis1 on reddit.](https://old.reddit.com/r/DarkTide/comments/11cod2i/guide_how_to_install_mods_in_darktide_w_gifs/) -ruderalis1
 - [Install Darktide Mods Fast](https://youtu.be/xQtXFlxPiho) -Janotil
 - [Darktide Mod Loader](https://www.nexusmods.com/warhammer40kdarktide/mods/19) -Aussiemon
 - [Darktide Mod Framework](https://www.nexusmods.com/warhammer40kdarktide/mods/8) -Aussiemon
@@ -432,5 +429,5 @@ Some attributions may not appear within the body of the document as I have time 
 - [Debuff Indicator](https://www.nexusmods.com/warhammer40kdarktide/mods/137) -Zombine04
 - [Granular Settings](https://www.nexusmods.com/warhammer40kdarktide/mods/38) -Skwuruhl
 - [Zealot Fire Particle Swap](https://www.nexusmods.com/warhammer40kdarktide/mods/230) -JCaleb
-- Direct storage dll update -pttgo
+- Direct storage DLL update -pttgo
 
