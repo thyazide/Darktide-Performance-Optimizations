@@ -251,7 +251,7 @@ renderer = {
 *\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\launcher
 ```
 
-This will extend the amount of memory- available in game to mods.
+This will extend the amount of memory available in game to mods.
 
 Find and replace the `ExeArgs` lines with the settings below:
 
