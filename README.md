@@ -53,7 +53,7 @@ There are other ways of handling mod support in Darktide, [Vortex](https://www.n
 
 	Then double click the `toggle_darktide_mods.bat`, this will enable mods. This will need to be repeated after each patch to re-enable mods. Also if you need to disable mods at any time you can double click the batch file again and follow the on screen prompt to disable them. 
 
-5. Once AML is installed you can simply download and extract any mods you wish into the mods folder: 
+5. Once mods are enabled, you can extract any mods you wish into the mods folder: 
 
 	`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods\`
 
