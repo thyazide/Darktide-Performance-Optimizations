@@ -8,15 +8,15 @@
 - [Necessary Mods](https://github.com/thyazide/Darktide-Performance-Optimizations#necessary-mods)
 - [Launcher Skip](https://github.com/thyazide/Darktide-Performance-Optimizations#launcher-skip)
 - [INI & config file changes optimize the game engine](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#ini--config-file-changes-optimize-the-game-engine)
-	- [`Settings_common.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#target-file-settings_commonini)
-	- [`Win32_settings.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#target-file-win32_settingsini)
-	- [`Launcher.exe.config`](https://github.com/thyazide/Darktide-Performance-Optimizations#target-file-launcherexeconfig)
+	- [`settings_common.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#settings_commonini)
+	- [`win32_settings.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#win32_settingsini)
+	- [`Launcher.exe.config`](https://github.com/thyazide/Darktide-Performance-Optimizations#launcherexeconfig)
 - [Nvidia App Settings](https://github.com/thyazide/Darktide-Performance-Optimizations#nvidia-app-settings)
 - [In-Game settings](https://github.com/thyazide/Darktide-Performance-Optimizations#in-game-settings)
 -  [Direct Storage DLL Update](https://github.com/thyazide/Darktide-Performance-Optimizations#direct-storage-dll-update)
 - [Default settings for edited files](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-for-edited-files)
 	- [`win32_settings.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-win32_settingsini) 
-	- [`settings_common.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-settings_commonini)
+	- [`settings_common.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#settings_commonini)
 	- [`Launcher.exe.config`](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-launcherexeconfig)
 - [File locations](https://github.com/thyazide/Darktide-Performance-Optimizations#file-locations)
 - [List of attributions](https://github.com/thyazide/Darktide-Performance-Optimizations#list-of-attributions)
@@ -173,7 +173,7 @@ If you want to completely replace it, rename the original launcher to `Launcher
 Tabbing and spacing are important when editing these files or the game will not work. These changes will need to be reapplied after every game update. They need to be done manually, as these files are updated by Fatshark after each patch/hotfix. If something gets broken, you can always [run an integrity check on the game in Steam](https://help.steampowered.com/en/faqs/view/0C48-FCBD-DA71-93EB), doing so will remove any changes you’ve made and disable mods. You’ll need to re-run the `toogle_darktide_mods.bat`, re-edit the INI files and the `launcher.exe.config` once the integrity check has completed. Or you can restore the original settings, they are included at the [bottom of this document](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-for-edited-files).  
 
 These settings work for AMD and Nvidia users.
-# `Settings_common.ini`
+# `settings_common.ini`
 
 `*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\bundle\application_settings`
 
@@ -222,7 +222,7 @@ texture_streamer_settings = {
         streaming_buffer_size = 128  
         streaming_texture_pool_size = 1024
 ```
-# `Win32_settings.ini`
+# `win32_settings.ini`
 
 ```
 *\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\bundle\application_settings/
@@ -318,25 +318,7 @@ Update the direct storage dll files
 7. Copy the `dstoragecore.dll` and `dstorage.dll` files from where you placed them earlier and place them into `*/steam/steamapps/common/Warhammer 40,000 DARKTIDE/binaries/`
 # Default settings for edited files
 
-# Default settings `win32_settings.ini`
-
-```
-renderer = {
-        adapter_index = 0
-        aspect_ratio = -1
-        d3d_debug = false
-        d3d_gpu_validation = false
-        dlss_logging = 0
-        dred_pagefault = true
-        fullscreen = true
-        fullscreen_output = 0
-        gpu_crash_dumps = false
-        ray_tracing = true
-        screen_resolution = [ 1920 1080] 
-        streaming_buffer_size = 64  
-        streaming_texture_pool_size = 512
-```
-# Default settings `settings_common.ini` 
+# `settings_common.ini` 
 
 ```
 feedback_streamer_settings = {  
@@ -359,7 +341,25 @@ texture_streamer_settings = {
    streaming_buffer_size = 64  
    streaming_texture_pool_size = 512
 ```
-# Default settings `Launcher.exe.config`
+# `win32_settings.ini`
+
+```
+renderer = {
+        adapter_index = 0
+        aspect_ratio = -1
+        d3d_debug = false
+        d3d_gpu_validation = false
+        dlss_logging = 0
+        dred_pagefault = true
+        fullscreen = true
+        fullscreen_output = 0
+        gpu_crash_dumps = false
+        ray_tracing = true
+        screen_resolution = [ 1920 1080] 
+        streaming_buffer_size = 64  
+        streaming_texture_pool_size = 512
+```
+# `Launcher.exe.config`
 
 ```
       <setting name="ExeArgs" serializeAs="String">
