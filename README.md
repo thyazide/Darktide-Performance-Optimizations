@@ -18,7 +18,7 @@
 	- [Default settings `win32_settings.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-win32_settingsini) 
 	- [Default settings `settings_common.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-settings_commonini)
 	- [Default settings `Launcher.exe.config`](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-launcherexeconfig)
-- [File locations](https://github.com/thyazide/Darktide-Performance-Optimizations#file-locactions)
+- [File locations](https://github.com/thyazide/Darktide-Performance-Optimizations#file-locations)
 - [List of attributions](https://github.com/thyazide/Darktide-Performance-Optimizations#list-of-attributions)
 # Forward about mods
 
