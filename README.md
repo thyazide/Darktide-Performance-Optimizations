@@ -367,6 +367,14 @@ texture_streamer_settings = {
 
 # File locations
 
+You can open the Darktide base folder via the steam library:
+1. Open Steam 
+2. Click Library at the top of the page
+3. On the left, right-click on "Warhammer 40,000: Darktide"
+4. Click properties
+5. Click Installed files 
+6. On the right, click "Browse"
+
 Darktide base folder: 
 
 ```
@@ -421,4 +429,3 @@ Some attributions may not appear within the body of the document as I have time 
 - [Zealot Fire Particle Swap](https://www.nexusmods.com/warhammer40kdarktide/mods/230) -JCaleb
 - Direct storage dll update -pttgo
 
-https://github.com/thyazide/Darktide-Performance-Optimizations#file-locations
