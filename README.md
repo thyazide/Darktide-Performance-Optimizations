@@ -69,6 +69,8 @@ Then double click the `toggle_darktide_mods.bat`, this will enable mods. This wi
 
 **Linux specific:** 
 If you are on linux you can use [dtkit-patch](https://github.com/manshanko/dtkit-patch) to enable mods. Extract the archive into the Darktide folder (`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`), make it executable. Then double click it, or run the file from the terminal of your choice to enable mods.  
+
+**Video guide** - [Install Darktide Mods Fast](https://youtu.be/xQtXFlxPiho)
 # Commonly used Archive programs
 
 - [Winrar](https://www.win-rar.com/download.html?&L=0)
@@ -414,7 +416,7 @@ Some attributions may not appear within the body of the document as I have time 
 - [Better FPS & Graphic Options - Darktide Performance Guide](https://www.youtube.com/watch?v=tJ11KfVsG_c) -ItalianSpartacus
 - [https://discord.gg/rKYWtaDx4D](https://discord.gg/rKYWtaDx4D) -Darktide modding Discord
 - [Guide for installing darktide mods from /u/ruderalis1 on reddit.](https://old.reddit.com/r/DarkTide/comments/11cod2i/guide_how_to_install_mods_in_darktide_w_gifs/) -ruderalis1
-- [Alternate guide for installing mods.](https://youtu.be/xQtXFlxPiho) -Janotil
+- [Install Darktide Mods Fast](https://youtu.be/xQtXFlxPiho) -Janotil
 - [Darktide Mod Loader](https://www.nexusmods.com/warhammer40kdarktide/mods/19) -Aussiemon
 - [Darktide Mod Framework](https://www.nexusmods.com/warhammer40kdarktide/mods/8) -Aussiemon
 - [Auto Mod Loading and Ordering](https://www.nexusmods.com/warhammer40kdarktide/mods/246) -Altarion
