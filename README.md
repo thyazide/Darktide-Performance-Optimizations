@@ -15,9 +15,9 @@
 - [In-Game settings](https://github.com/thyazide/Darktide-Performance-Optimizations#in-game-settings)
 - [Direct Storage DLL Update](https://github.com/thyazide/Darktide-Performance-Optimizations#direct-storage-dll-update)
 - [Default settings for edited files](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-for-edited-files)
-	- [`win32_settings.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-win32_settingsini) 
 	- [`settings_common.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#settings_commonini)
-	- [`Launcher.exe.config`](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-launcherexeconfig)
+	- [`win32_settings.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#win32_settingsini-1) 
+	- [`Launcher.exe.config`](https://github.com/thyazide/Darktide-Performance-Optimizations#launcherexeconfig)
 - [File locations](https://github.com/thyazide/Darktide-Performance-Optimizations#file-locations)
 - [List of attributions](https://github.com/thyazide/Darktide-Performance-Optimizations#list-of-attributions)
 # Forward about mods
