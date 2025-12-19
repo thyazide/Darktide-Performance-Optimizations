@@ -18,6 +18,7 @@
 	- [Default settings `win32_settings.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-win32_settingsini) 
 	- [Default settings `settings_common.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-settings_commonini)
 	- [Default settings `Launcher.exe.config`](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-launcherexeconfig)
+- [File locations](https://github.com/thyazide/Darktide-Performance-Optimizations#file-locactions)
 - [List of attributions](https://github.com/thyazide/Darktide-Performance-Optimizations#list-of-attributions)
 # Forward about mods
 
@@ -363,6 +364,26 @@ texture_streamer_settings = {
       <setting name="ExeArgs" serializeAs="String">
         <value>--bundle-dir ../bundle --ini settings</value>
 ```
+
+# File locations
+Darktide base folder: 
+`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`
+	Default installation folder for Steam.  
+	Location of `toggle_darktide_mods.bat` and `dtkit-patch`
+
+Darktide Launcher folder: 
+`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\launcher\`
+	The game launcher folder. 
+	Location of `Launcher.exe.config`
+
+Darktide mods folder:
+`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods\`
+	Mod folders/files.
+
+Darktide application_settings folder: 
+`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\bundle\application_settings\`
+	Stores INI files that govern settings for the game engine. 
+	Location of `Settings_common.ini` and `Win32_settings.ini`.
 # List of attributions
 
 Some attributions may not appear within the body of the document as I have time to write my own version of them. I am keeping them here for posterity.
