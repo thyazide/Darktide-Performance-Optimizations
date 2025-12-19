@@ -7,7 +7,7 @@
 - [Commonly used Archive programs](https://github.com/thyazide/Darktide-Performance-Optimizations#commonly-used-archive-programs)
 - [Necessary Mods](https://github.com/thyazide/Darktide-Performance-Optimizations#necessary-mods)
 - [Launcher Skip](https://github.com/thyazide/Darktide-Performance-Optimizations#launcher-skip)
-- [INI & config file changes optimize the game engine](https://github.com/thyazide/Darktide-Performance-Optimizations#ini-file-edits-to-optimize-the-game-engine)
+- [INI & config file changes optimize the game engine](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#ini--config-file-changes-optimize-the-game-engine)
 	- [Target file `Settings_common.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#target-file-settings_commonini)
 	- [Target file `Win32_settings.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#target-file-win32_settingsini)
 	- [Target file `Launcher.exe.config`](https://github.com/thyazide/Darktide-Performance-Optimizations#target-file-launcherexeconfig)
