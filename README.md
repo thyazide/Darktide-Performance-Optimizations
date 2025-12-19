@@ -7,13 +7,13 @@
 - [Commonly used Archive programs](https://github.com/thyazide/Darktide-Performance-Optimizations#commonly-used-archive-programs)
 - [Necessary Mods](https://github.com/thyazide/Darktide-Performance-Optimizations#necessary-mods)
 - [Launcher Skip](https://github.com/thyazide/Darktide-Performance-Optimizations#launcher-skip)
-- [INI file edits to optimize the game engine](https://github.com/thyazide/Darktide-Performance-Optimizations#ini-file-edits-to-optimize-the-game-engine)
-- [Target file `Settings_common.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#target-file-settings_commonini)
-- [Target file `Win32_settings.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#target-file-win32_settingsini)
-- [Target file `Launcher.exe.config`](https://github.com/thyazide/Darktide-Performance-Optimizations#target-file-launcherexeconfig)
+- [INI & config file changes optimize the game engine](https://github.com/thyazide/Darktide-Performance-Optimizations#ini-file-edits-to-optimize-the-game-engine)
+	- [Target file `Settings_common.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#target-file-settings_commonini)
+	- [Target file `Win32_settings.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#target-file-win32_settingsini)
+	- [Target file `Launcher.exe.config`](https://github.com/thyazide/Darktide-Performance-Optimizations#target-file-launcherexeconfig)
 - [Nvidia App Settings](https://github.com/thyazide/Darktide-Performance-Optimizations#nvidia-app-settings)
 - [In-Game settings](https://github.com/thyazide/Darktide-Performance-Optimizations#in-game-settings)
-- [Original settings for edited files](https://github.com/thyazide/Darktide-Performance-Optimizations#in-game-settings)
+- [Original settings for edited files](https://github.com/thyazide/Darktide-Performance-Optimizations#original-settings-for-edited-files)
 - [Direct Storage DLL Update](https://github.com/thyazide/Darktide-Performance-Optimizations#direct-storage-dll-update)
 - [List of attributions](https://github.com/thyazide/Darktide-Performance-Optimizations#list-of-attributions)
 # Forward about mods
@@ -163,7 +163,7 @@ It will not try to start Steam/Game Pass for you so they need to already be runn
 The original launcher has deliberately been left alone, so simply launch the game from Steam/Game Pass (without the shortcut) to view it.  
   
 If you want to completely replace it, rename the original launcher to `Launcher-original.exe`, and `LauncherSkip.exe` to `Launcher.exe` (and replace any shortcuts to `LauncherSkip.exe`). You will need to redo this each time the game updates or you run "Verify integrity of game files" in Steam. 
-# INI file edits to optimize the game engine
+# INI & config file changes optimize the game engine
 
 Tabbing and spacing are important when editing these files or the game will not work. These changes will need to be reapplied after every game update. They need to be done manually, as these files are updated by Fatshark after each patch/hotfix. If something gets broken, you can always [run an integrity check on the game in Steam](https://help.steampowered.com/en/faqs/view/0C48-FCBD-DA71-93EB), doing so will remove any changes you’ve made and disable mods. You’ll need to re-run the `toogle_darktide_mods.bat`, re-edit the INI files and the `launcher.exe.config` once the integrity check has completed. Or you can restore the original settings, they are included at the [bottom of this document](https://github.com/thyazide/Darktide-Performance-Optimizations#original-settings-for-edited-files).  
 
@@ -311,9 +311,10 @@ Update the direct storage dll files
 5. Open the darktide binaries folder `*/steam/steamapps/common/Warhammer 40,000 DARKTIDE/binaries/`
 6. Find `dstoragecore.dll` and `dstorage.dll`, back them up else where in case you wish to undo these changes (or run a [file integrity verification in steam](https://help.steampowered.com/en/faqs/view/0C48-FCBD-DA71-93EB), note this will disable mods, so you will need to re-enable them using the batch file in the root darktide folder  `*/steam/steamapps/common/Warhammer 40,000 DARKTIDE/`).
 7. Copy the `dstoragecore.dll` and `dstorage.dll` files from where you placed them earlier and place them into `*/steam/steamapps/common/Warhammer 40,000 DARKTIDE/binaries/`
-# Original settings for edited files
+# Default settings for edited files
 
-Original settings from `win32_settings.ini`
+# Default settings from `win32_settings.ini`
+
 ```
 renderer = {
         adapter_index = 0
@@ -330,8 +331,8 @@ renderer = {
         streaming_buffer_size = 64  
         streaming_texture_pool_size = 512
 ```
+# Default settings from `settings_common.ini` 
 
-Original settings from `settings_common.ini` 
 ```
 feedback_streamer_settings = {  
    feedback_buffer_size = 4  
@@ -352,6 +353,12 @@ surface_properties = "application_settings/global"
 texture_streamer_settings = {  
    streaming_buffer_size = 64  
    streaming_texture_pool_size = 512
+```
+# Default settings from `Launcher.exe.config`
+
+```
+      <setting name="ExeArgs" serializeAs="String">
+        <value>--bundle-dir ../bundle --ini settings</value>
 ```
 # List of attributions
 
