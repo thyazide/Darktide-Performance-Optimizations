@@ -1,4 +1,4 @@
-# Darktide Performance Optimizations
+  mhjkm, .hn m # Darktide Performance Optimizations
 
 # Table of Contents
 
@@ -179,7 +179,11 @@ These settings work for AMD and Nvidia users.
 
 Tabbing and spacing are important when editing these files or the game will not work. These changes will need to be reapplied after every game update. They need to be done manually, as these files are changed after each update by Fatshark.
 
-By default `tile_staging_buffer_size` is set to `64` in the settings below. Values lower than 64 can cause rubbery looking textures on enemies until the texture fully loads. Here are suggestions for the value based on the amount of VRAM your videocard has. 
+You will need to know how much VRAM your video card has. There are a lot of ways to find this out. On windows you can use [GPU-Z](https://www.techpowerup.com/download/techpowerup-gpu-z/), the `memory size` box should print the total amount of VRAM available on your card.  
+
+For Linux you can use [CPU-X](https://flathub.org/en/apps/io.github.thetumultuousunicornofdarkness.cpu-x), click graphics, look for `Memory Used` the number on the right side of the / is the total GPU VRAM. There are probably other ways to get this info. This is more about ease of use. 
+
+By default `tile_staging_buffer_size` is set to `64` in the settings below. Values lower than 64 can cause rubbery looking textures on enemies until the texture fully loads. 
 
 Valid values for `tile_staging_buffer_size`: 
 
@@ -189,13 +193,12 @@ Valid values for `tile_staging_buffer_size`:
 
 Here are some suggestions for values based on VRAM. You’ll need to adjust these settings based on your own experience in-game:
 
-```
-8gb can use tile_staging_buffer_size = 4  
-10gb can use tile_staging_buffer_size = 8  
-11gb can use tile_staging_buffer_size = 8  
-12gb can use tile_staging_buffer_size = 16  
-16gb can use tile_staging_buffer-_size = 64
-```
+| 8gb      | tile_staging_buffer_size = 4       |
+| -------- | ---------------------------------- |
+| **10gb** | **tile_staging_buffer_size = 8**   |
+| **11gb** | **tile_staging_buffer_size = 8**   |
+| **12gb** | **tile_staging_buffer_size = 16**  |
+| **16gb** | **tile_staging_buffer-_size = 64** |
 
 You will need to correct the value for `tile_staging_buffer_size` after copying and pasting the values into the `Settings_common.ini`.
 
