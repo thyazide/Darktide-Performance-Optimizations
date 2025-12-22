@@ -471,4 +471,4 @@ Some attributions may not appear within the body of the document as I have time 
 - Direct storage DLL update -pttgo
 - [More Graphics Options - Performance boost](https://www.nexusmods.com/warhammer40kdarktide/mods/236) -yakuzadeso
 
-
+Thank you to everyone on this list, without their hard work and dedication this document would not be possible. 
