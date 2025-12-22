@@ -450,6 +450,7 @@ Some attributions may not appear within the body of the document as I have time 
 
 - [How to fix AMD GPU stutters and improve clarity | Streaming settings config fix - Performance Feedback - Fatshark Forums](https://forums.fatsharkgames.com/t/how-to-fix-amd-gpu-stutters-and-improve-clarirty-streaming-settings-config-fix/108373) -Vizra
 - [Fullscreen Optimizations are not enabled for Darktide (fix included) - Performance Feedback - Fatshark Forums](https://forums.fatsharkgames.com/t/fullscreen-optimisations-are-not-enabled-for-darktide-fix-included/103471) -Vizra
+- [I fixed stutter and textures not loading in! (Texutre streaming config file change)](https://forums.fatsharkgames.com/t/i-fixed-stutter-and-textures-not-loading-in-texutre-streaming-config-file-change/102199) -Vizra
 - [Better FPS & Graphic Options - Darktide Performance Guide](https://www.youtube.com/watch?v=tJ11KfVsG_c) -ItalianSpartacus
 - [Darktide modding Discord](https://discord.gg/rKYWtaDx4D)
 - [DMF Docs official mod installation guide](https://dmf-docs.darkti.de/#/installing-mods)
