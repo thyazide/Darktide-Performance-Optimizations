@@ -312,7 +312,7 @@ Find and replace the `ExeArgs` lines with the settings below:
 [Video Guide](https://youtu.be/0w7-N8y5b_k)
 # In-Game settings
 
-Resolution should be set to whatever you use. You can use whatever setting for up-scaling is available and looks best, and provides the best performance for you. Automatic will change the internal render resolution dynamically, though it may cause stuttering. I use performance at 4K and it runs well and looks good. 
+Resolution should be set to whatever you use. You can use whatever setting for up-scaling is available and looks best, and provides the best performance for you. `Automatic` will change the internal render resolution dynamically, though it may cause stuttering. I use `performance` at 4K and it runs well and looks good. 
 
 If your card has the option to enable `Nvidia Reflex Low Latency` do so. 
 
