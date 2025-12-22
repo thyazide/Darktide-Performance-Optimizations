@@ -148,12 +148,6 @@ Particle Type = Nurgle Goo
 
 [Granular Settings](https://www.nexusmods.com/warhammer40kdarktide/mods/38) - Has no configurable settings in mod options. Allows for greater control of mouse speed, and fov. The following was taken and reformatted from the Granular Settings page on nexus mods. 
 
-Commands are entered into the system via the chat dialog box.
-
-	Example: 
-	/set_look_scale 0.394
-	/set_look_scale_ranged_alternate_fire 0.394 
-
 | Setting                              | Values                                                                           |
 | ------------------------------------ | -------------------------------------------------------------------------------- |
 | set_look_scale                       | sets all 3 sensitivity values to the same value. Valid values range from 0 to 10 |
@@ -161,6 +155,11 @@ Commands are entered into the system via the chat dialog box.
 | set_vertical_fov                     | sets only alternate fire sensitivity                                             |
 | set_horizontal_fov                   | sets fov measured vertically. Valid values range from 0 to 180 exclusive         |
 | set_look_scale                       | sets fov measured horizontally. Valid values range from 0 to 180 exclusive       |
+Commands are entered into the system via the chat dialog box.
+
+	Example: 
+	/set_look_scale 0.394
+	/set_look_scale_ranged_alternate_fire 0.394 
 
 **Recommendations:**
 Use the same sensitivity value for all 3 sliders. The game correctly scales sensitivity by the tangent of `FOV/2` by default. This is opposed to many games simply scaling by `FOV/2`. Zoom is the ratio of focal lengths, not fields of view. Scaling sensitivity by the tangent of `FOV/2` properly emulates the ratio of focal lengths.
