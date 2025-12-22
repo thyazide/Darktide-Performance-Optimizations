@@ -171,7 +171,7 @@ Use the same sensitivity value for all 3 sliders. The game correctly scales sens
 [Launcher Skip](https://www.nexusmods.com/warhammer40kdarktide/mods/131) - instructions for usage taken from the nexus mods page, reformatted for clarity, below.
 
 **Usage**
-1. Copy LauncherSkip.exe to your launcher folder. By default:  
+1. Right-click `LauncherSkip.exe` > `click copy` then `paste` into your launcher folder. By default it is stored in:
 
 - Steam:   
 `*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\launcher` 
@@ -180,12 +180,11 @@ Use the same sensitivity value for all 3 sliders. The game correctly scales sens
 `*\XboxGames\Warhammer 40,000- Darktide\Content\launcher`
 
 1. Create shortcut/s:  
-  a) Right-click LauncherSkip.exe and select an option:  
+  a) Right-click `LauncherSkip.exe` and select an option:  
 	- Start menu: `Pin to Start`
 	- Taskbar: `Pin to taskbar`
 	- Desktop: `Send to` > `Desktop (create shortcut)`  
- b) Copy LauncherSkip.exe, navigate to any folder, then right-click and select `Paste shortcut`.
-It will not try to start Steam/Game Pass for you so they need to already be running. This is not a DMF mod and does not need to be copied to your mods folder.  
+ b) Copy `LauncherSkip.exe`, navigate to any folder, then right-click and select `Paste shortcut`. It will not try to start Steam/Game Pass for you so they need to already be running. This is not a DMF mod and does not need to be copied to your mods folder.  
 
 **Original launcher**
 
