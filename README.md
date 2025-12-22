@@ -347,7 +347,7 @@ Ragdoll Interactions = on
 
 Update the direct storage dll files
 
-1. Download the [Direct Storage Nupkg](https://www.nuget.org/api/v2/package/Microsoft.Direct3D.DirectStorage/1.3.0)
+1. Download the [Direct Storage Nupkg](https://www.nuget.org/packages/Microsoft.Direct3D.DirectStorage)
 2. Open it with [Peazip](https://peazip.github.io/index.html) 
 3. Inside the archive open `/native/bin/x64/`
 4. Extract `dstorage.dll` and `dstoragecore.dll` to some where you can locate it later
@@ -470,5 +470,12 @@ Some attributions may not appear within the body of the document as I have time 
 - [Zealot Fire Particle Swap](https://www.nexusmods.com/warhammer40kdarktide/mods/230) -JCaleb
 - Direct storage DLL update -pttgo
 - [More Graphics Options - Performance boost](https://www.nexusmods.com/warhammer40kdarktide/mods/236) -yakuzadeso
+- [Winrar](https://www.win-rar.com/download.html?&L=0)
+- [Peazip](https://peazip.github.io/)
+- [7-Zip](https://www.7-zip.org/download.html)
+- [Windows native extraction](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5)
+- [Ark for KDE](https://apps.kde.org/ark/)
+- [File-Roller for Gnome](https://flathub.org/en/apps/org.gnome.FileRoller)
+- [Direct Storage Nupkg](https://www.nuget.org/packages/Microsoft.Direct3D.DirectStorage)
 
 Thank you to everyone on this list, without their hard work and dedication this document would not be possible. 
