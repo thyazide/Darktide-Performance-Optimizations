@@ -1,11 +1,12 @@
-  mhjkm, .hn m # Darktide Performance Optimizations
+# Darktide Performance Optimizations
 
 # Table of Contents
 
 - [Forward about mods](https://github.com/thyazide/Darktide-Performance-Optimizations#forward-about-mods)
 - [Mod installation instructions](https://github.com/thyazide/Darktide-Performance-Optimizations#mod-installation-instructions)
 - [Commonly used Archive programs](https://github.com/thyazide/Darktide-Performance-Optimizations#commonly-used-archive-programs)
-- [Necessary Mods](https://github.com/thyazide/Darktide-Performance-Optimizations#necessary-mods)
+- [Necessary Mods](https://github.com/thyazide/Darktide-Performance-Optimizations#necessary-mods)\
+- [Optional Mods]()
 - [Launcher Skip](https://github.com/thyazide/Darktide-Performance-Optimizations#launcher-skip)
 - [INI & config file changes optimize the game engine](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#ini--config-file-changes-optimize-the-game-engine)
 	- [`settings_common.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#settings_commonini)
@@ -135,14 +136,35 @@ Remove Blocking Sound Effect = off
 ```
 
 [Debuff Indicator](https://www.nexusmods.com/warhammer40kdarktide/mods/137) - User preference as there are multiple ways to set up how this mod displays itself in game. Needed as a replacement for the visual effects removed by less dot.
+# Optional Mods
 
-[Granular Settings](https://www.nexusmods.com/warhammer40kdarktide/mods/38) - Has no configurable settings in mod options. Allows for greater control over many aspects of the games settings. (*Optional mod.*)
-
-[Zealot Fire Particle Swap](https://www.nexusmods.com/warhammer40kdarktide/mods/230) - Not really a performance enhancer but nice to have. (*Optional mod.*)
+[Zealot Fire Particle Swap](https://www.nexusmods.com/warhammer40kdarktide/mods/230) - Allows you to configure the particle effects for Zealot fire grenades to make them distinct from bomber grenades. 
 
 ```
 Particle Type = Nurgle Goo
 ```
+
+[More Graphics Options - Performance boost](https://www.nexusmods.com/warhammer40kdarktide/mods/236) - Possibly useful for users with minimum spec PCs. 
+
+[Granular Settings](https://www.nexusmods.com/warhammer40kdarktide/mods/38) - Has no configurable settings in mod options. Allows for greater control of mouse speed, and fov. The following was taken and reformatted from the Granular Settings page on nexus mods. 
+
+Commands are entered into the system via the chat dialog box.
+
+	Example: 
+	/set_look_scale 0.394
+	/set_look_scale_ranged_alternate_fire 0.394 
+
+| Setting                              | Values                                                                           |
+| ------------------------------------ | -------------------------------------------------------------------------------- |
+| set_look_scale                       | sets all 3 sensitivity values to the same value. Valid values range from 0 to 10 |
+| set_look_scale_ranged_alternate_fire | sets only ranged sensitivity                                                     |
+| set_vertical_fov                     | sets only alternate fire sensitivity                                             |
+| set_horizontal_fov                   | sets fov measured vertically. Valid values range from 0 to 180 exclusive         |
+| set_look_scale                       | sets fov measured horizontally. Valid values range from 0 to 180 exclusive       |
+
+Recommendations
+	Use the same sensitivity value for all 3 sliders. The game correctly scales sensitivity by the tangent of FOV/2 by default. This is opposed to many games simply scaling by FOV/2. Zoom is the ratio of focal lengths, not fields of view. Scaling sensitivity by the tangent of FOV/2 properly emulates the ratio of focal lengths.
+
 # Launcher Skip
 [Launcher Skip](https://www.nexusmods.com/warhammer40kdarktide/mods/131) - instructions for usage taken from the nexus mods page below.
 
@@ -183,47 +205,51 @@ You will need to know how much VRAM your video card has. There are a lot of ways
 
 For Linux you can use [CPU-X](https://flathub.org/en/apps/io.github.thetumultuousunicornofdarkness.cpu-x), click graphics, look for `Memory Used` the number on the right side of the / is the total GPU VRAM. There are probably other ways to get this info. This is more about ease of use. 
 
-By default `tile_staging_buffer_size` is set to `64` in the settings below. Values lower than 64 can cause rubbery looking textures on enemies until the texture fully loads. 
+By default `tile_staging_buffer_size` is set to `256` in the settings below. Values lower than `64` can cause rubbery looking textures on enemies until the texture fully loads. 
+
+**NOTE about tile_staging_buffer_size value: While 256 is recommended as a safe value for everyone, you can try setting this to 512 or 1024 for an even larger improvement, though performance for lower end systems may not work. I personally use 1024.**
+
+The above note was taken from a recent update to Vizra's original post linked in the [attribution](https://github.com/thyazide/Darktide-Performance-Optimizations#list-of-attributions) section.
 
 Valid values for `tile_staging_buffer_size`: 
 
 ```
-4, 8, 16, 32, 64
+4, 8, 16, 32, 64, 256, 512, 1024
 ```
 
 Here are some suggestions for values based on VRAM. You’ll need to adjust these settings based on your own experience in-game:
 
-| 8gb      | tile_staging_buffer_size = 4       |
-| -------- | ---------------------------------- |
-| **10gb** | **tile_staging_buffer_size = 8**   |
-| **11gb** | **tile_staging_buffer_size = 8**   |
-| **12gb** | **tile_staging_buffer_size = 16**  |
-| **16gb** | **tile_staging_buffer-_size = 64** |
+| 8gb      | tile_staging_buffer_size = 4        |
+| -------- | ----------------------------------- |
+| **10gb** | **tile_staging_buffer_size = 8**    |
+| **11gb** | **tile_staging_buffer_size = 8**    |
+| **12gb** | **tile_staging_buffer_size = 16**   |
+| **16gb** | **tile_staging_buffer-_size = 256** |
 
 You will need to correct the value for `tile_staging_buffer_size` after copying and pasting the values into the `Settings_common.ini`.
 
 Find and replace the `feedback_streamer_settings` and `streaming_buffer_size` settings with the settings below:
 
 ```
-feedback_streamer_settings = {  
-        feedback_buffer_size = 16  
-        max_age_out_tiles_per_frame = 16  
-        max_streaming_tiles_per_frame = 16  
-        max_texture_pool_size = 1024  
-        max_write_feedback_threshold = 0.009 
-        min_write_feedback_threshold = 0.005  
-        staging_buffer_size = 8  
-        threaded_streamer = true  
-        tile_age_out_time_ms = 5000  
-        tile_staging_buffer_size = 64  
-  
-streaming_buffer_size = 128  
-streaming_max_open_streams = 32  
-streaming_texture_pool_size = 1024  
-surface_properties = "application_settings/global"  
-texture_streamer_settings = {  
-        streaming_buffer_size = 128  
-        streaming_texture_pool_size = 1024
+feedback_streamer_settings = {
+	feedback_buffer_size = 4
+	max_age_out_tiles_per_frame = 16
+	max_streaming_tiles_per_frame = 16
+	max_texture_pool_size = 1024
+	max_write_feedback_threshold = 0.009
+	min_write_feedback_threshold = 0.005
+	staging_buffer_size = 4
+	threaded_streamer = true
+	tile_age_out_time_ms = 5000
+	tile_staging_buffer_size = 256
+
+streaming_buffer_size = 128
+streaming_max_open_streams = 48
+streaming_texture_pool_size = 1024
+surface_properties = "application_settings/global"
+texture_streamer_settings = {
+	streaming_buffer_size = 128
+	streaming_texture_pool_size = 1024
 ```
 # `win32_settings.ini`
 
@@ -235,17 +261,17 @@ Find and replace the `renderer` settings with the settings below:
 
 ```
 renderer = {  
-               adapter_index = 0  
-               aspect_ratio = -1  
-               d3d_debug = false  
-               d3d_gpu_validation = false  
-               dlss_logging = 0  
-               dred_pagefault = true  
-               fullscreen = true  
-               fullscreen_output = 0  
-               gpu_crash_dumps = false  
-               ray_tracing = true  
-               screen_resolution = [ 1920 1080 ]
+			adapter_index = 0  
+			aspect_ratio = -1  
+			d3d_debug = false  
+			d3d_gpu_validation = false  
+			dlss_logging = 0  
+			dred_pagefault = true  
+			fullscreen = true  
+			fullscreen_output = 0  
+			gpu_crash_dumps = false  
+			ray_tracing = true  
+			screen_resolution = [ 1920 1080]
 ```
 # `Launcher.exe.config`
 
