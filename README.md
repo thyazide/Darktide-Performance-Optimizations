@@ -162,7 +162,8 @@ Commands are entered into the system via the chat dialog box.
 | set_horizontal_fov                   | sets fov measured vertically. Valid values range from 0 to 180 exclusive         |
 | set_look_scale                       | sets fov measured horizontally. Valid values range from 0 to 180 exclusive       |
 
-Recommendations
+Recommendations:
+
 	Use the same sensitivity value for all 3 sliders. The game correctly scales sensitivity by the tangent of FOV/2 by default. This is opposed to many games simply scaling by FOV/2. Zoom is the ratio of focal lengths, not fields of view. Scaling sensitivity by the tangent of FOV/2 properly emulates the ratio of focal lengths.
 
 # Launcher Skip
