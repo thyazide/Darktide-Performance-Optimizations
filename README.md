@@ -4,7 +4,7 @@
 
 - [Forward about mods](https://github.com/thyazide/Darktide-Performance-Optimizations#forward-about-mods)
 - [Mod installation instructions](https://github.com/thyazide/Darktide-Performance-Optimizations#mod-installation-instructions)
-- [Keeping mods up to date]()
+- [Keeping mods up to date](https://github.com/thyazide/Darktide-Performance-Optimizations#keeping-mods-up-to-date)
 - [Commonly used Archive programs](https://github.com/thyazide/Darktide-Performance-Optimizations#commonly-used-archive-programs)
 - [Necessary Mods](https://github.com/thyazide/Darktide-Performance-Optimizations#necessary-mods)
 - [Optional Mods](https://github.com/thyazide/Darktide-Performance-Optimizations/tree/main#optional-mods)
