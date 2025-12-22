@@ -5,8 +5,8 @@
 - [Forward about mods](https://github.com/thyazide/Darktide-Performance-Optimizations#forward-about-mods)
 - [Mod installation instructions](https://github.com/thyazide/Darktide-Performance-Optimizations#mod-installation-instructions)
 - [Commonly used Archive programs](https://github.com/thyazide/Darktide-Performance-Optimizations#commonly-used-archive-programs)
-- [Necessary Mods](https://github.com/thyazide/Darktide-Performance-Optimizations#necessary-mods)\
-- [Optional Mods]()
+- [Necessary Mods](https://github.com/thyazide/Darktide-Performance-Optimizations#necessary-mods)
+- [Optional Mods](https://github.com/thyazide/Darktide-Performance-Optimizations/tree/main#optional-mods)
 - [Launcher Skip](https://github.com/thyazide/Darktide-Performance-Optimizations#launcher-skip)
 - [INI & config file changes optimize the game engine](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#ini--config-file-changes-optimize-the-game-engine)
 	- [`settings_common.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#settings_commonini)
