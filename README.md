@@ -4,6 +4,7 @@
 
 - [Forward about mods](https://github.com/thyazide/Darktide-Performance-Optimizations#forward-about-mods)
 - [Mod installation instructions](https://github.com/thyazide/Darktide-Performance-Optimizations#mod-installation-instructions)
+- [Keeping mods up to date]()
 - [Commonly used Archive programs](https://github.com/thyazide/Darktide-Performance-Optimizations#commonly-used-archive-programs)
 - [Necessary Mods](https://github.com/thyazide/Darktide-Performance-Optimizations#necessary-mods)
 - [Optional Mods](https://github.com/thyazide/Darktide-Performance-Optimizations/tree/main#optional-mods)
@@ -68,7 +69,9 @@ If you are on linux you can use [dtkit-patch](https://github.com/manshanko/dtkit
 
 [DMF Docs official mod installation guide](https://dmf-docs.darkti.de/#/installing-mods) 
 [Install Darktide Mods Fast](https://youtu.be/xQtXFlxPiho) - **Video guide** 
+# Keeping mods up to date
 
+If you have opted to create a [Nexus Mods Account](https://users.nexusmods.com/register) your previous downloads will be tracked and tagged with a `check mark` to denote they have been downloaded. They will also display an `Update available` marker if they have been updated. You can then click on them and `download > extract them` to the mods folder, `overwriting the existing files`. You can make a bookmark in your browser [for this page](https://www.nexusmods.com/games/warhammer40kdarktide/mods?timeRange=14&sort=updatedAt). It will show you any mods that have been updated in the last two weeks. This is extremely helpful at times when large game updates are released. It also shows a list of mods that were added to the site within that same period. 
 # Commonly used Archive programs
 
 - [Winrar](https://www.win-rar.com/download.html?&L=0)
