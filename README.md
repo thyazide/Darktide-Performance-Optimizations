@@ -469,5 +469,6 @@ Some attributions may not appear within the body of the document as I have time 
 - [Granular Settings](https://www.nexusmods.com/warhammer40kdarktide/mods/38) -Skwuruhl
 - [Zealot Fire Particle Swap](https://www.nexusmods.com/warhammer40kdarktide/mods/230) -JCaleb
 - Direct storage DLL update -pttgo
+- [More Graphics Options - Performance boost](https://www.nexusmods.com/warhammer40kdarktide/mods/236) -yakuzadeso
 
 
