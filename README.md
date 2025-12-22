@@ -153,9 +153,8 @@ Particle Type = Nurgle Goo
 | set_look_scale                       | sets all 3 sensitivity values to the same value. Valid values range from 0 to 10 |
 | set_look_scale_ranged                | sets only ranged sensitivity                                                     |
 | set_look_scale_ranged_alternate_fire | sets only alternate fire sensitivity                                             |
-| set_vertical_fov                     |                                                                                  |
-| set_horizontal_fov                   | sets fov measured vertically. Valid values range from 0 to 180 exclusive         |
-| set_look_scale                       | sets fov measured horizontally. Valid values range from 0 to 180 exclusive       |
+| set_vertical_fov                     | sets fov measured vertically. Valid values range from 0 to 180 exclusive         |
+| set_horizontal_fov                   | sets fov measured horizontally. Valid values range from 0 to 180 exclusive       |
 
 Commands are entered into the system via the chat dialog box.
 
