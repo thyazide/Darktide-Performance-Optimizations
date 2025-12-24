@@ -35,9 +35,9 @@ There are other ways of handling mod support in Darktide, [Vortex](https://www.n
 
 1. Create a [Nexus Mods Account](https://users.nexusmods.com/register), or not, downloads will be slower and capped if you do not. 
 
-	- Download [Darktide Mod Loader](https://www.nexusmods.com/warhammer40kdarktide/mods/19) (referred to as DML from here on out)
-	- Download [Darktide Mod Framework](https://www.nexusmods.com/warhammer40kdarktide/mods/8) (referred to as DMF from here on out)
-	- Download [Auto Mod Loading and Ordering](https://www.nexusmods.com/warhammer40kdarktide/mods/246) (referred to as AML from here on out)
+	- Download [Darktide Mod Loader](https://www.nexusmods.com/warhammer40kdarktide/mods/19) (referred to as DML from here on out).
+	- Download [Darktide Mod Framework](https://www.nexusmods.com/warhammer40kdarktide/mods/8) (referred to as DMF from here on out).
+	- Download [Auto Mod Loading and Ordering](https://www.nexusmods.com/warhammer40kdarktide/mods/246) (referred to as AML from here on out).
 
 2. Use the [Archive program of your choice](https://github.com/thyazide/Darktide-Performance-Optimizations#commonly-used-archive-programs) to extract DML and DMF to your Darktide folder:
 
@@ -151,13 +151,13 @@ Particle Type = Nurgle Goo
 
 [Granular Settings](https://www.nexusmods.com/warhammer40kdarktide/mods/38) - Has no configurable settings in mod options. Allows for greater control of mouse speed, and fov. The following was taken and reformatted from the Granular Settings page on nexus mods. 
 
-| Setting                              | Values                                                                           |
-| ------------------------------------ | -------------------------------------------------------------------------------- |
-| set_look_scale                       | sets all 3 sensitivity values to the same value. Valid values range from 0 to 10 |
-| set_look_scale_ranged                | sets only ranged sensitivity                                                     |
-| set_look_scale_ranged_alternate_fire | sets only alternate fire sensitivity                                             |
-| set_vertical_fov                     | sets fov measured vertically. Valid values range from 0 to 180 exclusive         |
-| set_horizontal_fov                   | sets fov measured horizontally. Valid values range from 0 to 180 exclusive       |
+| Setting                              | Values                                                                            |
+| ------------------------------------ | --------------------------------------------------------------------------------- |
+| set_look_scale                       | Sets all 3 sensitivity values to the same value. Valid values range from 0 to 10. |
+| set_look_scale_ranged                | sets only ranged sensitivity.                                                     |
+| set_look_scale_ranged_alternate_fire | Sets only alternate fire sensitivity.                                             |
+| set_vertical_fov                     | Sets fov measured vertically. Valid values range from 0 to 180 exclusive.         |
+| set_horizontal_fov                   | Sets fov measured horizontally. Valid values range from 0 to 180 exclusive.       |
 
 Commands are entered into the system via the chat dialog box.
 
@@ -298,13 +298,13 @@ Find and replace the `ExeArgs` lines with the settings below:
 # Nvidia App Settings
 
 ```
-1. Open Nvidia App settings
-2. Warhammer 40k darktide
-3. Driver settings
-4. DLSS Override - Model Presets    
-5. Use different settings for each DLSS Technology
-6. Super resolution
-7. Latest
+1. Open Nvidia App settings.
+2. Warhammer 40k darktide.
+3. Driver settings.
+4. DLSS Override - Model Presets.   
+5. Use different settings for each DLSS Technology.
+6. Super resolution.
+7. Latest.
 8. Click apply.
 ```
 
@@ -344,15 +344,15 @@ Ragdoll Interactions = on
 ```
 # Direct Storage DLL Update
 
-Update the direct storage dll files
+Update the direct storage dll files.
 
-1. Download the [Direct Storage Nupkg](https://www.nuget.org/packages/Microsoft.Direct3D.DirectStorage)
-2. Open it with [Peazip](https://peazip.github.io/index.html) 
-3. Inside the archive open `/native/bin/x64/`
-4. Extract `dstorage.dll` and `dstoragecore.dll` to some where you can locate it later
-5. Open the darktide binaries folder `*/steam/steamapps/common/Warhammer 40,000 DARKTIDE/binaries/`
+1. Download the [Direct Storage Nupkg](https://www.nuget.org/packages/Microsoft.Direct3D.DirectStorage).
+2. Open it with [Peazip](https://peazip.github.io/index.html).
+3. Inside the archive open `/native/bin/x64/`.
+4. Extract `dstorage.dll` and `dstoragecore.dll` to some where you can locate it later.
+5. Open the darktide binaries folder `*/steam/steamapps/common/Warhammer 40,000 DARKTIDE/binaries/`.
 6. Find `dstoragecore.dll` and `dstorage.dll`, back them up else where in case you wish to undo these changes (or run a [file integrity verification in steam](https://help.steampowered.com/en/faqs/view/0C48-FCBD-DA71-93EB), note this will disable mods, so you will need to re-enable them using the batch file in the root darktide folder  `*/steam/steamapps/common/Warhammer 40,000 DARKTIDE/`).
-7. Copy the `dstoragecore.dll` and `dstorage.dll` files from where you placed them earlier and place them into `*/steam/steamapps/common/Warhammer 40,000 DARKTIDE/binaries/`
+7. Copy the `dstoragecore.dll` and `dstorage.dll` files from where you placed them earlier and place them into `*/steam/steamapps/common/Warhammer 40,000 DARKTIDE/binaries/`.
 # Default settings for edited files
 
 # `settings_common.ini` 
