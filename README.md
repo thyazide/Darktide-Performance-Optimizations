@@ -476,5 +476,6 @@ Some attributions may not appear within the body of the document as I have time 
 - [Ark for KDE](https://apps.kde.org/ark/)
 - [File-Roller for Gnome](https://flathub.org/en/apps/org.gnome.FileRoller)
 - [Direct Storage Nupkg](https://www.nuget.org/packages/Microsoft.Direct3D.DirectStorage)
+- [dtkit-patch](https://github.com/manshanko/dtkit-patch) - manshanko
 
 Thank you to everyone on this list, without their hard work and dedication this document would not be possible. 
