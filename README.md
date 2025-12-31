@@ -138,7 +138,7 @@ Remove Push Attack Visual Effect = on
 Remove Blocking Sound Effect = off
 ```
 
-[Debuff Indicator](https://www.nexusmods.com/warhammer40kdarktide/mods/137) - User preference as there are multiple ways to set up how this mod displays itself in game. Needed as a replacement for the visual effects removed by less dot.
+[Debuff Indicator](https://www.nexusmods.com/warhammer40kdarktide/mods/137) - The settings are user preference as there are multiple ways to set up how this mod displays itself in game. Needed as a replacement for the visual effects removed by less dot.
 # Optional Mods
 
 [Zealot Fire Particle Swap](https://www.nexusmods.com/warhammer40kdarktide/mods/230) - Allows you to configure the particle effects for Zealot fire grenades to make them distinct from bomber grenades. 
@@ -311,7 +311,7 @@ Find and replace the `ExeArgs` lines with the settings below:
 [Video Guide](https://youtu.be/0w7-N8y5b_k)
 # In-Game settings
 
-Resolution should be set to whatever you use. You can use whatever setting for up-scaling is available and looks best, and provides the best performance for you. `Automatic` will change the internal render resolution dynamically, though it may cause stuttering. I use `performance` at 4K and it runs well and looks good. 
+Resolution should be set to whatever you use. You can use whatever setting for up-scaling is available, looks best, and provides the best performance for you. `Automatic` will change the internal render resolution dynamically, though it may cause stuttering. I use `performance` at 4K and it runs well and looks good. 
 
 If your card has the option to enable `Nvidia Reflex Low Latency` do so. 
 
