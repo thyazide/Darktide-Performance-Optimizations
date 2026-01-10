@@ -316,6 +316,13 @@ I would highly recommend testing 4.0 vs 4.5 on your specific setup as the perfor
 
 - [Video Guide](https://youtu.be/0w7-N8y5b_k)
 - [Video Guide for 4.5 and beyond.](https://youtu.be/1lAMbO0saAw?t=44])
+
+# Enable FSR Redstone 
+
+1. Click this link: https://www.amd.com/en/products/graphics/technologies/fidelityfx/super-resolution.html 
+2. Scroll down to the FAQ section.
+3. Click "How to activate FSR Redstone in my games?"
+4. Follow the instructions provided.
 # In-Game settings
 
 Resolution should be set to whatever you use. You can use whatever setting for up-scaling is available, looks best, and provides the best performance for you. `Automatic` will change the internal render resolution dynamically, though it may cause stuttering. I use `performance` at 4K and it runs well and looks good. 
