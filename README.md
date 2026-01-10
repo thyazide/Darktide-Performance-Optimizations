@@ -53,7 +53,7 @@ There are other ways of handling mod support in Darktide, [Vortex](https://www.n
 
 	`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`
 
-	Then double click the `toggle_darktide_mods.bat`, this will enable mods. This will need to be repeated after each patch to re-enable mods. Also if you need to disable mods at any time you can double click the batch file again and follow the on screen prompt to disable them. 
+	Then double click the `toggAAle_darktide_mods.bat`, this will enable mods. This will need to be repeated after each patch to re-enable mods. Also if you need to disable mods at any time you can double click the batch file again and follow the on screen prompt to disable them. 
 
 5. Once mods are enabled, you can extract any mods you wish into the mods folder: 
 
@@ -297,6 +297,8 @@ Find and replace the `ExeArgs` lines with the settings below:
 ```
 # Nvidia App Settings
 
+The introduction of DLSS 4.5 cause FPS loss for gpus below the 5000 series as it contains FP8 calculations. Those calculations don't run as efficiently on older Nvidia GPUS. Sticking to the older 4.0 model (`PRESET K`) if your card is below the 5000 series. 
+
 ```
 1. Open Nvidia App settings.
 2. Warhammer 40k darktide.
@@ -304,11 +306,14 @@ Find and replace the `ExeArgs` lines with the settings below:
 4. DLSS Override - Model Presets.   
 5. Use different settings for each DLSS Technology.
 6. Super resolution.
-7. Latest.
+7. Latest. (for 5000 series and up)
+   A) Or click CUSTOM
+   B) Choose Preset K off the list. (for 4000 series and below)
 8. Click apply.
 ```
 
 [Video Guide](https://youtu.be/0w7-N8y5b_k)
+[Video Guide for 4.5 and beyond.](https://youtu.be/1lAMbO0saAw?t=44])
 # In-Game settings
 
 Resolution should be set to whatever you use. You can use whatever setting for up-scaling is available, looks best, and provides the best performance for you. `Automatic` will change the internal render resolution dynamically, though it may cause stuttering. I use `performance` at 4K and it runs well and looks good. 
@@ -475,7 +480,8 @@ Some attributions may not appear within the body of the document as I have time 
 - [Windows native extraction](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5)
 - [Ark for KDE](https://apps.kde.org/ark/)
 - [File-Roller for Gnome](https://flathub.org/en/apps/org.gnome.FileRoller)
-- [Direct Storage Nupkg](https://www.nuget.org/packages/Microsoft.Direct3D.DirectStorage)
+- [Direct Storage Nupkg](https://www.nuget.org/packages/Microsoft.Direct3D.DirectStorage)AA
 - [dtkit-patch](https://github.com/manshanko/dtkit-patch) - manshanko
+- [How to Enable Dlss 4.5 - Huge Visual Upgrade](https://www.youtube.com/watch?v=1lAMbO0saAw) -Benchmark Boy
 
 Thank you to everyone on this list, without their hard work and dedication this document would not be possible. 
