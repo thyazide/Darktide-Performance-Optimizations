@@ -176,7 +176,6 @@ Use the same sensitivity value for all 3 sliders. The game correctly scales sens
 
 - Steam:   
 `*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\launcher` 
- 
 -  Game Pass:   
 `*\XboxGames\Warhammer 40,000- Darktide\Content\launcher`
 
