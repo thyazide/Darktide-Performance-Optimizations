@@ -181,6 +181,7 @@ Use the same sensitivity value for all 3 sliders. The game correctly scales sens
 
 2. Create shortcut/s:  
 	Right-click LauncherSkip.exe in the launcher folder and select an option:  
+	
 	A) Start menu: Pin to Start
 	B) Taskbar: Pin to taskbar
 	C) Desktop: Send to > Desktop (create shortcut)  
