@@ -180,12 +180,14 @@ Use the same sensitivity value for all 3 sliders. The game correctly scales sens
 -  Game Pass:   
 `*\XboxGames\Warhammer 40,000- Darktide\Content\launcher`
 
-1. Create shortcut/s:  
-  a) Right-click `LauncherSkip.exe` and select an option:  
+2. Create shortcut/s:  
+
+  A) Right-click `LauncherSkip.exe` and select an option:  
 	- Start menu: `Pin to Start`
 	- Taskbar: `Pin to taskbar`
 	- Desktop: `Send to` > `Desktop (create shortcut)`  
- b) Copy `LauncherSkip.exe`, navigate to any folder, then right-click and select `Paste shortcut`. It will not try to start Steam/Game Pass for you so they need to already be running. This is not a DMF mod and does not need to be copied to your mods folder.  
+
+ B) Copy `LauncherSkip.exe`, navigate to any folder, then right-click and select `Paste shortcut`. It will not try to start Steam/Game Pass for you so they need to already be running. This is not a DMF mod and does not need to be copied to your mods folder.  
 
 **Original launcher**
 
