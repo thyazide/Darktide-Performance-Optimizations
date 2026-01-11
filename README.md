@@ -171,7 +171,7 @@ Use the same sensitivity value for all 3 sliders. The game correctly scales sens
 # Launcher Skip
 [Launcher Skip](https://www.nexusmods.com/warhammer40kdarktide/mods/131) - instructions for usage taken from the nexus mods page, reformatted for clarity, below.
 
-Note:  `LauncherSkip.exe` will not try to start Steam/Game Pass for you so they need to already be running.
+Note:  `LauncherSkip.exe` will not try to start Steam/Game Pass for you so ensure they are already running before attempting to start the game. 
 
 **Installation:**
 1. Right-click `LauncherSkip.exe` > `click copy` then `paste` into your launcher folder. By default it is stored in:
