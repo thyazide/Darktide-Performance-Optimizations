@@ -221,13 +221,13 @@ Valid values for `tile_staging_buffer_size`:
 
 Here are some suggestions for values based on VRAM. You’ll need to adjust these settings based on your own experience in-game:
 
-| Video Memory size | Setting                        |
-| ----------------- | ------------------------------ |
-| 8gb               | tile_staging_buffer_size = 4   |
-| 10gb              | tile_staging_buffer_size = 8   |
-| 11gb              | tile_staging_buffer_size = 8   |
-| 12gb              | tile_staging_buffer_size = 16  |
-| 16gb              | tile_staging_buffer-size = 256 |
+| VRAM Size | Setting                        |
+| --------- | ------------------------------ |
+| 8gb       | tile_staging_buffer_size = 4   |
+| 10gb      | tile_staging_buffer_size = 8   |
+| 11gb      | tile_staging_buffer_size = 8   |
+| 12gb      | tile_staging_buffer_size = 16  |
+| 16gb      | tile_staging_buffer-size = 256 |
 
 You will need to correct the value for `tile_staging_buffer_size` after copying and pasting the values into the `Settings_common.ini`.
 
