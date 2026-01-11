@@ -334,7 +334,7 @@ You can add an environment variable to enable the FSR4/Redstone upgrade system w
 
 Open a `Terminal` window, for my purposes I'm using `Konsole` in `KDE`. 
 
-1. `sudo nano /etc/environment` 
+1. Type `sudo nano /etc/environment`, or copy and paste the command and hit enter. 
 2. Enter your sudo password.
 3. Add a new line `PROTON_FSR4_UPGRADE=1`.
 4. Save an exit the file.
