@@ -92,8 +92,6 @@ Maximum impact effect per frame = 2
 Performance Features set to = on
 ```
 
-[VFX Limiter (grenades)](https://www.nexusmods.com/warhammer40kdarktide/mods/602) - Removes grenade effects, settings are personal preference.
-
 [Less Dot](https://www.nexusmods.com/warhammer40kdarktide/mods/521) - This removes effects from enemy characters in-game that chew up a lot of resources thus improving frame rate. More importantly, it keeps framerate stable as large amounts of effects happening simultaneously tanks framerate.
 
 ```
@@ -168,6 +166,8 @@ Commands are entered into the system via the chat dialog box.
 
 **Recommendations:**
 Use the same sensitivity value for all 3 sliders. The game correctly scales sensitivity by the tangent of `FOV/2` by default. This is opposed to many games simply scaling by `FOV/2`. Zoom is the ratio of focal lengths, not fields of view. Scaling sensitivity by the tangent of `FOV/2` properly emulates the ratio of focal lengths.
+
+[VFX Swapper](https://www.nexusmods.com/warhammer40kdarktide/mods/678) - Replacing VFX Limiter with VFX Swapper as there is a bug in VFX Limiter that causes a crash and the author has pulled it from Nexus Mods. Moved this down to optional mods. Currently I have no setting suggestions for this mod as I have not tested it myself. 
 # Launcher Skip
 [Launcher Skip](https://www.nexusmods.com/warhammer40kdarktide/mods/131) - instructions for usage taken from the nexus mods page, reformatted for clarity, below.
 
@@ -524,5 +524,6 @@ Some attributions may not appear within the body of the document as I have time 
 - [Direct Storage Nupkg](https://www.nuget.org/packages/Microsoft.Direct3D.DirectStorage)AA
 - [dtkit-patch](https://github.com/manshanko/dtkit-patch) - manshanko
 - [How to Enable Dlss 4.5 - Huge Visual Upgrade](https://www.youtube.com/watch?v=1lAMbO0saAw) -Benchmark Boy
+- [VFX Swapper](https://www.nexusmods.com/warhammer40kdarktide/mods/678) -tdopz, with original mod credit going to leerH
 
 Thank you to everyone on this list, without their hard work and dedication this document would not be possible. 
