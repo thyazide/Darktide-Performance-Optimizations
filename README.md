@@ -298,7 +298,7 @@ Find and replace the `ExeArgs` lines with the settings below:
 ```
 # Nvidia App Settings
 
-The introduction of DLSS 4.5 cause FPS loss for GPUs below the 5000 series as it contains FP8 calculations. Those calculations don't run as efficiently on older Nvidia GPUs. Sticking to the older 4.0 model (`PRESET K`) if your card is below the 5000 series. 
+The introduction of DLSS 4.5 cause FPS loss for GPUs below the 5000 series as it contains FP8 calculations. Those calculations don't run as efficiently on older Nvidia GPUs. Sticking to the older 4.0 model, `PRESET K`, if your card is below the 5000 series. 
 
 I would highly recommend testing 4.0 vs 4.5 on your specific setup as the performance hit for the 4000 series may not be as large as the gains in visual fidelity. Nvidia has stated that the performance loss for the 5000 series is around 3% give or take. 
 
