@@ -303,7 +303,6 @@ The introduction of DLSS 4.5 cause FPS loss for GPUs below the 5000 series as it
 
 I would highly recommend testing 4.0 vs 4.5 on your specific setup as the performance hit for the 4000 series may not be as large as the gains in visual fidelity. Nvidia has stated that the performance loss for the 5000 series is around 3% give or take. 
 
-
 1. Open Nvidia App settings.
 2. Click Graphics on the left. 
 3. Under Program Settings find the list of games, scroll down and click Warhammer 40k darktide.
