@@ -185,7 +185,8 @@ Note:  `LauncherSkip.exe` will not try to start Steam/Game Pass for you so they
 	- Start Menu: Pin to Start
 	- Taskbar: Pin to Taskbar
 	- Desktop: Send to > Desktop (Create Shortcut)  
- 
+
+
 **Replace Original Launcher:**
 
 You can also replace the Original Launcher entirely, this will allow you to launch the game from Steam or the Game Pass Launcher directly. 
