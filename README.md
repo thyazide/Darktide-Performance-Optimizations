@@ -189,7 +189,7 @@ Note:  `LauncherSkip.exe` will not try to start Steam/Game Pass for you so they
 
 **Replace Original Launcher:**
 
-You can also replace the Original Launcher entirely, this will allow you to launch the game from Steam or the Game Pass Launcher directly. 
+You can also replace the Original Launcher entirely, this will allow you to launch the game from Steam/Game Pass Launcher directly. 
 
 1. Right click `Launcher.exe` 
 2. Click `Rename`
