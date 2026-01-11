@@ -188,6 +188,7 @@ Use the same sensitivity value for all 3 sliders. The game correctly scales sens
  It will not try to start Steam/Game Pass for you so they need to already be running.
 
 **Replace Original Launcher:**
+
 You can also replace the original launcher entirely, this will allow you to launch the game from Steam or the XBox Launcher directly. 
 
 1. Right click `Launcher.exe` 
