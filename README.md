@@ -221,7 +221,7 @@ Valid values for `tile_staging_buffer_size`:
 
 Here are some suggestions for values based on VRAM. You’ll need to adjust these settings based on your own experience in-game:
 
-| 8gb      | tile_staging_buffer_size = 4        |
+| 8gb      | **tile_staging_buffer_size = 4**    |
 | -------- | ----------------------------------- |
 | **10gb** | **tile_staging_buffer_size = 8**    |
 | **11gb** | **tile_staging_buffer_size = 8**    |
