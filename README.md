@@ -343,11 +343,13 @@ Open a `Terminal` window, for my purposes I'm using `Konsole` in `KDE`.
 After the reboot any title you run and enable `FSR 3.1` in will automatically upgrade to `FSR4/Redstone`.
 # In-Game settings
 
+Nvidia:
 Resolution should be set to whatever you use. You can use whatever setting for up-scaling is available, looks best, and provides the best performance for you. `Automatic` will change the internal render resolution dynamically, though it may cause stuttering. I use `performance` at 4K and it runs well and looks good. 
 
 If your card has the option to enable `Nvidia Reflex Low Latency` do so. 
 
-If you are on an AMD Based system enable `FSR 3.1` under the `Performance` section and set it to your desired upscaling setting. I use `Performance` on my 9070XT at 4k and it looks good and runs well. Though I would recommend finding the specific setting that works best for your hardware and has the desired fidelity. 
+AMD Radeon:
+On AMD Radeon Based system enable `FSR 3.1` under the `Performance` section and set it to your desired upscaling setting. I use `Performance` on my 9070XT at 4k and it looks good and runs well. Though I would recommend finding the specific setting that works best for your hardware and has the desired fidelity. 
 
 ```
 Framerate Cap = unlimited
