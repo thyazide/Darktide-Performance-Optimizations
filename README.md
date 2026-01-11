@@ -171,25 +171,24 @@ Use the same sensitivity value for all 3 sliders. The game correctly scales sens
 # Launcher Skip
 [Launcher Skip](https://www.nexusmods.com/warhammer40kdarktide/mods/131) - instructions for usage taken from the nexus mods page, reformatted for clarity, below.
 
+Note:  `LauncherSkip.exe` will not try to start Steam/Game Pass for you so they need to already be running.
+
 **Installation:**
 1. Right-click `LauncherSkip.exe` > `click copy` then `paste` into your launcher folder. By default it is stored in:
-
 - Steam:   
 `*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\launcher` 
 -  Game Pass:   
 `*\XboxGames\Warhammer 40,000- Darktide\Content\launcher`
 
 2. Create shortcut/s:  
-	Right-click LauncherSkip.exe in the launcher folder and select an option:  
-	- Start menu: Pin to Start
-	- Taskbar: Pin to taskbar
+	Right-click `LauncherSkip.exe` in the launcher folder and select (any or all) options:  
+	- Start Menu: Pin to Start
+	- Taskbar: Pin to Taskbar
 	- Desktop: Send to > Desktop (Create Shortcut)  
  
- It will not try to start Steam/Game Pass for you so they need to already be running.
-
 **Replace Original Launcher:**
 
-You can also replace the original launcher entirely, this will allow you to launch the game from Steam or the XBox Launcher directly. 
+You can also replace the Original Launcher entirely, this will allow you to launch the game from Steam or the Game Pass Launcher directly. 
 
 1. Right click `Launcher.exe` 
 2. Click `Rename`
@@ -198,7 +197,7 @@ You can also replace the original launcher entirely, this will allow you to laun
 5. Click `Rename` 
 6. Set the name to `Launcher.exe`
 
-When you open the game from Steam, or the XBox launcher it will open the game directly. You will need to re-do these steps after any updates as the original launcher will be restored by Fatshark. So I would recommend keeping a copy of the `LauncherSkip.exe` in a safe location so it can be moved back into the launcher folder and renamed later. 
+When you open the game from Steam, or the Game Pass Launcher it will open the game directly. You will need to re-do these steps after any updates as the original launcher will be restored by Fatshark. So I would recommend keeping a copy of the `LauncherSkip.exe` in a safe location so it can be moved back into the launcher folder and renamed later. 
 
 # INI & config file changes optimize the game engine
 
