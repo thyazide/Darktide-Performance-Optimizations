@@ -302,20 +302,18 @@ The introduction of DLSS 4.5 cause FPS loss for GPUs below the 5000 series as it
 
 I would highly recommend testing 4.0 vs 4.5 on your specific setup as the performance hit for the 4000 series may not be as large as the gains in visual fidelity. Nvidia has stated that the performance loss for the 5000 series is around 3% give or take. 
 
-```
-1. Open Nvidia App settings.
-2. Warhammer 40k darktide.
-3. Driver settings.
-4. DLSS Override - Model Presets.   
-5. Use different settings for each DLSS Technology.
-6. Super resolution.
-7. Latest. (for 5000 series and up)
-   A) Or click CUSTOM
-   B) Choose Preset K off the list. (for 4000 series and below)
-8. Click apply.
-```
 
-- [Video Guide](https://youtu.be/0w7-N8y5b_k)
+1. Open Nvidia App settings.
+2. Click Graphics on the left. 
+3. Under Program Settings find the list of games, scroll down and click Warhammer 40k darktide.
+4. On the right scroll down to the bottom of the list to Driver Settings. 
+5. Find DLSS Override - Model Presets. 
+6. To the right of DLSS Override - Model Presets, click Global - Use 3d app settings.
+7. On the pop up window click Latest for 5000 series and up graphics cards.
+   A) Or click Custom near the top of the pop up window. 
+   B) To the right of Super Resolution click the on the drop down menu and choose Preset K off the list if you are using 4000 series and below.
+8. Click apply.
+
 - [Video Guide for 4.5 and beyond.](https://youtu.be/1lAMbO0saAw?t=44])
 
 # Enable FSR Redstone 
