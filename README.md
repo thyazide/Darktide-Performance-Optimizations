@@ -318,7 +318,7 @@ I would highly recommend testing 4.0 vs 4.5 on your specific setup as the perfor
 
 # Enable FSR Redstone 
 
-Windows 11:
+Windows:
 
 1. Open `AMD Software: Adrenalin Edition`
 2. Click the `Gaming` tab at the top of the window. 
@@ -387,6 +387,8 @@ Update the direct storage dll files.
 5. Open the darktide binaries folder `*/steam/steamapps/common/Warhammer 40,000 DARKTIDE/binaries/`.
 6. Find `dstoragecore.dll` and `dstorage.dll`, back them up else where in case you wish to undo these changes (or run a [file integrity verification in steam](https://help.steampowered.com/en/faqs/view/0C48-FCBD-DA71-93EB), note this will disable mods, so you will need to re-enable them using the batch file in the root darktide folder  `*/steam/steamapps/common/Warhammer 40,000 DARKTIDE/`).
 7. Copy the `dstoragecore.dll` and `dstorage.dll` files from where you placed them earlier and place them into `*/steam/steamapps/common/Warhammer 40,000 DARKTIDE/binaries/`.
+
+This can be done in Windows or Linux. 
 # Default settings for edited files
 
 # `settings_common.ini` 
