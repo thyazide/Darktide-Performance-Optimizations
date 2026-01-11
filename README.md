@@ -180,6 +180,7 @@ Use the same sensitivity value for all 3 sliders. The game correctly scales sens
 `*\XboxGames\Warhammer 40,000- Darktide\Content\launcher`
 
 2. Create shortcut/s:  
+
   A) Right-click `LauncherSkip.exe` and select an option:  
 - Start menu: `Pin to Start`
 - Taskbar: `Pin to taskbar`
