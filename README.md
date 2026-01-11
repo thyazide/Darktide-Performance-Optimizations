@@ -198,7 +198,7 @@ You can also replace the Original Launcher entirely, this will allow you to laun
 5. Click `Rename` 
 6. Set the name to `Launcher.exe`
 
-When you open the game from Steam, or the Game Pass Launcher it will open the game directly. You will need to re-do these steps after any updates as the original launcher will be restored by Fatshark. So I would recommend keeping a copy of the `LauncherSkip.exe` in a safe location so it can be moved back into the launcher folder and renamed later. 
+When you open the game from Steam/Game Pass Launcher it will open the game directly. You will need to re-do these steps after any updates as the original launcher will be restored by Fatshark. So I would recommend keeping a copy of the `LauncherSkip.exe` in a safe location so it can be moved back into the launcher folder and renamed later. 
 
 # INI & config file changes optimize the game engine
 
