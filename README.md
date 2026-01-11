@@ -171,7 +171,7 @@ Use the same sensitivity value for all 3 sliders. The game correctly scales sens
 # Launcher Skip
 [Launcher Skip](https://www.nexusmods.com/warhammer40kdarktide/mods/131) - instructions for usage taken from the nexus mods page, reformatted for clarity, below.
 
-**Usage**
+**Installation:**
 1. Right-click `LauncherSkip.exe` > `click copy` then `paste` into your launcher folder. By default it is stored in:
 
 - Steam:   
@@ -185,13 +185,20 @@ Use the same sensitivity value for all 3 sliders. The game correctly scales sens
 	B) Taskbar: Pin to taskbar
 	C) Desktop: Send to > Desktop (create shortcut)  
  
- It will not try to start Steam/Game Pass for you so they need to already be running. This is not a DMF mod and does not need to be copied to your mods folder.  
+ It will not try to start Steam/Game Pass for you so they need to already be running.
 
-**Original launcher**
+**Replace Original Launcher:**
+You can also replace the original launcher entirely, this will allow you to launch the game from Steam or the XBox Launcher directly. 
 
-The original launcher has deliberately been left alone, so simply launch the game from Steam/Game Pass (without the shortcut) to view it.  
-  
-If you want to completely replace it, rename the original launcher to `Launcher-original.exe`, and `LauncherSkip.exe` to `Launcher.exe` (and replace any shortcuts to `LauncherSkip.exe`). You will need to redo this each time the game updates or you run "Verify integrity of game files" in Steam. 
+1. Right click `Launcher.exe` 
+2. Click `Rename`
+3. Set the name to `Launcher-original.exe`
+4. Right click `LauncherSkip.exe`
+5. Click `Rename` 
+6. Set the name to `Launcher.exe`
+
+Now when you open the game from Steam, or the XBox launcher it will go directly into the game. You will need to re-do these steps after any updates as the original launcher will be restored by Fatshark. So I would recommend keeping a copy of the `LauncherSkip.exe` in a safe location so it can be moved back into the launcher folder and renamed later. 
+
 # INI & config file changes optimize the game engine
 
 Tabbing and spacing are important when editing these files or the game will not work. These changes will need to be reapplied after every game update. They need to be done manually, as these files are updated by Fatshark after each patch/hotfix. If something gets broken, you can always [run an integrity check on the game in Steam](https://help.steampowered.com/en/faqs/view/0C48-FCBD-DA71-93EB), doing so will remove any changes you’ve made and disable mods. You’ll need to re-run the `toogle_darktide_mods.bat`, re-edit the INI files and the `launcher.exe.config` once the integrity check has completed. Or you can restore the original settings, they are included at the [bottom of this document](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-for-edited-files).  
