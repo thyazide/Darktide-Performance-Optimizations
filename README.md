@@ -13,6 +13,7 @@
 	- [`settings_common.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#settings_commonini)
 	- [`win32_settings.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#win32_settingsini)
 	- [`Launcher.exe.config`](https://github.com/thyazide/Darktide-Performance-Optimizations#launcherexeconfig)
+- [Increase Nvidia Shader Cache Size](https://github.com/thyazide/Darktide-Performance-Optimizations#increase-nvidia-shader-cache-size)
 - [Nvidia App Settings](https://github.com/thyazide/Darktide-Performance-Optimizations#nvidia-app-settings)
 - [Enable FSR Redstone](https://github.com/thyazide/Darktide-Performance-Optimizations#enable-fsr-redstone)
 - [In-Game settings](https://github.com/thyazide/Darktide-Performance-Optimizations#in-game-settings)
