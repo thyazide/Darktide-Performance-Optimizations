@@ -307,25 +307,43 @@ Find and replace the `ExeArgs` lines with the settings below:
 <setting name="ExeArgs" serializeAs="String">  
        <value>--bundle-dir ../bundle --ini settings --lua-heap-mb-size 2048</value>
 ```
+
+# Increase Nvidia Shader Cache Size 
+
+In some instances increasing the `Nvidia Shader Cache Size` can assist with reducing or eliminating stuttering in games. 
+
+Normally the `Nvidia Control Panel` can be found in the `Windows Control Panel`. If its not there, or not installed you can [grab it from here.](https://apps.microsoft.com/detail/9nf8h0h7wmlt?hl=en-US&gl=US) 
+
+1. Right Click the `Windows Desktop`. 
+2. Click `Show more options`.
+3. Click `Nvidia Control Panel`. 
+4. Click `Manage 3D settings` on the left of the `Nvidia Control Panel` window.
+5. On the right Click on the `Global Settings` tab.
+6. Below in the settings section find `Shader Cache Size`.
+7. On the right change the setting to `100GB`. 
+8. Click `Apply`.
+9. Exit the `Nvidia Control Panel`.
+10. Reboot.
+
+Once enabled this will increase the amount of disk space that can be used to store shaders created/used by games for the Nvidia drivers. It won't take up the whole `100GB` of storage space at once, but will only trim unused shaders once the cache hits the `100GB` limit. This should keep games from stuttering when loading shaders as the drivers are not having to re-cache them after each run of a different title. 
 # Nvidia App Settings
 
 The introduction of DLSS 4.5 cause FPS loss for GPUs below the 5000 series as it contains FP8 calculations. Those calculations don't run as efficiently on older Nvidia GPUs. Sticking to the older 4.0 model, `PRESET K`, if your card is below the 5000 series. 
 
 I would highly recommend testing 4.0 vs 4.5 on your specific setup as the performance hit for the 4000 series may not be as large as the gains in visual fidelity. Nvidia has stated that the performance loss for the 5000 series is around 3% give or take. 
 
-1. Open Nvidia App settings.
-2. Click Graphics on the left. 
-3. Under Program Settings find the list of games, scroll down and click Warhammer 40k Darktide.
-4. On the right scroll down to the bottom of the list to Driver Settings. 
-5. Find DLSS Override - Model Presets. 
-6. To the right of DLSS Override - Model Presets, click Global - Use 3d app settings.
-7. On the pop up window click Latest for 5000 series and up graphics cards.
-   A) Or click Custom near the top of the pop up window. 
-   B) To the right of Super Resolution click the on the drop down menu and choose Preset K off the list if you are using 4000 series and below.
-8. Click apply.
+1. Open `Nvidia App` settings.
+2. Click `Graphics` on the left. 
+3. Under `Program Settings` find the list of games, scroll down and click `Warhammer 40k Darktide`.
+4. On the right scroll down to the bottom of the list to `Driver Settings`. 
+5. Find `DLSS Override - Model Presets`. 
+6. To the right of `DLSS Override - Model Presets`, click `Global - Use 3d app settings`.
+7. On the pop up window click `Latest` for 5000 series and up graphics cards.
+   A) Or click `Custom` near the top of the pop up window. 
+   B) To the right of `Super Resolution` click the on the drop down menu and choose `Preset K` off the list if you are using 4000 series and below.
+8. Click `Apply`.
 
 - [Video Guide for 4.5 and beyond.](https://youtu.be/1lAMbO0saAw?t=44])
-
 # Enable FSR Redstone 
 
 Windows:
@@ -528,5 +546,7 @@ Some attributions may not appear within the body of the document as I have time 
 - [How to Enable Dlss 4.5 - Huge Visual Upgrade](https://www.youtube.com/watch?v=1lAMbO0saAw) -Benchmark Boy
 - [VFX Swapper](https://www.nexusmods.com/warhammer40kdarktide/mods/678) -tdopz, with original mod credit going to leerH
 - [NoCorpses](https://www.nexusmods.com/warhammer40kdarktide/mods/689) -7878949696
+-  [Nvidia Control Panel](https://apps.microsoft.com/detail/9nf8h0h7wmlt?hl=en-US&gl=US) 
+
 
 Thank you to everyone on this list, without their hard work and dedication this document would not be possible. 
