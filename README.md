@@ -38,7 +38,7 @@ There are other ways of handling mod support in Darktide, [Vortex](https://www.n
 1. Create a [Nexus Mods Account](https://users.nexusmods.com/register), or not, downloads will be slower and capped if you do not. 
 
 	- Download [Darktide Mod Loader](https://www.nexusmods.com/warhammer40kdarktide/mods/19) (referred to as DML from here on out).
-	- Download [Darktide Mod Framework](https://www.nexusmods.com/warhammer40kdarktide/mods/8) (referred to as DMF from here on out).
+	- Download [Darktide Mod Framework](https://www.nexusmods.com/warhammer40kdarktide/mods/8) (referred to as DMF from hereIncrease Nvidia Shader Cache Size on out).
 	- Download [Auto Mod Loading and Ordering](https://www.nexusmods.com/warhammer40kdarktide/mods/246) (referred to as AML from here on out).
 
 2. Use the [Archive program of your choice](https://github.com/thyazide/Darktide-Performance-Optimizations#commonly-used-archive-programs) to extract DML and DMF to your Darktide folder:
@@ -510,6 +510,15 @@ Darktide application_settings folder:
 ```
 - Stores INI files that govern settings for the game engine. 
 - Location of `Settings_common.ini` and `Win32_settings.ini`.
+
+# Using DDU to cleanly remove and reinstall your drivers
+
+Using DDU (Display Driver Uninstaller) can help you cleanly remove the AMD, NVIDIA, and Intel display drivers from the system. This can help if you are having issues with crashing related to your GPU Drivers themselves. 
+
+DDU Download Page: https://www.guru3d.com/download/display-driver-uninstaller-download/
+
+The DDU Usage tutorial from the developers website: https://www.wagnardsoft.com/content/How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial
+
 # List of attributions
 
 Some attributions may not appear within the body of the document as I have time to write my own version of them. I am keeping them here for posterity.
@@ -548,6 +557,7 @@ Some attributions may not appear within the body of the document as I have time 
 - [VFX Swapper](https://www.nexusmods.com/warhammer40kdarktide/mods/678) -tdopz, with original mod credit going to leerH
 - [NoCorpses](https://www.nexusmods.com/warhammer40kdarktide/mods/689) -7878949696
 -  [Nvidia Control Panel](https://apps.microsoft.com/detail/9nf8h0h7wmlt?hl=en-US&gl=US) 
+-  [How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial](https://www.wagnardsoft.com/content/How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial) 
 
 
 Thank you to everyone on this list, without their hard work and dedication this document would not be possible. 
