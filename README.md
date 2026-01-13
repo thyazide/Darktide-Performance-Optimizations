@@ -23,7 +23,7 @@
 	- [`win32_settings.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#win32_settingsini-1) 
 	- [`Launcher.exe.config`](https://github.com/thyazide/Darktide-Performance-Optimizations#launcherexeconfig)
 - [File locations](https://github.com/thyazide/Darktide-Performance-Optimizations#file-locations)
-- [Using DDU to cleanly remove and reinstall your drivers](https://github.com/thyazide/Darktide-Performance-Optimizations#using-ddu-to-cleanly-remove-and-reinstall-your-drivers)
+- [Using DDU to cleanly remove and reinstall your drivers]((https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#using-ddu-to-cleanly-remove-and-reinstall-your-drivers))
 - [List of attributions](https://github.com/thyazide/Darktide-Performance-Optimizations#list-of-attributions)
 # Forward about mods
 
