@@ -514,11 +514,10 @@ Darktide application_settings folder:
 
 # Using DDU to cleanly remove and reinstall your drivers
 
-Using DDU (Display Driver Uninstaller) can help you cleanly remove the AMD, NVIDIA, and Intel display drivers from the system. This can help if you are having issues with crashing related to your GPU Drivers themselves. 
+Using DDU (Display Driver Uninstaller) can help you cleanly remove the AMD, NVIDIA, and Intel display drivers from the system. This can help if you are having issues with crashing related to your GPU Drivers themselves. If you choose to use DDU, you will need to re-enable the [shader cache changes](https://github.com/thyazide/Darktide-Performance-Optimizations#increase-nvidia-shader-cache-size) (if you've made them) within the Nvidia Drivers. 
 
-DDU Download Page: https://www.guru3d.com/download/display-driver-uninstaller-download/
-
-The DDU Usage tutorial from the developers website: https://www.wagnardsoft.com/content/How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial
+- [DDU Download Page.](https://www.guru3d.com/download/display-driver-uninstaller-download/)
+- [The DDU Usage tutorial from the developers website.](https://www.wagnardsoft.com/content/How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial)
 
 # List of attributions
 
