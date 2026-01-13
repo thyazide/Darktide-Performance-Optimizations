@@ -315,7 +315,7 @@ I would highly recommend testing 4.0 vs 4.5 on your specific setup as the perfor
 
 1. Open Nvidia App settings.
 2. Click Graphics on the left. 
-3. Under Program Settings find the list of games, scroll down and click Warhammer 40k darktide.
+3. Under Program Settings find the list of games, scroll down and click Warhammer 40k Darktide.
 4. On the right scroll down to the bottom of the list to Driver Settings. 
 5. Find DLSS Override - Model Presets. 
 6. To the right of DLSS Override - Model Presets, click Global - Use 3d app settings.
