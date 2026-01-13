@@ -326,7 +326,7 @@ Normally the `Nvidia Control Panel` can be found in the `Windows Control Panel`.
 9. Exit the `Nvidia Control Panel`.
 10. Reboot.
 
-Once enabled this will increase the amount of disk space that can be used to store shaders created/used by games for the Nvidia drivers. It won't take up the whole `100GB` of storage space at once, but will only trim unused shaders once the cache hits the `100GB` limit. This should keep games from stuttering when loading shaders as the drivers are not having to re-cache them after each run of a different title. 
+Once enabled this will increase the amount of disk space that can be used to store shaders created/used by games for the Nvidia Drivers. It won't take up the whole `100GB` of storage space at once, but will only trim unused shaders once the cache hits the `100GB` limit. This should keep games from stuttering when loading shaders as the drivers are not having to re-cache them after each run of a different title. 
 # Nvidia App Settings
 
 The introduction of DLSS 4.5 cause FPS loss for GPUs below the 5000 series as it contains FP8 calculations. Those calculations don't run as efficiently on older Nvidia GPUs. Sticking to the older 4.0 model, `PRESET K`, if your card is below the 5000 series. 
