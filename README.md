@@ -398,7 +398,7 @@ Motion Blur = off
 Screen Space Reflections = off
 Lens Quality = off (turns off all below it)
 Lens Flares  = off
-Scatter Density = 0.00
+Scatter Density = 0.00shader cache changes
 Max Ragdolls = 12
 Max Weapon Impact decals = 15
 Max Blood Decals = 25
@@ -556,8 +556,9 @@ Some attributions may not appear within the body of the document as I have time 
 - [How to Enable Dlss 4.5 - Huge Visual Upgrade](https://www.youtube.com/watch?v=1lAMbO0saAw) -Benchmark Boy
 - [VFX Swapper](https://www.nexusmods.com/warhammer40kdarktide/mods/678) -tdopz, with original mod credit going to leerH
 - [NoCorpses](https://www.nexusmods.com/warhammer40kdarktide/mods/689) -7878949696
--  [Nvidia Control Panel](https://apps.microsoft.com/detail/9nf8h0h7wmlt?hl=en-US&gl=US) 
--  [How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial](https://www.wagnardsoft.com/content/How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial) 
+- [Nvidia Control Panel](https://apps.microsoft.com/detail/9nf8h0h7wmlt?hl=en-US&gl=US) 
+- [How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial](https://www.wagnardsoft.com/content/How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial) 
+- [DDU Download Page.](https://www.guru3d.com/download/display-driver-uninstaller-download/)
 
 
 Thank you to everyone on this list, without their hard work and dedication this document would not be possible. 
