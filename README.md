@@ -221,10 +221,6 @@ For Linux you can use [CPU-X](https://flathub.org/en/apps/io.github.thetumultuou
 
 By default `tile_staging_buffer_size` is set to `256` in the settings below. Values lower than `64` can cause rubbery looking textures on enemies until the texture fully loads. 
 
-The following note was taken from a recent update to Vizra's original post linked in the [attribution](https://github.com/thyazide/Darktide-Performance-Optimizations#list-of-attributions) section.
-
-**NOTE about tile_staging_buffer_size value: While 256 is recommended as a safe value for everyone, you can try setting this to 512 or 1024 for an even larger improvement, though performance for lower end systems may suffer. I personally use 1024.**
-
 Valid values for `tile_staging_buffer_size`: 
 
 ```
@@ -239,7 +235,7 @@ Here are some suggestions for values based on VRAM. You’ll need to adjust thes
 | 10gb      | tile_staging_buffer_size = 8   |
 | 11gb      | tile_staging_buffer_size = 8   |
 | 12gb      | tile_staging_buffer_size = 16  |
-| 16gb      | tile_staging_buffer-size = 256 |
+| 16gb      | tile_staging_buffer-size = 128 |
 
 You will need to correct the value for `tile_staging_buffer_size` after copying and pasting the values into the `Settings_common.ini`.
 
@@ -256,7 +252,7 @@ feedback_streamer_settings = {
 	staging_buffer_size = 4
 	threaded_streamer = true
 	tile_age_out_time_ms = 5000
-	tile_staging_buffer_size = 256
+	tile_staging_buffer_size = 128
 
 streaming_buffer_size = 128
 streaming_max_open_streams = 48
