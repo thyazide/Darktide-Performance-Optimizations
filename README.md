@@ -258,13 +258,6 @@ feedback_streamer_settings = {
 	tile_age_out_time_ms = 5000
 	tile_staging_buffer_size = 256
 
-mesh_streamer_settings = {
-	disable = false
-	eviction_timeout = 5
-	frame_time_budget = 1
-	io_buffer_budget = 10240
-	limit = 768
-
 streaming_buffer_size = 128
 streaming_max_open_streams = 48
 streaming_texture_pool_size = 1024
@@ -294,6 +287,9 @@ renderer = {
 			gpu_crash_dumps = false  
 			ray_tracing = true  
 			screen_resolution = [ 1920 1080]
+			
+streaming_buffer_size = 128
+streaming_texture_pool_size = 1024
 ```
 # `Launcher.exe.config`
 
