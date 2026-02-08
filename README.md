@@ -215,52 +215,32 @@ These settings work for AMD and Nvidia users.
 
 Tabbing and spacing are important when editing these files or the game will not work. These changes will need to be reapplied after every game update. They need to be done manually, as these files are changed after each update by Fatshark.
 
-You will need to know how much VRAM your video card has. There are a lot of ways to find this out. On windows you can use [GPU-Z](https://www.techpowerup.com/download/techpowerup-gpu-z/), the `memory size` box should print the total amount of VRAM available on your card.  
-
-For Linux you can use [CPU-X](https://flathub.org/en/apps/io.github.thetumultuousunicornofdarkness.cpu-x), click graphics, look for `Memory Used` the number on the right side of the / is the total GPU VRAM. There are probably other ways to get this info. This is more about ease of use. 
-
-By default `tile_staging_buffer_size` is set to `256` in the settings below. Values lower than `64` can cause rubbery looking textures on enemies until the texture fully loads. 
-
-Valid values for `tile_staging_buffer_size`: 
-
-```
-4, 8, 16, 32, 64, 256, 512, 1024
-```
-
-Here are some suggestions for values based on VRAM. You’ll need to adjust these settings based on your own experience in-game:
-
-| VRAM Size | Setting                        |
-| --------- | ------------------------------ |
-| 8gb       | tile_staging_buffer_size = 4   |
-| 10gb      | tile_staging_buffer_size = 8   |
-| 11gb      | tile_staging_buffer_size = 8   |
-| 12gb      | tile_staging_buffer_size = 16  |
-| 16gb      | tile_staging_buffer-size = 128 |
-
-You will need to correct the value for `tile_staging_buffer_size` after copying and pasting the values into the `Settings_common.ini`.
+The following settings were taken from a recent updates to Vizra's config on Vizra's Discord Server. 
 
 Find and replace the `feedback_streamer_settings` and `streaming_buffer_size` settings with the settings below:
 
 ```
 feedback_streamer_settings = {
-	feedback_buffer_size = 4
-	max_age_out_tiles_per_frame = 16
-	max_streaming_tiles_per_frame = 16
-	max_texture_pool_size = 1024
-	max_write_feedback_threshold = 0.009
-	min_write_feedback_threshold = 0.005
-	staging_buffer_size = 4
-	threaded_streamer = true
-	tile_age_out_time_ms = 5000
-	tile_staging_buffer_size = 128
+    feedback_buffer_size = 4
+    max_age_out_tiles_per_frame = 16 
+    max_streaming_tiles_per_frame = 16 
+    max_texture_pool_size = 1024
+    max_write_feedback_threshold = 0.009
+    min_write_feedback_threshold = 0.005
+    staging_buffer_size = 4
+    threaded_streamer = true
+    tile_age_out_time_ms = 5000
+    tile_staging_buffer_size = 128 
+`````
 
-streaming_buffer_size = 128
-streaming_max_open_streams = 48
-streaming_texture_pool_size = 1024
+```
+streaming_buffer_size = 32
+streaming_max_open_streams = 38 
+streaming_texture_pool_size = 400
 surface_properties = "application_settings/global"
 texture_streamer_settings = {
-	streaming_buffer_size = 128
-	streaming_texture_pool_size = 1024
+    streaming_buffer_size = 128 
+    streaming_texture_pool_size = 1024 
 ```
 # `win32_settings.ini`
 
@@ -268,23 +248,13 @@ texture_streamer_settings = {
 *\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\bundle\application_settings/
 ```
 
-Find and replace the `renderer` settings with the settings below:
+Find and replace the following two lines with `win32_settings.ini`:
 
 ```
-renderer = {  
-			adapter_index = 0  
-			aspect_ratio = -1  
-			d3d_debug = false  
-			d3d_gpu_validation = false  
-			dlss_logging = 0  
-			dred_pagefault = true  
-			fullscreen = true  
-			fullscreen_output = 0  
-			gpu_crash_dumps = false  
-			ray_tracing = true  
-			screen_resolution = [ 1920 1080]
-			
-streaming_buffer_size = 128
+fullscreen = true
+```
+
+```
 streaming_texture_pool_size = 1024
 ```
 # `Launcher.exe.config`
@@ -551,6 +521,7 @@ Some attributions may not appear within the body of the document as I have time 
 - [Nvidia Control Panel](https://apps.microsoft.com/detail/9nf8h0h7wmlt?hl=en-US&gl=US) 
 - [How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial](https://www.wagnardsoft.com/content/How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial) 
 - [DDU Download Page.](https://www.guru3d.com/download/display-driver-uninstaller-download/)
+- [Vizra's Darktide Configs](https://discord.gg/TE6YwF5sWQ)
 
 
 Thank you to everyone on this list, without their hard work and dedication this document would not be possible. 
