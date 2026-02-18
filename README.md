@@ -326,7 +326,7 @@ You can add an environment variable to enable the FSR4/Redstone upgrade system w
 
 Open a `Terminal` window, for my purposes I'm using `Konsole` in `KDE`. 
 
-1. Type `sudo nano /etc/environment`, or copy and paste the command and hit enter. 
+1. Type `sudo nano /etc/environment` into a terminal window, or copy and paste the command and hit enter. 
 2. Enter your sudo password.
 3. Add a new line `PROTON_FSR4_UPGRADE=1`.
 4. Save an exit the file.
@@ -522,6 +522,5 @@ Some attributions may not appear within the body of the document as I have time 
 - [How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial](https://www.wagnardsoft.com/content/How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial) 
 - [DDU Download Page.](https://www.guru3d.com/download/display-driver-uninstaller-download/)
 - [Vizra's Darktide Configs](https://discord.gg/TE6YwF5sWQ)
-
 
 Thank you to everyone on this list, without their hard work and dedication this document would not be possible. 
