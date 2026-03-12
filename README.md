@@ -236,10 +236,10 @@ feedback_streamer_settings = {
 ```
 streaming_buffer_size = 32
 streaming_max_open_streams = 38 
-streaming_texture_pool_size = 400
+streaming_texture_pool_size = 1024 
 surface_properties = "application_settings/global"
 texture_streamer_settings = {
-    streaming_buffer_size = 128 
+    streaming_buffer_size = 64
     streaming_texture_pool_size = 1024 
 ```
 # `win32_settings.ini`
