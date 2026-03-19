@@ -172,7 +172,30 @@ Use the same sensitivity value for all 3 sliders. The game correctly scales sens
 [VFX Swapper](https://www.nexusmods.com/warhammer40kdarktide/mods/678) - Replacing VFX Limiter with VFX Swapper as there is a bug in VFX Limiter that causes a crash and the author has pulled it from Nexus Mods. Moved this down to optional mods. Currently I have no setting suggestions for this mod as I have not tested it myself. 
 
 [NoCorpses](https://www.nexusmods.com/warhammer40kdarktide/mods/689) - I used google translate as the text on Nexus Mods is in Chinese. This mod is meant to entirely remove corpses from the playing field when the unit is dead. Another mod that I don't have personal experience with as it just came out. I feel however that it could be very beneficial for users on very low end hardware, or handhelds.  
+
+[Darktide Mod Autopatcher](https://www.nexusmods.com/warhammer40kdarktide/mods/709) - Automatically patches darktide for mods on startup.
+
+```
+Hosted at github.com/manshanko/dt-mod-autopatch﻿
+
+Darktide engine plugin (DLL) that patches Darktide to load mods every time the game starts. Replaces manually running toggle_darktide_mods (dtkit-patch) after updates.
+
+Supports Windows and Linux/Wine.
+
+Contains:
+
+    binaries/plugins/_dt_mod_autopatch.dll
+    toggle_dt_mod_autopatch.cmd
+
+
+Install by unpacking the zip into the Darktide folder. When successfully installed toggle_dt_mod_autopatch will be next to toggle_darktide_mods from DML.
+
+Uninstall by deleting _dt_mod_autopatch.dll (binaries/plugins/_dt_mod_autopatch.dll).
+
+Disable/enable with toggle_dt_mod_autopatch. 
+```
 # Launcher Skip
+
 [Launcher Skip](https://www.nexusmods.com/warhammer40kdarktide/mods/131) - instructions for usage taken from the nexus mods page, reformatted for clarity, below.
 
 Note:  `LauncherSkip.exe` will not try to start Steam/Game Pass for you so ensure they are already running before attempting to start the game. 
@@ -203,31 +226,6 @@ You can also replace the Original Launcher entirely, this will allow you to laun
 6. Set the name to `Launcher.exe`
 
 When you open the game from Steam/Game Pass Launcher it will open the game directly. You will need to re-do these steps after any updates as the original launcher will be restored by Fatshark. So I would recommend keeping a copy of the `LauncherSkip.exe` in a safe location so it can be moved back into the launcher folder and renamed later. 
-
-## Darktide Mod Autopatcher
-
-[Darktide Mod Autopatcher](https://www.nexusmods.com/warhammer40kdarktide/mods/709) - Automatically patches darktide for mods on startup.
-
-```
-Hosted at github.com/manshanko/dt-mod-autopatch﻿
-
-Darktide engine plugin (DLL) that patches Darktide to load mods every time the game starts. Replaces manually running toggle_darktide_mods (dtkit-patch) after updates.
-
-Supports Windows and Linux/Wine.
-
-Contains:
-
-    binaries/plugins/_dt_mod_autopatch.dll
-    toggle_dt_mod_autopatch.cmd
-
-
-Install by unpacking the zip into the Darktide folder. When successfully installed toggle_dt_mod_autopatch will be next to toggle_darktide_mods from DML.
-
-Uninstall by deleting _dt_mod_autopatch.dll (binaries/plugins/_dt_mod_autopatch.dll).
-
-Disable/enable with toggle_dt_mod_autopatch. 
-```
-
 # INI & config file changes optimize the game engine
 
 Tabbing and spacing are important when editing these files or the game will not work. These changes will need to be reapplied after every game update. They need to be done manually, as these files are updated by Fatshark after each patch/hotfix. If something gets broken, you can always [run an integrity check on the game in Steam](https://help.steampowered.com/en/faqs/view/0C48-FCBD-DA71-93EB), doing so will remove any changes you’ve made and disable mods. You’ll need to re-run the `toogle_darktide_mods.bat`, re-edit the INI files and the `launcher.exe.config` once the integrity check has completed. Or you can restore the original settings, they are included at the [bottom of this document](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-for-edited-files).  
@@ -334,7 +332,7 @@ I would highly recommend testing 4.0 vs 4.5 on your specific setup as the perfor
 - [Video Guide for 4.5 and beyond.](https://youtu.be/1lAMbO0saAw?t=44])
 # Enable FSR Redstone 
 
-Windows:
+**Windows:**
 
 1. Open `AMD Software: Adrenalin Edition`
 2. Click the `Gaming` tab at the top of the window. 
@@ -344,7 +342,7 @@ Windows:
 
 You can now close the `AMD Software: Adrenalin Edition`. In any game title you have that has `AMD FSR 3.1` as an option enabled will now automatically enable `FSR Redstone`.
 
-Linux:
+**Linux:**
 
 You can add an environment variable to enable the FSR4/Redstone upgrade system wide so you don't need to add it to every title in steam. 
 
@@ -359,12 +357,12 @@ Open a `Terminal` window, for my purposes I'm using `Konsole` in `KDE`.
 After the reboot any title you run and enable `FSR 3.1` in will automatically upgrade to `FSR4/Redstone`.
 # In-Game settings
 
-Nvidia:
+**Nvidia:**
 Resolution should be set to whatever you use. You can use whatever setting for up-scaling is available, looks best, and provides the best performance for you. `Automatic` will change the internal render resolution dynamically, though it may cause stuttering. I use `performance` at 4K and it runs well and looks good. 
 
 If your card has the option to enable `Nvidia Reflex Low Latency` do so. 
 
-AMD Radeon:
+**AMD Radeon:**
 On AMD Radeon Based system enable `FSR 3.1` under the `Performance` section and set it to your desired upscaling setting. I use `Performance` on my 9070XT at 4k and it looks good and runs well. Though I would recommend finding the specific setting that works best for your hardware and has the desired fidelity. 
 
 ```
@@ -553,5 +551,6 @@ Some attributions may not appear within the body of the document as I have time 
 - [How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial](https://www.wagnardsoft.com/content/How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial) 
 - [DDU Download Page.](https://www.guru3d.com/download/display-driver-uninstaller-download/)
 - [Vizra's Darktide Configs](https://discord.gg/TE6YwF5sWQ)
+- [Darktide Mod Autopatcher](https://www.nexusmods.com/warhammer40kdarktide/mods/709) - manshanko
 
 Thank you to everyone on this list, without their hard work and dedication this document would not be possible. 
