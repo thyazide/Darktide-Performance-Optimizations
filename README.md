@@ -204,6 +204,30 @@ You can also replace the Original Launcher entirely, this will allow you to laun
 
 When you open the game from Steam/Game Pass Launcher it will open the game directly. You will need to re-do these steps after any updates as the original launcher will be restored by Fatshark. So I would recommend keeping a copy of the `LauncherSkip.exe` in a safe location so it can be moved back into the launcher folder and renamed later. 
 
+## Darktide Mod Autopatcher
+
+[Darktide Mod Autopatcher](https://www.nexusmods.com/warhammer40kdarktide/mods/709) - Automatically patches darktide for mods on startup.
+
+```
+Hosted at github.com/manshanko/dt-mod-autopatch﻿
+
+Darktide engine plugin (DLL) that patches Darktide to load mods every time the game starts. Replaces manually running toggle_darktide_mods (dtkit-patch) after updates.
+
+Supports Windows and Linux/Wine.
+
+Contains:
+
+    binaries/plugins/_dt_mod_autopatch.dll
+    toggle_dt_mod_autopatch.cmd
+
+
+Install by unpacking the zip into the Darktide folder. When successfully installed toggle_dt_mod_autopatch will be next to toggle_darktide_mods from DML.
+
+Uninstall by deleting _dt_mod_autopatch.dll (binaries/plugins/_dt_mod_autopatch.dll).
+
+Disable/enable with toggle_dt_mod_autopatch. 
+```
+
 # INI & config file changes optimize the game engine
 
 Tabbing and spacing are important when editing these files or the game will not work. These changes will need to be reapplied after every game update. They need to be done manually, as these files are updated by Fatshark after each patch/hotfix. If something gets broken, you can always [run an integrity check on the game in Steam](https://help.steampowered.com/en/faqs/view/0C48-FCBD-DA71-93EB), doing so will remove any changes you’ve made and disable mods. You’ll need to re-run the `toogle_darktide_mods.bat`, re-edit the INI files and the `launcher.exe.config` once the integrity check has completed. Or you can restore the original settings, they are included at the [bottom of this document](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-for-edited-files).  
@@ -236,10 +260,10 @@ feedback_streamer_settings = {
 ```
 streaming_buffer_size = 32
 streaming_max_open_streams = 38 
-streaming_texture_pool_size = 1024 
+streaming_texture_pool_size = 400
 surface_properties = "application_settings/global"
 texture_streamer_settings = {
-    streaming_buffer_size = 64
+    streaming_buffer_size = 128 
     streaming_texture_pool_size = 1024 
 ```
 # `win32_settings.ini`
@@ -326,7 +350,7 @@ You can add an environment variable to enable the FSR4/Redstone upgrade system w
 
 Open a `Terminal` window, for my purposes I'm using `Konsole` in `KDE`. 
 
-1. Type `sudo nano /etc/environment` into a terminal window, or copy and paste the command and hit enter. 
+1. Type `sudo nano /etc/environment`, or copy and paste the command and hit enter. 
 2. Enter your sudo password.
 3. Add a new line `PROTON_FSR4_UPGRADE=1`.
 4. Save an exit the file.
@@ -407,6 +431,13 @@ surface_properties = "application_settings/global"
 texture_streamer_settings = {  
    streaming_buffer_size = 64  
    streaming_texture_pool_size = 512
+   
+mesh_streamer_settings = {
+	disable = false
+	eviction_timeout = 5
+	frame_time_budget = 1
+	io_buffer_budget = 10240
+	limit = 700
 ```
 # `win32_settings.ini`
 
