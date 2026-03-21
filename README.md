@@ -244,7 +244,6 @@ texture_streamer_settings = {
 ```
 # `win32_settings.ini`
 
-`
 `\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\bundle\application_settings/`
 
 Find and replace the following two lines with `win32_settings.ini`:
