@@ -294,6 +294,84 @@ Find and replace the `ExeArgs` lines with the settings below:
        <value>--bundle-dir ../bundle --ini settings --lua-heap-mb-size 2048</value>
 ```
 
+**Linux:**
+
+Including a copy of the Launcher.exe.config here in the document as another Linux user from the Darktide Modders Discord (path.exe) was unable to find it in their launcher folder. If you need it copy and paste the contents into a new text file and save it as `Launcher.exe.config` in the Launcher folder. It includes the ExeArgs line to increase the `lua-heap-mb-size`. I tested this myself on a secondary machine on a fresh install of the game and the file *was* created for me automatically after first launch. So this may be unnecessary for the majority of users. 
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <section name="Launcher.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false"/>
+    </sectionGroup>
+    <section name="entityFramework" type="System.Data.Entity.Internal.ConfigFile.EntityFrameworkSection, EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false"/>
+    <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <section name="Launcher.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false"/>
+    </sectionGroup>
+  </configSections>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2"/>
+  </startup>
+  <runtime>
+    <enforceFIPSPolicy enabled="false"/>
+  </runtime>
+  <applicationSettings>
+    <Launcher.Properties.Settings>
+      <setting name="SettingsFile" serializeAs="String">
+        <value>user_settings.config</value>
+      </setting>
+      <setting name="DefaultQuality" serializeAs="String">
+        <value>Medium</value>
+      </setting>
+      <setting name="DefaultResolutions" serializeAs="String">
+        <value>1280x768;1024x768;800x600</value>
+      </setting>
+      <setting name="ExeArgs" serializeAs="String">
+        <value>--bundle-dir ../bundle --ini settings</value>
+      </setting>
+      <setting name="LauncherVersion" serializeAs="String">
+        <value>1.0.0</value>
+      </setting>
+	<setting name="ExeArgs" serializeAs="String">  
+	<value>--bundle-dir ../bundle --ini settings --lua-heap-mb-size 2048</value>
+      </setting>
+      <setting name="ExeName" serializeAs="String">
+        <value>Darktide.exe stingray_win64_dev_x64.exe</value>
+      </setting>
+      <setting name="AppId" serializeAs="String">
+        <value>1361210</value>
+      </setting>
+      <setting name="Project" serializeAs="String">
+        <value>Darktide</value>
+      </setting>
+      <setting name="ReleasePlatform" serializeAs="String">
+        <value>steam</value>
+      </setting>
+      <setting name="Backend" serializeAs="String">
+        <value>dev</value>
+      </setting>
+      <setting name="Release" serializeAs="String">
+        <value/>
+      </setting>
+      <setting name="ConnectionTimeoutSeconds" serializeAs="String">
+        <value>10</value>
+      </setting>
+    </Launcher.Properties.Settings>
+  </applicationSettings>
+  <entityFramework>
+    <defaultConnectionFactory type="System.Data.Entity.Infrastructure.SqlConnectionFactory, EntityFramework"/>
+  </entityFramework>
+  <userSettings>
+    <Launcher.Properties.Settings>
+      <setting name="MarketingURL" serializeAs="String">
+        <value>https://www.2f8a830db8-2d0e-4a55-aced-ef6d0279b1442f.org/</value>
+      </setting>
+    </Launcher.Properties.Settings>
+  </userSettings>
+	</configuration>
+
+```
 # Increase Nvidia Shader Cache Size 
 
 In some instances increasing the `Nvidia Shader Cache Size` can assist with reducing or eliminating stuttering in games. 
@@ -330,6 +408,21 @@ I would highly recommend testing 4.0 vs 4.5 on your specific setup as the perfor
 8. Click `Apply`.
 
 - [Video Guide for 4.5 and beyond.](https://youtu.be/1lAMbO0saAw?t=44])
+
+**Linux:**
+
+You can add an environment variable to enable the DLSS 4.5 upgrade system wide so you don't need to add it to every title in steam. 
+
+Open a `Terminal` window, for my purposes I'm using `Konsole` in `KDE`. 
+
+1. Type `sudo nano /etc/environment`, or copy and paste the command and hit enter. 
+2. Enter your sudo password.
+3. Add a new line `PROTON_DLSS_UPGRADE=1`.
+4. Save an exit the file.
+5. Reboot.
+
+After the reboot any title you run and enable `DLSS` in will automatically upgrade to `DLSS 4.5` with the default `Preset M`. More info on Passing additional settings on a per-game basis can be found on the [DXVK Wiki](https://github.com/jp7677/dxvk-nvapi/wiki/Passing-driver-settings). 
+
 # Enable FSR Redstone 
 
 **Windows:**
