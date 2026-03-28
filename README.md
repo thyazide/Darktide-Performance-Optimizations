@@ -273,11 +273,11 @@ texture_streamer_settings = {
 Find and replace the following two lines with `win32_settings.ini`:
 
 ```
-fullscreen = true
+		fullscreen = true
 ```
 
 ```
-streaming_texture_pool_size = 1024
+		streaming_texture_pool_size = 1024
 ```
 # `Launcher.exe.config`
 
