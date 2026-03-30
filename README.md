@@ -62,7 +62,7 @@ There are other ways of handling mod support in Darktide, [Vortex](https://www.n
 
 	`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods\`
 
-	They will be automatically sorted and listed in the game's mod settings page. 
+	They will be automatically sorted and listed in the game'sWithin the mass layoffs at Epic Games comes stories of the mod settings page. 
 
 **AML notes:**
 If DML is updated at any point after the initial install is finished you will need to download and extract AML into the mods folder to re-enable AML so mods can be loaded automatically. 
@@ -404,7 +404,7 @@ I would highly recommend testing 4.0 vs 4.5 on your specific setup as the perfor
 6. To the right of `DLSS Override - Model Presets`, click `Global - Use 3d app settings`.
 7. On the pop up window click `Latest` for 5000 series and up graphics cards.
    A) Or click `Custom` near the top of the pop up window. 
-   B) To the right of `Super Resolution` click the on the drop down menu and choose `Preset K` off the list if you are using 4000 series and below.
+   B) To the right of `Super Resolution` click the on the drop down menu and choose `Preset K` off the list if you are using 4000 series and below. You can also choose `Preset L` or `Preset M.` They process the [output image differently.](https://www.digitalfoundry.net/features/dlss-4-5-preset-l-tested-how-good-can-a-4k-upscale-from-720p-look)
 8. Click `Apply`.
 
 - [Video Guide for 4.5 and beyond.](https://youtu.be/1lAMbO0saAw?t=44])
@@ -645,5 +645,6 @@ Some attributions may not appear within the body of the document as I have time 
 - [DDU Download Page.](https://www.guru3d.com/download/display-driver-uninstaller-download/)
 - [Vizra's Darktide Configs](https://discord.gg/TE6YwF5sWQ)
 - [Darktide Mod Autopatcher](https://www.nexusmods.com/warhammer40kdarktide/mods/709) - manshanko
+- [Digital Foundry](https://www.digitalfoundry.net/features/dlss-4-5-preset-l-tested-how-good-can-a-4k-upscale-from-720p-look)
 
 Thank you to everyone on this list, without their hard work and dedication this document would not be possible. 
