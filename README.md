@@ -194,20 +194,6 @@ Uninstall by deleting _dt_mod_autopatch.dll (binaries/plugins/_dt_mod_autopatch.
 
 Disable/enable with toggle_dt_mod_autopatch. 
 ```
-
-[SmoothTide](https://www.nexusmods.com/warhammer40kdarktide/mods/800) - Another possible addition, I've not tested this personally. From the mod page.
-
-```
-SmoothTide isn’t just “lower settings = more FPS.”  
-It’s more like a **live gear shifter** for the game engine:
-
-- When things get chaotic → shift into **Performance**
-- When things calm down → shift into **Cinematic**   
-
-You’re not picking one forever… you’re adapting in real time.  
-One thing about this it will definitely make your game feel snappier at least for me it did.  
-if you have a high end pc you may not feel a difference.
-```
 # Launcher Skip
 
 [Launcher Skip](https://www.nexusmods.com/warhammer40kdarktide/mods/131) - instructions for usage taken from the nexus mods page, reformatted for clarity, below.
@@ -489,7 +475,7 @@ Motion Blur = off
 Screen Space Reflections = off
 Lens Quality = off (turns off all below it)
 Lens Flares  = off
-Scatter Density = 0.00shader cache changes
+Scatter Density = 0.00
 Max Ragdolls = 12
 Max Weapon Impact decals = 15
 Max Blood Decals = 25
