@@ -228,7 +228,7 @@ You can also replace the Original Launcher entirely, this will allow you to laun
 When you open the game from Steam/Game Pass Launcher it will open the game directly. You will need to re-do these steps after any updates as the original launcher will be restored by Fatshark. So I would recommend keeping a copy of the `LauncherSkip.exe` in a safe location so it can be moved back into the launcher folder and renamed later. 
 # INI & config file changes optimize the game engine
 
-Tabbing and spacing are important when editing these files or the game will not work. These changes will need to be reapplied after every game update. They need to be done manually, as these files are updated by Fatshark after each patch/hotfix. If something gets broken, you can always [run an integrity check on the game in Steam](https://help.steampowered.com/en/faqs/view/0C48-FCBD-DA71-93EB), doing so will remove any changes you’ve made and disable mods. You’ll need to re-run the `toogle_darktide_mods.bat`, re-edit the INI files and the `launcher.exe.config` once the integrity check has completed. Or you can restore the original settings, they are included at the [bottom of this document](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-for-edited-files).  
+Tabbing and spacing are important when editing these files or the game will not work. These changes will need to be reapplied after every game update. They need to be done manually, as these files are updated by Fatshark after each patch/hotfix. If something gets broken, you can always [run an integrity check on the game in Steam](https://help.steampowered.com/en/faqs/view/0C48-FCBD-DA71-93EB), doing so will remove any changes you’ve made and disable mods. You’ll need to re-run the `toogle_darktide_mods.bat`, re-edit the INI files and the `launcher.exe.config` once the integrity check has completed. Or you can restore the original settings, they are included [here](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-for-edited-files).  
 
 These settings work for AMD and Nvidia users.
 # `settings_common.ini`
@@ -237,7 +237,7 @@ These settings work for AMD and Nvidia users.
 
 Tabbing and spacing are important when editing these files or the game will not work. These changes will need to be reapplied after every game update. They need to be done manually, as these files are changed after each update by Fatshark.
 
-The following settings were taken from a recent updates to Vizra's config on Vizra's Discord Server. 
+The following settings were taken from a recent updates to Vizra's config (v3) on Vizra's Discord Server. 
 
 Find and replace the `feedback_streamer_settings` and `streaming_buffer_size` settings with the settings below:
 
