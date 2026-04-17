@@ -489,7 +489,7 @@ Ragdoll Interactions = on
 
 Update the direct storage dll files.
 
-1. Download the [Direct Storage Nupkg](https://www.nuget.org/packages/Microsoft.Direct3D.DirectStorage//1.4.0-preview1-2603.504).
+1. Download the [Direct Storage Nupkg](https://www.nuget.org/packages/Microsoft.Direct3D.DirectStorage/1.3.0).
 2. Open it with [Peazip](https://peazip.github.io/index.html).
 3. Inside the archive open `/native/bin/x64/`.
 4. Extract `dstorage.dll` and `dstoragecore.dll` to some where you can locate it later.
