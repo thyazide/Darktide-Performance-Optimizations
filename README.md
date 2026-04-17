@@ -1,650 +1,114 @@
-# Darktide Performance Optimizations
+# Virtual Display for Nobara, for use with Sunshine/Moonlight
 
-# Table of Contents
+We are going to use a hardware display out on the graphics card to create a virtual display. That means that we will be sacrificing the ability to plug a physical monitor into that slot in order to use it as a virtual display out for sunshine. Removing the `GRUB_CMDLINE_LINUX` changes we will install later from the `/etc/default/grub` file will remove the virtual display and allow physical hardware to be used in that port on the card. 
 
-- [Forward about mods](https://github.com/thyazide/Darktide-Performance-Optimizations#forward-about-mods)
-- [Mod installation instructions](https://github.com/thyazide/Darktide-Performance-Optimizations#mod-installation-instructions)
-- [Keeping mods up to date](https://github.com/thyazide/Darktide-Performance-Optimizations#keeping-mods-up-to-date)
-- [Commonly used Archive programs](https://github.com/thyazide/Darktide-Performance-Optimizations#commonly-used-archive-programs)
-- [Necessary Mods](https://github.com/thyazide/Darktide-Performance-Optimizations#necessary-mods)
-- [Optional Mods](https://github.com/thyazide/Darktide-Performance-Optimizations/tree/main#optional-mods)
-- [Launcher Skip](https://github.com/thyazide/Darktide-Performance-Optimizations#launcher-skip)
-- [INI & config file changes optimize the game engine](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#ini--config-file-changes-optimize-the-game-engine)
-	- [`settings_common.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#settings_commonini)
-	- [`win32_settings.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#win32_settingsini)
-	- [`Launcher.exe.config`](https://github.com/thyazide/Darktide-Performance-Optimizations#launcherexeconfig)
-- [Increase Nvidia Shader Cache Size](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#increase-nvidia-shader-cache-size)
-- [Nvidia App Settings](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#nvidia-app-settings)
-- [Enable FSR Redstone](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#enable-fsr-redstone)
-- [In-Game settings](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#in-game-settings)
-- [Direct Storage DLL Update](https://github.com/thyazide/Darktide-Performance-Optimizations#direct-storage-dll-update)
-- [Default settings for edited files](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-for-edited-files)
-	- [`settings_common.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#settings_commonini)
-	- [`win32_settings.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#win32_settingsini-1) 
-	- [`Launcher.exe.config`](https://github.com/thyazide/Darktide-Performance-Optimizations#launcherexeconfig)
-- [File locations](https://github.com/thyazide/Darktide-Performance-Optimizations#file-locations)
-- [Using DDU to cleanly remove and reinstall your drivers](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#using-ddu-to-cleanly-remove-and-reinstall-your-drivers)
-- [List of attributions](https://github.com/thyazide/Darktide-Performance-Optimizations#list-of-attributions)
-# Forward about mods
+1. Find the name of a physical connector on your card you wish to use for the virtual display: 
 
-Mods are not required, but are highly advisable as they can provide a sizable performance gain over all. You can skip them and go directly to the INI edits and other changes in this document. Though as I advise their use,  instructions for installing/enabling them are front and center. 
-# Mod installation instructions
-
-These instructions are fairly abstract as the programs you can use to extract the archives and the operating systems individuals choose to use are varied. Though it should be easy enough to follow if you are somewhat familiar with the process of extracting archives. If you have any questions or issue please feel free to contact me either through [Github](https://github.com/thyazide/Darktide-Performance-Optimizations/issues), or via the [Darktide Discord](https://discord.gg/darktide), or the [Darktide Modding Discord](<https://discord.gg/rKYWtaDx4D>).
-
-There are other ways of handling mod support in Darktide, [Vortex](https://www.nexusmods.com/about/vortex) for example, can be used to install and manage mods, this is simply the way I handle them personally. 
-
-**Instructions:**
-
-1. Create a [Nexus Mods Account](https://users.nexusmods.com/register), or not, downloads will be slower and capped if you do not. 
-
-	- Download [Darktide Mod Loader](https://www.nexusmods.com/warhammer40kdarktide/mods/19) (referred to as DML from here on out).
-	- Download [Darktide Mod Framework](https://www.nexusmods.com/warhammer40kdarktide/mods/8) (referred to as DMF from hereIncrease Nvidia Shader Cache Size on out).
-	- Download [Auto Mod Loading and Ordering](https://www.nexusmods.com/warhammer40kdarktide/mods/246) (referred to as AML from here on out).
-
-2. Use the [Archive program of your choice](https://github.com/thyazide/Darktide-Performance-Optimizations#commonly-used-archive-programs) to extract DML and DMF to your Darktide folder:
-
-	`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`
-
-3. Extract AML to: 
-
-	`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods\`
-
-	Tell your archive program to overwrite any existing files, as AML is a patch for DML that enables mods to be automatically loaded by the game on start up. 
-
-4. To enable mods after installing DMF, DML, and AML open the Darktide folder:
-
-	`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`
-
-	Then double click the `toggAAle_darktide_mods.bat`, this will enable mods. This will need to be repeated after each patch to re-enable mods. Also if you need to disable mods at any time you can double click the batch file again and follow the on screen prompt to disable them. 
-
-5. Once mods are enabled, you can extract any mods you wish into the mods folder: 
-
-	`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods\`
-
-	They will be automatically sorted and listed in the game'sWithin the mass layoffs at Epic Games comes stories of the mod settings page. 
-
-**AML notes:**
-If DML is updated at any point after the initial install is finished you will need to download and extract AML into the mods folder to re-enable AML so mods can be loaded automatically. 
-
-**Linux specific:** 
-If you are on linux you can use [dtkit-patch](https://github.com/manshanko/dtkit-patch) to enable mods. Extract the archive into the Darktide folder (`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`), make it executable. Then double click it, or run the file from the terminal of your choice to enable mods.  
-
-- [DMF Docs official mod installation guide](https://dmf-docs.darkti.de/#/installing-mods) 
-- [Install Darktide Mods Fast](https://youtu.be/xQtXFlxPiho) - **Video guide** 
-# Keeping mods up to date
-
-If you have opted to create a [Nexus Mods Account](https://users.nexusmods.com/register) your previous downloads will be tracked and tagged with a `check mark` to denote they have been downloaded. They will also display an `Update available` marker if they have been updated. You can then click on them and `download > extract them` to the mods folder, `overwriting the existing files`. You can make a bookmark in your browser [for this page](https://www.nexusmods.com/games/warhammer40kdarktide/mods?timeRange=14&sort=updatedAt). It will show you any mods that have been updated in the last two weeks. This is extremely helpful at times when large game updates are released. It also shows a list of mods that were added to the site within that same period. 
-# Commonly used Archive programs
-
-- [Winrar](https://www.win-rar.com/download.html?&L=0)
-- [Peazip](https://peazip.github.io/)
-- [7-Zip](https://www.7-zip.org/download.html)
-- [Windows native extraction](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5)
-- [Ark for KDE](https://apps.kde.org/ark/)
-- [File-Roller for Gnome](https://flathub.org/en/apps/org.gnome.FileRoller)
-# Necessary Mods
-
-[Impact VFX Limiter](https://www.nexusmods.com/warhammer40kdarktide/mods/424) - Allows the user to limit the maximum amount of flesh/armor impact VFX and surface impact VFX that can be played per frame for better performance.  
-  
-Also allows the user to simplify the blood decal casting behavior and the VFX of enemy fire attacks to be more performance friendly.
-
-```
-Maximum impact effect per frame = 2
-Performance Features set to = on
+This command prints the connectors available on your graphics card and their current state. 
+```bash
+for p in /sys/class/drm/*/status; do con=${p%/status}; echo -n "${con#*/card?-}: "; cat $p; done
 ```
 
-[Less Dot](https://www.nexusmods.com/warhammer40kdarktide/mods/521) - This removes effects from enemy characters in-game that chew up a lot of resources thus improving frame rate. More importantly, it keeps framerate stable as large amounts of effects happening simultaneously tanks framerate.
-
-```
-Set all settings to OFF.
-```
-
-[Clear Smoke](https://www.nexusmods.com/warhammer40kdarktide/mods/517) - Keep default settings. This removes the smoke effect from veteran grenades and replaces it with an area marker.
-
-[I Wanna See](https://www.nexusmods.com/warhammer40kdarktide/mods/371) - Removes Psyker bubble fx, but retains the large circle on the ground. Also is able to remove a lot of effects that can hurt performance from the rest of the Psykers kit, fire, lighting etc.
-
-I Wanna See
-```
-Remove Inferno Staff Effects = on
-Remove Smite Lightning Effects = off
-Remove Electro Staff Lightning Effects = off
-Remove Zealot Flamer Effects = on
+This is the output for my 9070 xt.
+```bash
+DP-1: connected  
+DP-2: connected  
+DP-3: disconnected  
+HDMI-A-1: disconnected  
+Writeback-1: unknown
 ```
 
-Psyker Shield Settings
-```
-Remove Psyker Shield Effects = on
-Remove Psyker Shield Soudns = off
-Display an AoE Radius on the Floor = on
-Shield AoE Radius (red) = 0
-Shield AoE Radius (green) = 0
-Shield AoE Radius (blue) = 255
-<display_shield_health> = on
+I'm going to use HDMI-A-1 for my virtual display leaving me with 3 display port (DP-1/2/3) connectors to use for physical monitors. Note I have 2 physical display port monitors connected, one disconnected and one disconnected HDMI. 
+
+2. We need firmware!
+	This is a [modified edid](https://github.com/Bloodhundur/steamdeckedid?tab=readme-ov-file) with added steam deck specific resolutions and refresh rates. It goes as high as 7860x4320 30hz, 4k at 120hz, etc. Whatever res you need its probably in there including HDR. You can clone the repository with this command. 
+```bash
+git clone https://github.com/Bloodhundur/steamdeckedid
 ```
 
-[Memory Leak Fix](https://www.nexusmods.com/warhammer40kdarktide/mods/406) - Helps by trimming the memory space used by mods to keep it from reaching critical mass as quickly and causing crashing.
-
-```
-GC Pause Time = 1.0
-GC step multiple = 5.0
-```
-
-[Clean Force Blocking](https://www.nexusmods.com/warhammer40kdarktide/mods/104) - Removes Psyker shield vfx.
-
-```
-Remove Blocking Visual Effect = on
-Remove Pushing Visual Effect = on
-Remove Push Attack Visual Effect = on 
-Remove Blocking Sound Effect = off
+3. Put the firmware in the folder.
+```bash
+cd steamdeckedid
+sudo cp steamdeckedid /usr/lib/firmware/
 ```
 
-[Debuff Indicator](https://www.nexusmods.com/warhammer40kdarktide/mods/137) - The settings are user preference as there are multiple ways to set up how this mod displays itself in game. Needed as a replacement for the visual effects removed by less dot.
-# Optional Mods
-
-[Zealot Fire Particle Swap](https://www.nexusmods.com/warhammer40kdarktide/mods/230) - Allows you to configure the particle effects for Zealot fire grenades to make them distinct from bomber grenades. 
-
-```
-Particle Type = Nurgle Goo
+4. Now that the firmware is in place we need to edit the grub config. 
+```bash
+sudo nano /etc/default/grub
 ```
 
-[More Graphics Options - Performance boost](https://www.nexusmods.com/warhammer40kdarktide/mods/236) - Possibly useful for users with minimum spec PCs. 
+Find the line `GRUB_CMDLINE_LINUX=` and add `firmware_class.path=/usr/local/lib/firmware drm.edid_firmware=HDMI-A-1:steamdeckedid video=HDMI-A-1:e` between the quotation marks. If there are other commands between the quotation marks simply add a space after the last command then paste the line in and make sure a quotation mark caps off the end of the command.  
 
-[Granular Settings](https://www.nexusmods.com/warhammer40kdarktide/mods/38) - Has no configurable settings in mod options. Allows for greater control of mouse speed, and fov. The following was taken and reformatted from the Granular Settings page on nexus mods. 
+*Example:
 
-| Setting                              | Values                                                                            |
-| ------------------------------------ | --------------------------------------------------------------------------------- |
-| set_look_scale                       | Sets all 3 sensitivity values to the same value. Valid values range from 0 to 10. |
-| set_look_scale_ranged                | sets only ranged sensitivity.                                                     |
-| set_look_scale_ranged_alternate_fire | Sets only alternate fire sensitivity.                                             |
-| set_vertical_fov                     | Sets fov measured vertically. Valid values range from 0 to 180 exclusive.         |
-| set_horizontal_fov                   | Sets fov measured horizontally. Valid values range from 0 to 180 exclusive.       |
-
-Commands are entered into the system via the chat dialog box.
-
-	Example: 
-	/set_look_scale 0.394
-	/set_look_scale_ranged_alternate_fire 0.394 
-
-**Recommendations:**
-Use the same sensitivity value for all 3 sliders. The game correctly scales sensitivity by the tangent of `FOV/2` by default. This is opposed to many games simply scaling by `FOV/2`. Zoom is the ratio of focal lengths, not fields of view. Scaling sensitivity by the tangent of `FOV/2` properly emulates the ratio of focal lengths.
-
-[VFX Swapper](https://www.nexusmods.com/warhammer40kdarktide/mods/678) - Replacing VFX Limiter with VFX Swapper as there is a bug in VFX Limiter that causes a crash and the author has pulled it from Nexus Mods. Moved this down to optional mods. Currently I have no setting suggestions for this mod as I have not tested it myself. 
-
-[NoCorpses](https://www.nexusmods.com/warhammer40kdarktide/mods/689) - I used google translate as the text on Nexus Mods is in Chinese. This mod is meant to entirely remove corpses from the playing field when the unit is dead. Another mod that I don't have personal experience with as it just came out. I feel however that it could be very beneficial for users on very low end hardware, or handhelds.  
-
-[Darktide Mod Autopatcher](https://www.nexusmods.com/warhammer40kdarktide/mods/709) - Automatically patches darktide for mods on startup.
-
-```
-Hosted at github.com/manshanko/dt-mod-autopatch﻿
-
-Darktide engine plugin (DLL) that patches Darktide to load mods every time the game starts. Replaces manually running toggle_darktide_mods (dtkit-patch) after updates.
-
-Supports Windows and Linux/Wine.
-
-Contains:
-
-    binaries/plugins/_dt_mod_autopatch.dll
-    toggle_dt_mod_autopatch.cmd
-
-
-Install by unpacking the zip into the Darktide folder. When successfully installed toggle_dt_mod_autopatch will be next to toggle_darktide_mods from DML.
-
-Uninstall by deleting _dt_mod_autopatch.dll (binaries/plugins/_dt_mod_autopatch.dll).
-
-Disable/enable with toggle_dt_mod_autopatch. 
-```
-# Launcher Skip
-
-[Launcher Skip](https://www.nexusmods.com/warhammer40kdarktide/mods/131) - instructions for usage taken from the nexus mods page, reformatted for clarity, below.
-
-Note:  `LauncherSkip.exe` will not try to start Steam/Game Pass for you so ensure they are already running before attempting to start the game. 
-
-**Installation:**
-1. Right-click `LauncherSkip.exe` > `click copy` then `paste` into your launcher folder. By default it is stored in:
-- Steam:   
-`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\launcher` 
--  Game Pass:   
-`*\XboxGames\Warhammer 40,000- Darktide\Content\launcher`
-
-2. Create shortcut/s:  
-	Right-click `LauncherSkip.exe` in the launcher folder and select (any or all) options:  
-	- Start Menu: Pin to Start
-	- Taskbar: Pin to Taskbar
-	- Desktop: Send to > Desktop (Create Shortcut)  
-
-
-**Replace Original Launcher:**
-
-You can also replace the Original Launcher entirely, this will allow you to launch the game from Steam/Game Pass Launcher directly. 
-
-1. Right click `Launcher.exe` 
-2. Click `Rename`
-3. Set the name to `Launcher-original.exe`
-4. Right click `LauncherSkip.exe`
-5. Click `Rename` 
-6. Set the name to `Launcher.exe`
-
-When you open the game from Steam/Game Pass Launcher it will open the game directly. You will need to re-do these steps after any updates as the original launcher will be restored by Fatshark. So I would recommend keeping a copy of the `LauncherSkip.exe` in a safe location so it can be moved back into the launcher folder and renamed later. 
-# INI & config file changes optimize the game engine
-
-Tabbing and spacing are important when editing these files or the game will not work. These changes will need to be reapplied after every game update. They need to be done manually, as these files are updated by Fatshark after each patch/hotfix. If something gets broken, you can always [run an integrity check on the game in Steam](https://help.steampowered.com/en/faqs/view/0C48-FCBD-DA71-93EB), doing so will remove any changes you’ve made and disable mods. You’ll need to re-run the `toogle_darktide_mods.bat`, re-edit the INI files and the `launcher.exe.config` once the integrity check has completed. Or you can restore the original settings, they are included [here](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-for-edited-files).  
-
-These settings work for AMD and Nvidia users.
-# `settings_common.ini`
-
-`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\bundle\application_settings`
-
-Tabbing and spacing are important when editing these files or the game will not work. These changes will need to be reapplied after every game update. They need to be done manually, as these files are changed after each update by Fatshark.
-
-The following settings were taken from a recent updates to Vizra's config (v3) on Vizra's Discord Server. 
-
-Find and replace the `feedback_streamer_settings` and `streaming_buffer_size` settings with the settings below:
-
-```
-feedback_streamer_settings = {
-    feedback_buffer_size = 4
-    max_age_out_tiles_per_frame = 16 
-    max_streaming_tiles_per_frame = 16 
-    max_texture_pool_size = 1024
-    max_write_feedback_threshold = 0.009
-    min_write_feedback_threshold = 0.005
-    staging_buffer_size = 4
-    threaded_streamer = true
-    tile_age_out_time_ms = 5000
-    tile_staging_buffer_size = 128 
-`````
-
-```
-streaming_buffer_size = 32
-streaming_max_open_streams = 38 
-streaming_texture_pool_size = 400
-surface_properties = "application_settings/global"
-texture_streamer_settings = {
-    streaming_buffer_size = 128 
-    streaming_texture_pool_size = 1024 
-```
-# `win32_settings.ini`
-
-```
-*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\bundle\application_settings/
+```bash
+GRUB_CMDLINE_LINUX="firmware_class.path=/usr/local/lib/firmware drm.edid_firmware=HDMI-A-1:steamdeckedid.bin video=HDMI-A-1:e"
 ```
 
-Find and replace the following two lines with `win32_settings.ini`:
+Exit out of nano and save changes `CTRL+X > Y > Enter`.
 
-```
-		fullscreen = true
-```
-
-```
-		streaming_texture_pool_size = 1024
-```
-# `Launcher.exe.config`
-
-```
-*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\launcher
+5. Update grub to incorporate the changes. 
+```bash
+sudo grub2-mkconfig -o /etc/grub2-efi.cfg && sudo grub2-mkconfig -o /etc/grub2.cfg
 ```
 
-This will extend the amount of memory available in game to mods.
+Now reboot, you should see the new display in `Settings > Display & Monitor > Display Configuration` in KDE. You can change the resolution and refresh rate and apply those changes even if the display is disabled. If you make changes in game, the virtual display should adjust to them properly and not produce black bars on your moonlight connected devices. 
 
-Find and replace the `ExeArgs` lines with the settings below:
+Now we need to setup sunshine to disable your physical monitors and enable the virtual monitor, and vice versa when you end the stream. 
+# Setup Sunshine for virtual display output. 
 
-```
-<setting name="ExeArgs" serializeAs="String">  
-       <value>--bundle-dir ../bundle --ini settings --lua-heap-mb-size 2048</value>
-```
-
-**Linux:**
-
-Including a copy of the Launcher.exe.config here in the document as another Linux user from the Darktide Modders Discord (path.exe) was unable to find it in their launcher folder. If you need it copy and paste the contents into a new text file and save it as `Launcher.exe.config` in the Launcher folder. It includes the ExeArgs line to increase the `lua-heap-mb-size`. I tested this myself on a secondary machine on a fresh install of the game and the file *was* created for me automatically after first launch. So this may be unnecessary for the majority of users. 
+Right-click Sunshine icon in your tray and select "Open Sunshine" go to Configuration page. Once there click on the General tab and click + Add to put a "Do" and a "Undo Command".
+## Explanation 
 
 ```
-<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-  <configSections>
-    <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-      <section name="Launcher.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false"/>
-    </sectionGroup>
-    <section name="entityFramework" type="System.Data.Entity.Internal.ConfigFile.EntityFrameworkSection, EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false"/>
-    <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-      <section name="Launcher.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false"/>
-    </sectionGroup>
-  </configSections>
-  <startup>
-    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2"/>
-  </startup>
-  <runtime>
-    <enforceFIPSPolicy enabled="false"/>
-  </runtime>
-  <applicationSettings>
-    <Launcher.Properties.Settings>
-      <setting name="SettingsFile" serializeAs="String">
-        <value>user_settings.config</value>
-      </setting>
-      <setting name="DefaultQuality" serializeAs="String">
-        <value>Medium</value>
-      </setting>
-      <setting name="DefaultResolutions" serializeAs="String">
-        <value>1280x768;1024x768;800x600</value>
-      </setting>
-      <setting name="ExeArgs" serializeAs="String">
-        <value>--bundle-dir ../bundle --ini settings</value>
-      </setting>
-      <setting name="LauncherVersion" serializeAs="String">
-        <value>1.0.0</value>
-      </setting>
-	<setting name="ExeArgs" serializeAs="String">  
-	<value>--bundle-dir ../bundle --ini settings --lua-heap-mb-size 2048</value>
-      </setting>
-      <setting name="ExeName" serializeAs="String">
-        <value>Darktide.exe stingray_win64_dev_x64.exe</value>
-      </setting>
-      <setting name="AppId" serializeAs="String">
-        <value>1361210</value>
-      </setting>
-      <setting name="Project" serializeAs="String">
-        <value>Darktide</value>
-      </setting>
-      <setting name="ReleasePlatform" serializeAs="String">
-        <value>steam</value>
-      </setting>
-      <setting name="Backend" serializeAs="String">
-        <value>dev</value>
-      </setting>
-      <setting name="Release" serializeAs="String">
-        <value/>
-      </setting>
-      <setting name="ConnectionTimeoutSeconds" serializeAs="String">
-        <value>10</value>
-      </setting>
-    </Launcher.Properties.Settings>
-  </applicationSettings>
-  <entityFramework>
-    <defaultConnectionFactory type="System.Data.Entity.Infrastructure.SqlConnectionFactory, EntityFramework"/>
-  </entityFramework>
-  <userSettings>
-    <Launcher.Properties.Settings>
-      <setting name="MarketingURL" serializeAs="String">
-        <value>https://www.2f8a830db8-2d0e-4a55-aced-ef6d0279b1442f.org/</value>
-      </setting>
-    </Launcher.Properties.Settings>
-  </userSettings>
-	</configuration>
-
-```
-# Increase Nvidia Shader Cache Size 
-
-In some instances increasing the `Nvidia Shader Cache Size` can assist with reducing or eliminating stuttering in games. 
-
-Normally the `Nvidia Control Panel` can be found in the `Windows Control Panel`. If its not there, or not installed you can [grab it from here.](https://apps.microsoft.com/detail/9nf8h0h7wmlt?hl=en-US&gl=US) 
-
-1. Right Click the `Windows Desktop`. 
-2. Click `Show more options`.
-3. Click `Nvidia Control Panel`. 
-4. Click `Manage 3D settings` on the left of the `Nvidia Control Panel` window.
-5. On the right Click on the `Global Settings` tab.
-6. Below in the settings section find `Shader Cache Size`.
-7. On the right change the setting to `100GB`. 
-8. Click `Apply`.
-9. Exit the `Nvidia Control Panel`.
-10. Reboot.
-
-Once enabled this will increase the amount of disk space that can be used to store shaders created/used by games for the Nvidia Drivers. It won't take up the whole `100GB` of storage space at once, but will only trim unused shaders once the cache hits the `100GB` limit. This should keep games from stuttering when loading shaders as the drivers are not having to re-cache them after each run of a different title. 
-# Nvidia App Settings
-
-The introduction of DLSS 4.5 cause FPS loss for GPUs below the 5000 series as it contains FP8 calculations. Those calculations don't run as efficiently on older Nvidia GPUs. Sticking to the older 4.0 model, `PRESET K`, if your card is below the 5000 series. 
-
-I would highly recommend testing 4.0 vs 4.5 on your specific setup as the performance hit for the 4000 series may not be as large as the gains in visual fidelity. Nvidia has stated that the performance loss for the 5000 series is around 3% give or take. 
-
-1. Open `Nvidia App` settings.
-2. Click `Graphics` on the left. 
-3. Under `Program Settings` find the list of games, scroll down and click `Warhammer 40k Darktide`.
-4. On the right scroll down to the bottom of the list to `Driver Settings`. 
-5. Find `DLSS Override - Model Presets`. 
-6. To the right of `DLSS Override - Model Presets`, click `Global - Use 3d app settings`.
-7. On the pop up window click `Latest` for 5000 series and up graphics cards.
-   A) Or click `Custom` near the top of the pop up window. 
-   B) To the right of `Super Resolution` click the on the drop down menu and choose `Preset K` off the list if you are using 4000 series and below. You can also choose `Preset L` or `Preset M.` They process the [output image differently.](https://www.digitalfoundry.net/features/dlss-4-5-preset-l-tested-how-good-can-a-4k-upscale-from-720p-look)
-8. Click `Apply`.
-
-- [Video Guide for 4.5 and beyond.](https://youtu.be/1lAMbO0saAw?t=44])
-
-**Linux:**
-
-You can add an environment variable to enable the DLSS 4.5 upgrade system wide so you don't need to add it to every title in steam. 
-
-Open a `Terminal` window, for my purposes I'm using `Konsole` in `KDE`. 
-
-1. Type `sudo nano /etc/environment`, or copy and paste the command and hit enter. 
-2. Enter your sudo password.
-3. Add a new line `PROTON_DLSS_UPGRADE=1`.
-4. Save an exit the file.
-5. Reboot.
-
-After the reboot any title you run and enable `DLSS` in will automatically upgrade to `DLSS 4.5` with the default `Preset M`. More info on Passing additional settings on a per-game basis can be found on the [DXVK Wiki](https://github.com/jp7677/dxvk-nvapi/wiki/Passing-driver-settings). 
-
-# Enable FSR Redstone 
-
-**Windows:**
-
-1. Open `AMD Software: Adrenalin Edition`
-2. Click the `Gaming` tab at the top of the window. 
-3. Below the `Gaming` tab click `Graphics` tab
-4. On the `Graphics` menu find `Amd FSR Upscaling`, click the `Enable` toggle. 
-5.  Find `AMD FSR Frame Generation`, click the click the `Enable` toggle.
-
-You can now close the `AMD Software: Adrenalin Edition`. In any game title you have that has `AMD FSR 3.1` as an option enabled will now automatically enable `FSR Redstone`.
-
-**Linux:**
-
-You can add an environment variable to enable the FSR4/Redstone upgrade system wide so you don't need to add it to every title in steam. 
-
-Open a `Terminal` window, for my purposes I'm using `Konsole` in `KDE`. 
-
-1. Type `sudo nano /etc/environment`, or copy and paste the command and hit enter. 
-2. Enter your sudo password.
-3. Add a new line `PROTON_FSR4_UPGRADE=1`.
-4. Save an exit the file.
-5. Reboot.
-
-After the reboot any title you run and enable `FSR 3.1` in will automatically upgrade to `FSR4/Redstone`.
-# In-Game settings
-
-**Nvidia:**
-Resolution should be set to whatever you use. You can use whatever setting for up-scaling is available, looks best, and provides the best performance for you. `Automatic` will change the internal render resolution dynamically, though it may cause stuttering. I use `performance` at 4K and it runs well and looks good. 
-
-If your card has the option to enable `Nvidia Reflex Low Latency` do so. 
-
-**AMD Radeon:**
-On AMD Radeon Based system enable `FSR 3.1` under the `Performance` section and set it to your desired upscaling setting. I use `Performance` on my 9070XT at 4k and it looks good and runs well. Though I would recommend finding the specific setting that works best for your hardware and has the desired fidelity. 
-
-```
-Framerate Cap = unlimited
-Raytraced Reflections = off
-RTX Global Illumination = off
-Texture Quality = high
-Mesh Quality = 2.0
-Ambient Occlusion Quality = low
-Lighting Quality = extreme
-Volumetric Fog Quality = medium
-Depth of Field = off
-Global Illumination = high
-Bloom = on
-Skin Sub-surface Scattering = on
-Motion Blur = off
-Screen Space Reflections = off
-Lens Quality = off (turns off all below it)
-Lens Flares  = off
-Scatter Density = 0.00
-Max Ragdolls = 12
-Max Weapon Impact decals = 15
-Max Blood Decals = 25
-Decal Lifetime = 30
-Blood Decals = on
-Gibbing = on
-Enemy Wounds = on
-Ragdoll Interactions = on
-```
-# Direct Storage DLL Update
-
-Update the direct storage dll files.
-
-1. Download the [Direct Storage Nupkg](https://www.nuget.org/packages/Microsoft.Direct3D.DirectStorage//1.4.0-preview1-2603.504).
-2. Open it with [Peazip](https://peazip.github.io/index.html).
-3. Inside the archive open `/native/bin/x64/`.
-4. Extract `dstorage.dll` and `dstoragecore.dll` to some where you can locate it later.
-5. Open the darktide binaries folder `*/steam/steamapps/common/Warhammer 40,000 DARKTIDE/binaries/`.
-6. Find `dstoragecore.dll` and `dstorage.dll`, back them up else where in case you wish to undo these changes (or run a [file integrity verification in steam](https://help.steampowered.com/en/faqs/view/0C48-FCBD-DA71-93EB), note this will disable mods, so you will need to re-enable them using the batch file in the root darktide folder  `*/steam/steamapps/common/Warhammer 40,000 DARKTIDE/`).
-7. Copy the `dstoragecore.dll` and `dstorage.dll` files from where you placed them earlier and place them into `*/steam/steamapps/common/Warhammer 40,000 DARKTIDE/binaries/`.
-
-This can be done in Windows or Linux. 
-# Default settings for edited files
-
-# `settings_common.ini` 
-
-```
-feedback_streamer_settings = {  
-   feedback_buffer_size = 4  
-   max_age_out_tiles_per_frame = 64  
-   max_streaming_tiles_per_frame = 64  
-   max_texture_pool_size = 1024  
-   max_write_feedback_threshold = 0.009  
-   min_write_feedback_threshold = 0.005  
-   staging_buffer_size = 4  
-   threaded_streamer = true  
-   tile_age_out_time_ms = 5000  
-   tile_staging_buffer_size = 4  
-
-streaming_buffer_size = 32  
-streaming_max_open_streams = 50  
-streaming_texture_pool_size = 400  
-surface_properties = "application_settings/global"  
-texture_streamer_settings = {  
-   streaming_buffer_size = 64  
-   streaming_texture_pool_size = 512
-   
-mesh_streamer_settings = {
-	disable = false
-	eviction_timeout = 5
-	frame_time_budget = 1
-	io_buffer_budget = 10240
-	limit = 700
-```
-# `win32_settings.ini`
-
-```
-renderer = {
-        adapter_index = 0
-        aspect_ratio = -1
-        d3d_debug = false
-        d3d_gpu_validation = false
-        dlss_logging = 0
-        dred_pagefault = true
-        fullscreen = true
-        fullscreen_output = 0
-        gpu_crash_dumps = false
-        ray_tracing = true
-        screen_resolution = [ 1920 1080] 
-        streaming_buffer_size = 64  
-        streaming_texture_pool_size = 512
-```
-# `Launcher.exe.config`
-
-```
-      <setting name="ExeArgs" serializeAs="String">
-        <value>--bundle-dir ../bundle --ini settings</value>
+kscreen-doctor is a command-line tool for manipulating display settings on KDE Plasma desktops. It can enable/disable outputs, set rotation, scaling, resolution, refresh rate, position, and primary display status using a simple dot-notation syntax. Multiple output changes can be specified in a single command invocation. Changes take effect immediately without requiring a restart.
 ```
 
-# File locations
+The command for enabling any physical connector on the video card is:
+```
+/usr/bin/kscreen-doctor output.<display connector>.enable
+``` 
 
-You can open the Darktide base folder via the steam library:
-1. Open Steam 
-2. Click Library at the top of the page
-3. On the left in your list of games, right-click on "Warhammer 40,000: Darktide"
-4. Click Properties
-5. Click Installed files 
-6. On the right, click "Browse"
+The command for disabling any physical connector on the video card is:
+```
+/usr/bin/kscreen-doctor output.<display connector>.disable
+```
 
-Darktide base folder: 
+You'll need to construct your own do and undo commands. The ones below are examples of how my machine is setup. You can use `kscreen-doctor` to get the names of your display outputs. Run the command `kscreen-doctor -o | grep Output:`
+
+```bash
+··• kscreen-doctor -o | grep Output:  
+Output: 1 DP-1 b663b323-648b-492f-8090-499a8ab70db9  
+Output: 2 HDMI-A-1 26a1cf34-1dc6-4e0d-aff0-6e939f9c6f15  
+Output: 3 DP-2 1e298e0e-3784-46af-ab11-68b477380276
+```
+
+
+# These are my example do and undo commands: 
+## Do Command
+
+Disables screens DP-1 and DP-2, and enables HDMI-A-1 where the virtual displays is tethered to the hardware HDMI port on my graphics card. 
 
 ```
-*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\
+/usr/bin/kscreen-doctor output.DP-1.disable && /usr/bin/kscreen-doctor output.DP-2.disable && /usr/bin/kscreen-doctor output.HDMI-A-1.enable
 ```
-- Default installation folder for Steam.  
-- Location of `toggle_darktide_mods.bat` and `dtkit-patch`
 
-Darktide Launcher folder: 
+Adding `&&` between the commands runs the commands in sequence. So in human readable language the command says something like: DO - Turn off display port 1, and turn off display port 2, and turn on HDMI-A-1. 
+## Undo Command
 
-```
-*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\launcher\
-```
-- The game launcher folder. 
-- Location of `Launcher.exe.config`
-
-Darktide mods folder:
+Re-enables DP-1 & DP-2 and Disables HDMI-A-1 (The virtual display.)
 
 ```
-*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods\
+/usr/bin/kscreen-doctor output.DP-1.enable && /usr/bin/kscreen-doctor output.DP-2.enable && /usr/bin/kscreen-doctor output.HDMI-A-1.disable
 ```
-- Mod folders/files.
 
-Darktide application_settings folder: 
+This is the opposite command, its run when the stream ends: UNDO - Turn on display port 1, and turn on display port 2, and turn off HDMI-A-1. 
 
-```
-*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\bundle\application_settings\
-```
-- Stores INI files that govern settings for the game engine. 
-- Location of `Settings_common.ini` and `Win32_settings.ini`.
+# Resources and links used to create this document:
+https://gist.github.com/iamthenuggetman/6d0884954653940596d463a48b2f459c
 
-# Using DDU to cleanly remove and reinstall your drivers
+https://github.com/Bloodhundur/steamdeckedid?tab=readme-ov-file
 
-Using DDU (Display Driver Uninstaller) can help you cleanly remove the AMD, NVIDIA, and Intel display drivers from the system. This can help if you are having issues with crashing related to your GPU Drivers themselves. If you choose to use DDU, you will need to re-enable the [shader cache changes](https://github.com/thyazide/Darktide-Performance-Optimizations#increase-nvidia-shader-cache-size) (if you've made them) within the Nvidia Drivers. 
+https://www.azdanov.dev/articles/2025/how-to-create-a-virtual-display-for-sunshine-on-arch-linux
 
-- [DDU Download Page.](https://www.guru3d.com/download/display-driver-uninstaller-download/)
-- [The DDU Usage tutorial from the developers website.](https://www.wagnardsoft.com/content/How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial)
-
-# List of attributions
-
-Some attributions may not appear within the body of the document as I have time to write my own version of them. I am keeping them here for posterity.
-
-- [How to fix AMD GPU stutters and improve clarity | Streaming settings config fix - Performance Feedback - Fatshark Forums](https://forums.fatsharkgames.com/t/how-to-fix-amd-gpu-stutters-and-improve-clarirty-streaming-settings-config-fix/108373) -Vizra
-- [Fullscreen Optimizations are not enabled for Darktide (fix included) - Performance Feedback - Fatshark Forums](https://forums.fatsharkgames.com/t/fullscreen-optimisations-are-not-enabled-for-darktide-fix-included/103471) -Vizra
-- [I fixed stutter and textures not loading in! (Texutre streaming config file change)](https://forums.fatsharkgames.com/t/i-fixed-stutter-and-textures-not-loading-in-texutre-streaming-config-file-change/102199) -Vizra
-- [Better FPS & Graphic Options - Darktide Performance Guide](https://www.youtube.com/watch?v=tJ11KfVsG_c) -ItalianSpartacus
-- [Darktide modding Discord](https://discord.gg/rKYWtaDx4D)
-- [DMF Docs official mod installation guide](https://dmf-docs.darkti.de/#/installing-mods)
-- [Guide for installing Darktide mods from /u/ruderalis1 on reddit.](https://old.reddit.com/r/DarkTide/comments/11cod2i/guide_how_to_install_mods_in_darktide_w_gifs/) -ruderalis1
-- [Install Darktide Mods Fast](https://youtu.be/xQtXFlxPiho) -Janotil
-- [Darktide Mod Loader](https://www.nexusmods.com/warhammer40kdarktide/mods/19) -Aussiemon
-- [Darktide Mod Framework](https://www.nexusmods.com/warhammer40kdarktide/mods/8) -Aussiemon
-- [Auto Mod Loading and Ordering](https://www.nexusmods.com/warhammer40kdarktide/mods/246) -Altarion
-- [Impact VFX Limiter](https://www.nexusmods.com/warhammer40kdarktide/mods/424) -fugsystem
-- [Less Dot](https://www.nexusmods.com/warhammer40kdarktide/mods/521) -SanctionedPsyker
-- [Clear Smoke](https://www.nexusmods.com/warhammer40kdarktide/mods/517) -leerH
-- [I Wanna See](https://www.nexusmods.com/warhammer40kdarktide/mods/371) -d3fallt
-- [Memory Leak Fix](https://www.nexusmods.com/warhammer40kdarktide/mods/406) -PaimonKawaii
-- [Clean Force Blocking](https://www.nexusmods.com/warhammer40kdarktide/mods/104) -deluxghost
-- [Debuff Indicator](https://www.nexusmods.com/warhammer40kdarktide/mods/137) -Zombine04
-- [Granular Settings](https://www.nexusmods.com/warhammer40kdarktide/mods/38) -Skwuruhl
-- [Zealot Fire Particle Swap](https://www.nexusmods.com/warhammer40kdarktide/mods/230) -JCaleb
-- Direct storage DLL update -pttgo
-- [More Graphics Options - Performance boost](https://www.nexusmods.com/warhammer40kdarktide/mods/236) -yakuzadeso
-- [Winrar](https://www.win-rar.com/download.html?&L=0)
-- [Peazip](https://peazip.github.io/)
-- [7-Zip](https://www.7-zip.org/download.html)
-- [Windows native extraction](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5)
-- [Ark for KDE](https://apps.kde.org/ark/)
-- [File-Roller for Gnome](https://flathub.org/en/apps/org.gnome.FileRoller)
-- [Direct Storage Nupkg](https://www.nuget.org/packages/Microsoft.Direct3D.DirectStorage)AA
-- [dtkit-patch](https://github.com/manshanko/dtkit-patch) - manshanko
-- [How to Enable Dlss 4.5 - Huge Visual Upgrade](https://www.youtube.com/watch?v=1lAMbO0saAw) -Benchmark Boy
-- [VFX Swapper](https://www.nexusmods.com/warhammer40kdarktide/mods/678) -tdopz, with original mod credit going to leerH
-- [NoCorpses](https://www.nexusmods.com/warhammer40kdarktide/mods/689) -7878949696
-- [Nvidia Control Panel](https://apps.microsoft.com/detail/9nf8h0h7wmlt?hl=en-US&gl=US) 
-- [How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial](https://www.wagnardsoft.com/content/How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial) 
-- [DDU Download Page.](https://www.guru3d.com/download/display-driver-uninstaller-download/)
-- [Vizra's Darktide Configs](https://discord.gg/TE6YwF5sWQ)
-- [Darktide Mod Autopatcher](https://www.nexusmods.com/warhammer40kdarktide/mods/709) - manshanko
-- [Digital Foundry](https://www.digitalfoundry.net/features/dlss-4-5-preset-l-tested-how-good-can-a-4k-upscale-from-720p-look)
-
-Thank you to everyone on this list, without their hard work and dedication this document would not be possible. 
+https://edid.build/
