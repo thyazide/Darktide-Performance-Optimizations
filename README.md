@@ -132,6 +132,8 @@ GC step multiple = 5.0
 
 [SMOG Cleaner](https://www.nexusmods.com/warhammer40kdarktide/mods/847) - Alternative to Memory Leak Fix, does the same job but in a different way. Considering MLF hasn't been updated since 01/25, this might be a better way moving forward provided it gets better support by the creator. 
 
+[Fps_Cleaner_Memory_FpsDoctor_LuaHeapCleaner](https://www.nexusmods.com/warhammer40kdarktide/mods/932) - Yet Another memory leak 'fixing' mod. Please note only one of these types of mods should be used at any one time. 
+
 [Clean Force Blocking](https://www.nexusmods.com/warhammer40kdarktide/mods/104) - Removes Psyker shield vfx.
 
 ```
@@ -650,5 +652,6 @@ Some attributions may not appear within the body of the document as I have time 
 - [Digital Foundry](https://www.digitalfoundry.net/features/dlss-4-5-preset-l-tested-how-good-can-a-4k-upscale-from-720p-look)
 - [Enemies Improved (Healthbars - Debuffs - Outlines and more)](https://www.nexusmods.com/warhammer40kdarktide/mods/809 ) 
 - [SMOG Cleaner](https://www.nexusmods.com/warhammer40kdarktide/mods/847) - xxBellatrix
+- [# Fps_Cleaner_Memory_FpsDoctor_LuaHeapCleaner](Ihttps://www.nexusmods.com/warhammer40kdarktide/mods/932) - Artem228337
 
 Thank you to everyone on this list, without their hard work and dedication this document would not be possible. 
