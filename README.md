@@ -437,7 +437,7 @@ After the reboot any title you run and enable `DLSS` in will automatically upgra
 4. On the `Graphics` menu find `Amd FSR Upscaling`, click the `Enable` toggle. 
 5.  Find `AMD FSR Frame Generation`, click the click the `Enable` toggle.
 
-You can now close the `AMD Software: Adrenalin Edition`. In any game title you have that has `AMD FSR 3.1` as an option enabled will now automatically enable `FSR Redstone`.
+You can now close the `AMD Software: Adrenalin Edition`. In any game title you have that has `AMD FSR 3.1` enabled will now automatically enable `FSR Redstone`.
 
 **Linux:**
 
