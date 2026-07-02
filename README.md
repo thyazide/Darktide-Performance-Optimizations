@@ -42,23 +42,27 @@ There are other ways of handling mod support in Darktide, [Vortex](https://www.n
 	- Download [Darktide Mod Framework](https://www.nexusmods.com/warhammer40kdarktide/mods/8) (referred to as DMF from hereIncrease Nvidia Shader Cache Size on out).
 	- Download [Auto Mod Loading and Ordering](https://www.nexusmods.com/warhammer40kdarktide/mods/246) (referred to as AML from here on out).
 
-2. Use the [Archive program of your choice](https://github.com/thyazide/Darktide-Performance-Optimizations#commonly-used-archive-programs) to extract DML and DMF to your Darktide folder:
+2. Use the [Archive program of your choice](https://github.com/thyazide/Darktide-Performance-Optimizations#commonly-used-archive-programs) to extract DML to your Darktide folder:
 
 	`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`
 
-3. Extract AML to: 
+3. Extract DMF to: 
+
+	`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods\`
+
+4. Extract AML to: 
 
 	`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods\`
 
 	Tell your archive program to overwrite any existing files, as AML is a patch for DML that enables mods to be automatically loaded by the game on start up. 
 
-4. To enable mods after installing DMF, DML, and AML open the Darktide folder:
+5. To enable mods after installing DMF, DML, and AML open the Darktide folder:
 
 	`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`
 
 	Then double click the `toggAAle_darktide_mods.bat`, this will enable mods. This will need to be repeated after each patch to re-enable mods. Also if you need to disable mods at any time you can double click the batch file again and follow the on screen prompt to disable them. 
 
-5. Once mods are enabled, you can extract any mods you wish into the mods folder: 
+6. Once mods are enabled, you can extract any mods you wish into the mods folder: 
 
 	`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods\`
 
@@ -76,7 +80,7 @@ If you are on linux you can use [dtkit-patch](https://github.com/manshanko/dtkit
 
 If you have opted to create a [Nexus Mods Account](https://users.nexusmods.com/register) your previous downloads will be tracked and tagged with a `check mark` to denote they have been downloaded. They will also display an `Update available` marker if they have been updated. You can then click on them and `download > extract them` to the mods folder, `overwriting the existing files`. You can make a bookmark in your browser [for this page](https://www.nexusmods.com/games/warhammer40kdarktide/mods?timeRange=14&sort=updatedAt). It will show you any mods that have been updated in the last two weeks. This is extremely helpful at times when large game updates are released. It also shows a list of mods that were added to the site within that same period. 
 # Commonly used Archive programs
-
+.
 - [Winrar](https://www.win-rar.com/download.html?&L=0)
 - [Peazip](https://peazip.github.io/)
 - [7-Zip](https://www.7-zip.org/download.html)
@@ -173,9 +177,9 @@ Commands are entered into the system via the chat dialog box.
 **Recommendations:**
 Use the same sensitivity value for all 3 sliders. The game correctly scales sensitivity by the tangent of `FOV/2` by default. This is opposed to many games simply scaling by `FOV/2`. Zoom is the ratio of focal lengths, not fields of view. Scaling sensitivity by the tangent of `FOV/2` properly emulates the ratio of focal lengths.
 
-[VFX Swapper](https://www.nexusmods.com/warhammer40kdarktide/mods/678) - Replacing VFX Limiter with VFX Swapper as there is a bug in VFX Limiter that causes a crash and the author has pulled it from Nexus Mods. Moved this down to optional mods. Currently I have no setting suggestions for this mod as I have not tested it myself. 
+[VFX Swapper](https://www.nexusmods.com/warhammer40kdarktide/mods/678) - Default options are fine, this limits VFX in-game to help with frame rate and clarity.
 
-[NoCorpses](https://www.nexusmods.com/warhammer40kdarktide/mods/689) - I used google translate as the text on Nexus Mods is in Chinese. This mod is meant to entirely remove corpses from the playing field when the unit is dead. Another mod that I don't have personal experience with as it just came out. I feel however that it could be very beneficial for users on very low end hardware, or handhelds.  
+[Clean Kills](https://www.nexusmods.com/warhammer40kdarktide/mods/979) - Removes corpses for higher fps. Good for minimum spec PCs. 
 
 [Darktide Mod Autopatcher](https://www.nexusmods.com/warhammer40kdarktide/mods/709) - Automatically patches darktide for mods on startup.
 
@@ -281,7 +285,7 @@ Find and replace the following two lines with `win32_settings.ini`:
 ```
 
 ```
-		streaming_texture_pool_size = 1024
+	streaming_texture_pool_size = 1024
 ```
 # `Launcher.exe.config`
 
@@ -653,5 +657,6 @@ Some attributions may not appear within the body of the document as I have time 
 - [Enemies Improved (Healthbars - Debuffs - Outlines and more)](https://www.nexusmods.com/warhammer40kdarktide/mods/809 ) 
 - [SMOG Cleaner](https://www.nexusmods.com/warhammer40kdarktide/mods/847) - xxBellatrix
 - [# Fps_Cleaner_Memory_FpsDoctor_LuaHeapCleaner](Ihttps://www.nexusmods.com/warhammer40kdarktide/mods/932) - Artem228337
+- [Clean kills](https://www.nexusmods.com/warhammer40kdarktide/mods/979) - marnhorn
 
 Thank you to everyone on this list, without their hard work and dedication this document would not be possible. 
