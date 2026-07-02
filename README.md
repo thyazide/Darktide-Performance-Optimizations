@@ -60,13 +60,13 @@ There are other ways of handling mod support in Darktide, [Vortex](https://www.n
 
 	`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`
 
-	Then double click the `toggAAle_darktide_mods.bat`, this will enable mods. This will need to be repeated after each patch to re-enable mods. Also if you need to disable mods at any time you can double click the batch file again and follow the on screen prompt to disable them. 
+	Then double click the `toggle_darktide_mods.bat`, this will enable mods. This will need to be repeated after each patch to re-enable mods. Also if you need to disable mods at any time you can double click the batch file again and follow the on screen prompt to disable them. 
 
 6. Once mods are enabled, you can extract any mods you wish into the mods folder: 
 
 	`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods\`
 
-	They will be automatically sorted and listed in the game'sWithin the mass layoffs at Epic Games comes stories of the mod settings page. 
+	They will be automatically sorted and listed in the game's of the mod settings page. 
 
 **AML notes:**
 If DML is updated at any point after the initial install is finished you will need to download and extract AML into the mods folder to re-enable AML so mods can be loaded automatically. 
@@ -138,7 +138,7 @@ GC step multiple = 5.0
 
 [Fps_Cleaner_Memory_FpsDoctor_LuaHeapCleaner](https://www.nexusmods.com/warhammer40kdarktide/mods/932) - Yet Another memory leak 'fixing' mod. Please note only one of these types of mods should be used at any one time. 
 
-[Clean Force Blocking](https://www.nexusmods.com/warhammer40kdarktide/mods/104) - Removes Psyker shield vfx.
+[Clean Force Blocking](https://www.nexusmods.com/warhammer40kdarktide/mods/104) - Removes Psyker Shield VFX.
 
 ```
 Remove Blocking Visual Effect = on
@@ -158,7 +158,7 @@ Particle Type = Nurgle Goo
 
 [More Graphics Options - Performance boost](https://www.nexusmods.com/warhammer40kdarktide/mods/236) - Possibly useful for users with minimum spec PCs. 
 
-[Granular Settings](https://www.nexusmods.com/warhammer40kdarktide/mods/38) - Has no configurable settings in mod options. Allows for greater control of mouse speed, and fov. The following was taken and reformatted from the Granular Settings page on nexus mods. 
+[Granular Settings](https://www.nexusmods.com/warhammer40kdarktide/mods/38) - Has no configurable settings in mod options. Allows for greater control of mouse speed, and FOV. The following was taken and reformatted from the Granular Settings page on nexus mods. 
 
 | Setting                              | Values                                                                            |
 | ------------------------------------ | --------------------------------------------------------------------------------- |
@@ -640,7 +640,7 @@ Some attributions may not appear within the body of the document as I have time 
 - [Winrar](https://www.win-rar.com/download.html?&L=0)
 - [Peazip](https://peazip.github.io/)
 - [7-Zip](https://www.7-zip.org/download.html)
-- [Windows native extraction](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5)https://www.nexusmods.com/warhammer40kdarktide/mods/809 
+- [Windows native extraction](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5)
 - [Ark for KDE](https://apps.kde.org/ark/)
 - [File-Roller for Gnome](https://flathub.org/en/apps/org.gnome.FileRoller)
 - [Direct Storage Nupkg](https://www.nuget.org/packages/Microsoft.Direct3D.DirectStorage)AA
@@ -652,11 +652,11 @@ Some attributions may not appear within the body of the document as I have time 
 - [How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial](https://www.wagnardsoft.com/content/How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial) 
 - [DDU Download Page.](https://www.guru3d.com/download/display-driver-uninstaller-download/)
 - [Vizra's Darktide Configs](https://discord.gg/TE6YwF5sWQ)
-- [Darktide Mod Autopatcher](https://www.nexusmods.com/warhammer40kdarktide/mods/709) - manshanko
+- [Darktide Mod Autopatcher](https://www.nexusmods.com/warhammer40kdarktide/mods/709) -manshanko
 - [Digital Foundry](https://www.digitalfoundry.net/features/dlss-4-5-preset-l-tested-how-good-can-a-4k-upscale-from-720p-look)
 - [Enemies Improved (Healthbars - Debuffs - Outlines and more)](https://www.nexusmods.com/warhammer40kdarktide/mods/809 ) 
-- [SMOG Cleaner](https://www.nexusmods.com/warhammer40kdarktide/mods/847) - xxBellatrix
-- [# Fps_Cleaner_Memory_FpsDoctor_LuaHeapCleaner](Ihttps://www.nexusmods.com/warhammer40kdarktide/mods/932) - Artem228337
-- [Clean kills](https://www.nexusmods.com/warhammer40kdarktide/mods/979) - marnhorn
+- [SMOG Cleaner](https://www.nexusmods.com/warhammer40kdarktide/mods/847) -xxBellatrix
+- [# Fps_Cleaner_Memory_FpsDoctor_LuaHeapCleaner](Ihttps://www.nexusmods.com/warhammer40kdarktide/mods/932) -Artem228337
+- [Clean kills](https://www.nexusmods.com/warhammer40kdarktide/mods/979) -marnhorn
 
 Thank you to everyone on this list, without their hard work and dedication this document would not be possible. 
