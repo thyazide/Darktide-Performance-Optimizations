@@ -2,7 +2,7 @@
 
 # Table of Contents
 
-- Mods
+- [Mods](https://github.com/thyazide/Darktide-Performance-Optimizations#mods)
 	- [Forward about mods](https://github.com/thyazide/Darktide-Performance-Optimizations#forward-about-mods)
 	- [Mod installation instructions](https://github.com/thyazide/Darktide-Performance-Optimizations#mod-installation-instructions)
 	- [Keeping mods up to date](https://github.com/thyazide/Darktide-Performance-Optimizations#keeping-mods-up-to-date)
