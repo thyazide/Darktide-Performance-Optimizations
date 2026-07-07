@@ -432,6 +432,14 @@ Open a `Terminal` window, for my purposes I'm using `Konsole` in `KDE`.
 
 After the reboot any title you run and enable `DLSS` in will automatically upgrade to `DLSS 4.5` with the default `Preset M`. More info on Passing additional settings on a per-game basis can be found on the [DXVK Wiki](https://github.com/jp7677/dxvk-nvapi/wiki/Passing-driver-settings). 
 
+# AMD Software: Adrenalin Edition software settings
+## Tessellation Mode setting
+
+1. Open AMD Software: Adrenalin Edition
+2. Click Gaming 
+3. Click Darktide off the list of games
+4. Scroll down to the `Advanced` section
+5. Set `Tessellation Mode` to `Use Application Settings`
 # Enable FSR Redstone 
 
 **Windows:**
