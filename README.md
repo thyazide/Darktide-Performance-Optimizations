@@ -2,20 +2,22 @@
 
 # Table of Contents
 
-- [Forward about mods](https://github.com/thyazide/Darktide-Performance-Optimizations#forward-about-mods)
-- [Mod installation instructions](https://github.com/thyazide/Darktide-Performance-Optimizations#mod-installation-instructions)
-- [Keeping mods up to date](https://github.com/thyazide/Darktide-Performance-Optimizations#keeping-mods-up-to-date)
-- [Commonly used Archive programs](https://github.com/thyazide/Darktide-Performance-Optimizations#commonly-used-archive-programs)
-- [Necessary Mods](https://github.com/thyazide/Darktide-Performance-Optimizations#necessary-mods)
-- [Optional Mods](https://github.com/thyazide/Darktide-Performance-Optimizations/tree/main#optional-mods)
-- [Launcher Skip](https://github.com/thyazide/Darktide-Performance-Optimizations#launcher-skip)
+- Mods
+	- [Forward about mods](https://github.com/thyazide/Darktide-Performance-Optimizations#forward-about-mods)
+	- [Mod installation instructions](https://github.com/thyazide/Darktide-Performance-Optimizations#mod-installation-instructions)
+	- [Keeping mods up to date](https://github.com/thyazide/Darktide-Performance-Optimizations#keeping-mods-up-to-date)
+	- [Commonly used Archive programs](https://github.com/thyazide/Darktide-Performance-Optimizations#commonly-used-archive-programs)
+	- [Necessary Mods](https://github.com/thyazide/Darktide-Performance-Optimizations#necessary-mods)
+	- [Optional Mods](https://github.com/thyazide/Darktide-Performance-Optimizations/tree/main#optional-mods)
+	- [Launcher Skip](https://github.com/thyazide/Darktide-Performance-Optimizations#launcher-skip)
 - [INI & config file changes optimize the game engine](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#ini--config-file-changes-optimize-the-game-engine)
 	- [`settings_common.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#settings_commonini)
 	- [`win32_settings.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#win32_settingsini)
 	- [`Launcher.exe.config`](https://github.com/thyazide/Darktide-Performance-Optimizations#launcherexeconfig)
 - [Increase Nvidia Shader Cache Size](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#increase-nvidia-shader-cache-size)
 - [Nvidia App Settings](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#nvidia-app-settings)
-- [Enable FSR Redstone](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#enable-fsr-redstone)
+- [AMD Software: Adrenalin Edition software settings](https://github.com/thyazide/Darktide-Performance-Optimizations#amd-software-adrenalin-edition-software-settings)
+	- [Enable FSR Redstone](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#enable-fsr-redstone)
 - [In-Game settings](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#in-game-settings)
 - [Direct Storage DLL Update](https://github.com/thyazide/Darktide-Performance-Optimizations#direct-storage-dll-update)
 - [Default settings for edited files](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-for-edited-files)
@@ -24,13 +26,16 @@
 	- [`Launcher.exe.config`](https://github.com/thyazide/Darktide-Performance-Optimizations#launcherexeconfig)
 - [File locations](https://github.com/thyazide/Darktide-Performance-Optimizations#file-locations)
 - [Using DDU to cleanly remove and reinstall your drivers](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#using-ddu-to-cleanly-remove-and-reinstall-your-drivers)
-- [List of attributions](https://github.com/thyazide/Darktide-Performance-Optimizations#list-of-attributions)
-# Forward about mods
+- [List of attributions](https://github.com/thyazide/Darktide-Performance-Optimizations#list-of-attributions)\
 
-Mods are not required, but are highly advisable as they can provide a sizable performance gain over all. You can skip them and go directly to the INI edits and other changes in this document. Though as I advise their use,  instructions for installing/enabling them are front and center. 
-# Mod installation instructions
+# Mods
+## Forward about mods
+
+Mods are not required, but are highly advisable as they can provide a sizable performance gain over all. You can skip them and go directly to the INI edits and other changes in this document. Though as I advise their use, instructions for installing/enabling them are front and center. 
+## Mod installation instructions
 
 These instructions are fairly abstract as the programs you can use to extract the archives and the operating systems individuals choose to use are varied. Though it should be easy enough to follow if you are somewhat familiar with the process of extracting archives. If you have any questions or issue please feel free to contact me either through [Github](https://github.com/thyazide/Darktide-Performance-Optimizations/issues), or via the [Darktide Discord](https://discord.gg/darktide), or the [Darktide Modding Discord](<https://discord.gg/rKYWtaDx4D>).
+￼
 
 There are other ways of handling mod support in Darktide, [Vortex](https://www.nexusmods.com/about/vortex) for example, can be used to install and manage mods, this is simply the way I handle them personally. 
 
@@ -76,10 +81,10 @@ If you are on linux you can use [dtkit-patch](https://github.com/manshanko/dtkit
 
 - [DMF Docs official mod installation guide](https://dmf-docs.darkti.de/#/installing-mods) 
 - [Install Darktide Mods Fast](https://youtu.be/xQtXFlxPiho) - **Video guide** 
-# Keeping mods up to date
+## Keeping mods up to date
 
 If you have opted to create a [Nexus Mods Account](https://users.nexusmods.com/register) your previous downloads will be tracked and tagged with a `check mark` to denote they have been downloaded. They will also display an `Update available` marker if they have been updated. You can then click on them and `download > extract them` to the mods folder, `overwriting the existing files`. You can make a bookmark in your browser [for this page](https://www.nexusmods.com/games/warhammer40kdarktide/mods?timeRange=14&sort=updatedAt). It will show you any mods that have been updated in the last two weeks. This is extremely helpful at times when large game updates are released. It also shows a list of mods that were added to the site within that same period. 
-# Commonly used Archive programs
+## Commonly used Archive programs
 
 - [Winrar](https://www.win-rar.com/download.html?&L=0)
 - [Peazip](https://peazip.github.io/)
@@ -87,7 +92,7 @@ If you have opted to create a [Nexus Mods Account](https://users.nexusmods.com/r
 - [Windows native extraction](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5)
 - [Ark for KDE](https://apps.kde.org/ark/)
 - [File-Roller for Gnome](https://flathub.org/en/apps/org.gnome.FileRoller)
-# Necessary Mods
+## Necessary Mods
 
 [Impact VFX Limiter](https://www.nexusmods.com/warhammer40kdarktide/mods/424) - Allows the user to limit the maximum amount of flesh/armor impact VFX and surface impact VFX that can be played per frame for better performance.  
   
@@ -147,7 +152,7 @@ Remove Push Attack Visual Effect = on
 Remove Blocking Sound Effect = off
 ```
 
-# Optional Mods
+## Optional Mods
 
 [Zealot Fire Particle Swap](https://www.nexusmods.com/warhammer40kdarktide/mods/230) - Allows you to configure the particle effects for Zealot fire grenades to make them distinct from bomber grenades. 
 
@@ -203,7 +208,7 @@ Disable/enable with toggle_dt_mod_autopatch.
 ```
 
 [Enemies Improved (Healthbars - Debuffs - Outlines and more)](https://www.nexusmods.com/warhammer40kdarktide/mods/809 ) - Highly customizable replacement for the visual indicators of debuffs, status effects, health bars of enemies. Along with a host of other nice to have features. You'll need this to replace the VFX removed by Less dot. 
-# Launcher Skip
+## Launcher Skip
 
 [Launcher Skip](https://www.nexusmods.com/warhammer40kdarktide/mods/131) - instructions for usage taken from the nexus mods page, reformatted for clarity, below.
 
@@ -382,7 +387,7 @@ Including a copy of the Launcher.exe.config here in the document as another Linu
 
 ```
 # Increase Nvidia Shader Cache Size 
-
+[AMD Software: Adrenalin Edition software settings](https://github.com/thyazide/Darktide-Performance-Optimizations#amd-software-adrenalin-edition-software-settings)￼
 In some instances increasing the `Nvidia Shader Cache Size` can assist with reducing or eliminating stuttering in games. 
 
 Normally the `Nvidia Control Panel` can be found in the `Windows Control Panel`. If its not there, or not installed you can [grab it from here.](https://apps.microsoft.com/detail/9nf8h0h7wmlt?hl=en-US&gl=US) 
