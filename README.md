@@ -147,7 +147,6 @@ Remove Push Attack Visual Effect = on
 Remove Blocking Sound Effect = off
 ```
 
-[Enemies Improved (Healthbars - Debuffs - Outlines and more)](https://www.nexusmods.com/warhammer40kdarktide/mods/809 ) - Highly customizable replacement for the visual indicators of debuffs, status effects, health bars of enemies. Along with a host of other nice to have features. You'll need this to replace the VFX removed by Less dot. 
 # Optional Mods
 
 [Zealot Fire Particle Swap](https://www.nexusmods.com/warhammer40kdarktide/mods/230) - Allows you to configure the particle effects for Zealot fire grenades to make them distinct from bomber grenades. 
@@ -202,6 +201,8 @@ Uninstall by deleting _dt_mod_autopatch.dll (binaries/plugins/_dt_mod_autopatch.
 
 Disable/enable with toggle_dt_mod_autopatch. 
 ```
+
+[Enemies Improved (Healthbars - Debuffs - Outlines and more)](https://www.nexusmods.com/warhammer40kdarktide/mods/809 ) - Highly customizable replacement for the visual indicators of debuffs, status effects, health bars of enemies. Along with a host of other nice to have features. You'll need this to replace the VFX removed by Less dot. 
 # Launcher Skip
 
 [Launcher Skip](https://www.nexusmods.com/warhammer40kdarktide/mods/131) - instructions for usage taken from the nexus mods page, reformatted for clarity, below.
