@@ -1,3 +1,4 @@
+
 # Darktide Performance Optimizations
 
 # Table of Contents
@@ -17,6 +18,7 @@
 - [Increase Nvidia Shader Cache Size](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#increase-nvidia-shader-cache-size)
 - [Nvidia App Settings](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#nvidia-app-settings)
 - [AMD Software: Adrenalin Edition software settings](https://github.com/thyazide/Darktide-Performance-Optimizations#amd-software-adrenalin-edition-software-settings)
+	- [Tessellation Mode setting](https://github.com/thyazide/Darktide-Performance-Optimizations#tessellation-mode-setting)
 	- [Enable FSR Redstone](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#enable-fsr-redstone)
 - [In-Game settings](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#in-game-settings)
 - [Direct Storage DLL Update](https://github.com/thyazide/Darktide-Performance-Optimizations#direct-storage-dll-update)
@@ -316,7 +318,7 @@ Including a copy of the Launcher.exe.config here in the document as another Linu
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
   <configSections>
-    <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=4.0.0.0, Culture=neutr[Mods](https://github.com/thyazide/Darktide-Performance-Optimizations#mods)￼al, PublicKeyToken=b77a5c561934e089">
       <section name="Launcher.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false"/>
     </sectionGroup>
     <section name="entityFramework" type="System.Data.Entity.Internal.ConfigFile.EntityFrameworkSection, EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false"/>
@@ -380,7 +382,7 @@ Including a copy of the Launcher.exe.config here in the document as another Linu
     <Launcher.Properties.Settings>
       <setting name="MarketingURL" serializeAs="String">
         <value>https://www.2f8a830db8-2d0e-4a55-aced-ef6d0279b1442f.org/</value>
-      </setting>
+      </setting>[Mods](https://github.com/thyazide/Darktide-Performance-Optimizations#mods)￼
     </Launcher.Properties.Settings>
   </userSettings>
 	</configuration>
@@ -445,7 +447,7 @@ After the reboot any title you run and enable `DLSS` in will automatically upgra
 3. Click Darktide off the list of games
 4. Scroll down to the `Advanced` section
 5. Set `Tessellation Mode` to `Use Application Settings`
-# Enable FSR Redstone 
+## Enable FSR Redstone 
 
 **Windows:**
 
