@@ -21,7 +21,6 @@
 	- [Tessellation Mode setting](https://github.com/thyazide/Darktide-Performance-Optimizations#tessellation-mode-setting)
 	- [Enable FSR Redstone](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#enable-fsr-redstone)
 - [In-Game settings](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#in-game-settings)
-- [Direct Storage DLL Update](https://github.com/thyazide/Darktide-Performance-Optimizations#direct-storage-dll-update)
 - [Default settings for edited files](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-for-edited-files)
 	- [`settings_common.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#settings_commonini)
 	- [`win32_settings.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#win32_settingsini-1) 
@@ -509,19 +508,7 @@ Gibbing = on
 Enemy Wounds = on
 Ragdoll Interactions = on
 ```
-# Direct Storage DLL Update
 
-Update the direct storage dll files.
-
-1. Download the [Direct Storage Nupkg](https://www.nuget.org/packages/Microsoft.Direct3D.DirectStorage/1.3.0).
-2. Open it with [Peazip](https://peazip.github.io/index.html).
-3. Inside the archive open `/native/bin/x64/`.
-4. Extract `dstorage.dll` and `dstoragecore.dll` to some where you can locate it later.
-5. Open the darktide binaries folder `*/steam/steamapps/common/Warhammer 40,000 DARKTIDE/binaries/`.
-6. Find `dstoragecore.dll` and `dstorage.dll`, back them up else where in case you wish to undo these changes (or run a [file integrity verification in steam](https://help.steampowered.com/en/faqs/view/0C48-FCBD-DA71-93EB), note this will disable mods, so you will need to re-enable them using the batch file in the root darktide folder  `*/steam/steamapps/common/Warhammer 40,000 DARKTIDE/`).
-7. Copy the `dstoragecore.dll` and `dstorage.dll` files from where you placed them earlier and place them into `*/steam/steamapps/common/Warhammer 40,000 DARKTIDE/binaries/`.
-
-This can be done in Windows or Linux. 
 # Default settings for edited files
 
 # `settings_common.ini` 
