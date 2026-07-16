@@ -95,14 +95,7 @@ If you have opted to create a [Nexus Mods Account](https://users.nexusmods.com/r
 - [File-Roller for Gnome](https://flathub.org/en/apps/org.gnome.FileRoller)
 ## Necessary Mods
 
-[Impact VFX Limiter](https://www.nexusmods.com/warhammer40kdarktide/mods/424) - Allows the user to limit the maximum amount of flesh/armor impact VFX and surface impact VFX that can be played per frame for better performance.  
-  
-Also allows the user to simplify the blood decal casting behavior and the VFX of enemy fire attacks to be more performance friendly.
-
-```
-Maximum impact effect per frame = 2
-Performance Features set to = on
-```
+[VFX Swapper](https://www.nexusmods.com/warhammer40kdarktide/mods/678) - Lots of options for limiting VFX in game, replacement for VFX Limiter. Default options are good, though there is potential for bigger gains by tweaking these settings further. 
 
 [Less Dot](https://www.nexusmods.com/warhammer40kdarktide/mods/521) - This removes effects from enemy characters in-game that chew up a lot of resources thus improving frame rate. More importantly, it keeps framerate stable as large amounts of effects happening simultaneously tanks framerate.
 
@@ -661,5 +654,5 @@ Some attributions may not appear within the body of the document as I have time 
 - [SMOG Cleaner](https://www.nexusmods.com/warhammer40kdarktide/mods/847) -xxBellatrix
 - [# Fps_Cleaner_Memory_FpsDoctor_LuaHeapCleaner](Ihttps://www.nexusmods.com/warhammer40kdarktide/mods/932) -Artem228337
 - [Clean kills](https://www.nexusmods.com/warhammer40kdarktide/mods/979) -marnhorn
-
+- [VFX Swapper](https://www.nexusmods.com/warhammer40kdarktide/mods/678) -tdopz
 Thank you to everyone on this list, without their hard work and dedication this document would not be possible. 
