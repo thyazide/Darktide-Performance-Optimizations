@@ -465,31 +465,6 @@ Open a `Terminal` window, for my purposes I'm using `Konsole` in `KDE`.
 5. Reboot.
 
 After the reboot any title you run and enable `FSR 3.1` in will automatically upgrade to `FSR4/Redstone`.
-
-# Additional Linux Optimizations
-
-These optimizations are for AMD Graphics cards with AMD Processors. Your mileage may vary using these with other processors/cards. 
-
-Current systems specs:
-
-```
-OS: Nobara Linux 44 (KDE Plasma Desktop Edition) x86_64
-Kernel: Linux 7.1.4-200.nobara.fc44.x86_64
-DE: KDE Plasma 6.7.3
-CPU: AMD Ryzen 7 9800X3D (16) @ 5.27 GHz
-GPU: AMD Radeon RX 9070 XT
-Memory: 62.47 GiB
-```
-
-You can use the new `PROTON_VKD3D_LOWLATENCY=1` layer to enable NVIDIA reflex + boost in Darktide. Install `proton-cachyos-11.0-20260702-slr-x86_64_v3`, `proton-cachyos-11.0-20260703-slr-x86_64_v3` or later using protonqt-up or proton plus. Then select the new proton version in steam for your compatibility layer.
-
-Add this to your launch options: 
-
-`FSR4_UPGRADE=1 PROTON_VKD3D_LOWLATENCY=1 DXVK_CONFIG="dxgi.hideAmdGpu=True" DXVK_NVAPI_ALLOW_OTHER_DRIVERS=1 %command%`
-
-In-game enable FSR 4.1.1 in the video options, and on the NVIDIA reflex setting choose reflex + boost. You should see a decent increase in FPS as well as responsiveness.
-
-I would also recommend using something like [Falcond-gui](https://github.com/PikaOS-Linux/falcond), or [sched-ext](https://wiki.cachyos.org/configuration/sched-ext/) to swap schedulers, currently I'm using [cosmos](https://wiki.cachyos.org/configuration/sched-ext/#scx_cosmos) with performance mode on, scheduler mode -> gaming, and vcache mode -> cache. Configuring these settings using Falcond-gui. I'm currently using a 9800x3d processor so if you do not have a vcache enabled processor then the vcache mode may not be accessible. 
 # In-Game settings
 
 **Nvidia:**
