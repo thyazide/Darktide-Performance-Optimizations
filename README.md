@@ -20,6 +20,7 @@
 - [AMD Software: Adrenalin Edition software settings](https://github.com/thyazide/Darktide-Performance-Optimizations#amd-software-adrenalin-edition-software-settings)
 	- [Tessellation Mode setting](https://github.com/thyazide/Darktide-Performance-Optimizations#tessellation-mode-setting)
 	- [Enable FSR Redstone](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#enable-fsr-redstone)
+- [Additional Linux Settings](https://github.com/thyazide/Darktide-Performance-Optimizations#additional-linux-optimizations)
 - [In-Game settings](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#in-game-settings)
 - [Default settings for edited files](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-for-edited-files)
 	- [`settings_common.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#settings_commonini)
