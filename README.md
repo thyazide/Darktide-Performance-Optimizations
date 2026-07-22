@@ -465,7 +465,7 @@ Open a `Terminal` window, for my purposes I'm using `Konsole` in `KDE`.
 
 After the reboot any title you run and enable `FSR 3.1` in will automatically upgrade to `FSR4/Redstone`.
 
-**Additional Linux Optimizations:**
+# Additional Linux Optimizations
 
 These optimizations are for AMD Graphics cards with AMD Processors. Your mileage may vary using these with other processors/cards. 
 
