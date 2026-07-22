@@ -481,7 +481,7 @@ GPU: AMD Radeon RX 9070 XT
 Memory: 62.47 GiB
 ```
 
-You can use the new PROTON_VKD3D_LOWLATENCY=1 layer to enable NVIDIA reflex + boost in Darktide. Install `proton-cachyos-11.0-20260702-slr-x86_64_v3` or `proton-cachyos-11.0-20260703-slr-x86_64_v3` or later using protonqt-up or proton plus. Then select the new proton layer in steam for your compatibility layer.
+You can use the new `PROTON_VKD3D_LOWLATENCY=1` layer to enable NVIDIA reflex + boost in Darktide. Install `proton-cachyos-11.0-20260702-slr-x86_64_v3` or `proton-cachyos-11.0-20260703-slr-x86_64_v3` or later using protonqt-up or proton plus. Then select the new proton layer in steam for your compatibility layer.
 
 Add this to your launch options: 
 
