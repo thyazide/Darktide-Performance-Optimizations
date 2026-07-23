@@ -381,7 +381,7 @@ Including a copy of the Launcher.exe.config here in the document as another Linu
 	</configuration>
 
 ```
-# Increase Nvidia Shad[Additional Linux Optimizations](https://github.com/thyazide/Darktide-Performance-Optimizations#additional-linux-optimizations)￼er Cache Size 
+# Increase Nvidia Shader Cache Size 
 [AMD Software: Adrenalin Edition software settings](https://github.com/thyazide/Darktide-Performance-Optimizations#amd-software-adrenalin-edition-software-settings)￼
 In some instances increasing the `Nvidia Shader Cache Size` can assist with reducing or eliminating stuttering in games. 
 
