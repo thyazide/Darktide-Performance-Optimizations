@@ -96,7 +96,7 @@ If you have opted to create a [Nexus Mods Account](https://users.nexusmods.com/r
 - [File-Roller for Gnome](https://flathub.org/en/apps/org.gnome.FileRoller)
 ## Necessary Mods
 
-[VFX Swapper](https://www.nexusmods.com/warhammer40kdarktide/mods/678) - 
+[VFX Swapper](https://www.nexusmods.com/warhammer40kdarktide/mods/678) - Default options are fine, this limits VFX in-game to help with frame rate and clarity.
 
 [Less Dot](https://www.nexusmods.com/warhammer40kdarktide/mods/521) - This removes effects from enemy characters in-game that chew up a lot of resources thus improving frame rate. More importantly, it keeps framerate stable as large amounts of effects happening simultaneously tanks framerate.
 
@@ -176,8 +176,6 @@ Commands are entered into the system via the chat dialog box.
 **Recommendations:**
 Use the same sensitivity value for all 3 sliders. The game correctly scales sensitivity by the tangent of `FOV/2` by default. This is opposed to many games simply scaling by `FOV/2`. Zoom is the ratio of focal lengths, not fields of view. Scaling sensitivity by the tangent of `FOV/2` properly emulates the ratio of focal lengths.
 
-[VFX Swapper](https://www.nexusmods.com/warhammer40kdarktide/mods/678) - Default options are fine, this limits VFX in-game to help with frame rate and clarity.
-
 [Clean Kills](https://www.nexusmods.com/warhammer40kdarktide/mods/979) - Removes corpses for higher fps. Good for minimum spec PCs. 
 
 [Darktide Mod Autopatcher](https://www.nexusmods.com/warhammer40kdarktide/mods/709) - Automatically patches darktide for mods on startup.
@@ -192,13 +190,12 @@ Use the same sensitivity value for all 3 sliders. The game correctly scales sens
 > 
 >     binaries/plugins/_dt_mod_autopatch.dll
 >     toggle_dt_mod_autopatch.cmd
-
-Install by unpacking the zip into the Darktide folder. When successfully installed toggle_dt_mod_autopatch will be next to toggle_darktide_mods from DML.
-
-Uninstall by deleting _dt_mod_autopatch.dll (binaries/plugins/_dt_mod_autopatch.dll).
-
-Disable/enable with toggle_dt_mod_autopatch. 
-```
+> 
+> Install by unpacking the zip into the Darktide folder. When successfully installed toggle_dt_mod_autopatch will be next to toggle_darktide_mods from DML.
+> 
+> Uninstall by deleting _dt_mod_autopatch.dll (binaries/plugins/_dt_mod_autopatch.dll).
+> 
+> Disable/enable with toggle_dt_mod_autopatch. 
 
 [Enemies Improved (Healthbars - Debuffs - Outlines and more)](https://www.nexusmods.com/warhammer40kdarktide/mods/809 ) - Highly customizable replacement for the visual indicators of debuffs, status effects, health bars of enemies. Along with a host of other nice to have features. You'll need this to replace the VFX removed by Less dot. 
 ## Launcher Skip
