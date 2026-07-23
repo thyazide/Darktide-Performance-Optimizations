@@ -381,7 +381,7 @@ Including a copy of the Launcher.exe.config here in the document as another Linu
 	</configuration>
 
 ```
-# Increase Nvidia Shader Cache Size 
+# Increase Nvidia Shad[Additional Linux Optimizations](https://github.com/thyazide/Darktide-Performance-Optimizations#additional-linux-optimizations)￼er Cache Size 
 [AMD Software: Adrenalin Edition software settings](https://github.com/thyazide/Darktide-Performance-Optimizations#amd-software-adrenalin-edition-software-settings)￼
 In some instances increasing the `Nvidia Shader Cache Size` can assist with reducing or eliminating stuttering in games. 
 
@@ -481,7 +481,7 @@ GPU: AMD Radeon RX 9070 XT
 Memory: 62.47 GiB
 ```
 
-You can use the new `PROTON_USE_OPTISCALER=1` layer that is nested inside proton-cachyos to enable NVIDIA reflex + boost in Darktide. Install `proton-cachyos-11.0-20260703-slr-x86_64_v3` or later using protonqt-up or proton plus. Then select the new proton version in steam for your compatibility layer.
+You can use the new `PROTON_USE_OPTISCALER=1` layer that is nested inside proton-CachyOS to enable NVIDIA Reflex in Darktide that uses the [low_latency_layer.](https://github.com/Korthos-Software/low_latency_layer#low_latency_layer) Install `proton-cachyos-11.0-20260703-slr-x86_64_v3` or later using Protonqt-up or Proton Plus. Then select the new proton version in steam for your compatibility layer.
 
 Add this to your launch options: 
 
@@ -491,7 +491,7 @@ Then launch the game.
 
 We are using `PROTON_FSR4_INDICATOR=1` for proof that the upscaler is still using 4.1.1. Once you are satisfied that things are working correctly in game. You can remove it from the launch options. 
 
-In-game enable FSR 4.1.1 in the video options, and on the NVIDIA reflex setting choose reflex or reflex+boost, [there is no distinction between them](https://github.com/Korthos-Software/low_latency_layer#usage-and-configuration). For me it turned DLSS on in the video options, I just disabled that since we have native FSR 4.1.1 support. Head into the Psykhanium, the character selection screen obscures the FSR watermark. 
+In-game enable FSR 4.1.1 in the video options, and on the NVIDIA Reflex setting choose Reflex or Reflex+Boost, [there is no distinction between them](https://github.com/Korthos-Software/low_latency_layer#usage-and-configuration). For me it turned DLSS on in the video options, I just disabled that since we have native FSR 4.1.1 support. Head into the Psykhanium, the character selection screen obscures the FSR watermark. 
 
 Hit insert to bring up the Optiscaler menu. Configure it like this: 
 
@@ -500,6 +500,8 @@ Hit insert to bring up the Optiscaler menu. Configure it like this:
 You should also be seeing this water mark in the upper left: 
 
 ![FSR 4.1.1 Watermark](images/FSR4.1.1watermark.png)
+
+**Scheduler changes**
 
 I would also recommend using something like [Falcond-gui](https://github.com/PikaOS-Linux/falcond), or [sched-ext](https://wiki.cachyos.org/configuration/sched-ext/) to swap schedulers, currently I'm using [cosmos](https://wiki.cachyos.org/configuration/sched-ext/#scx_cosmos). Configured these settings using Falcond-gui: 
 
