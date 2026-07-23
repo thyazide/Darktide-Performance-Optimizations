@@ -176,9 +176,9 @@ Commands are entered into the system via the chat dialog box.
 **Recommendations:**
 Use the same sensitivity value for all 3 sliders. The game correctly scales sensitivity by the tangent of `FOV/2` by default. This is opposed to many games simply scaling by `FOV/2`. Zoom is the ratio of focal lengths, not fields of view. Scaling sensitivity by the tangent of `FOV/2` properly emulates the ratio of focal lengths.
 
-[VFX Swapper](https://www.nexusmods.com/warhammer40kdarktide/mods/678) - Default options are fine, this limits VFX in-game to help with frame rate and clarity.![Boot Menu](workflow-example-images/01%20-%20Boot%20Menu.png)
+[VFX Swapper](https://www.nexusmods.com/warhammer40kdarktide/mods/678) - Default options are fine, this limits VFX in-game to help with frame rate and clarity.
 
-[Clean Kills](https://www.nexusmods.com/warhammer40kdarktide/mods/979) - Removes corpses for higher fps. Good for minimum spec PCs. ![Boot Menu](workflow-example-images/01%20-%20Boot%20Menu.png)
+[Clean Kills](https://www.nexusmods.com/warhammer40kdarktide/mods/979) - Removes corpses for higher fps. Good for minimum spec PCs. 
 
 [Darktide Mod Autopatcher](https://www.nexusmods.com/warhammer40kdarktide/mods/709) - Automatically patches darktide for mods on startup.
 
