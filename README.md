@@ -182,18 +182,16 @@ Use the same sensitivity value for all 3 sliders. The game correctly scales sens
 
 [Darktide Mod Autopatcher](https://www.nexusmods.com/warhammer40kdarktide/mods/709) - Automatically patches darktide for mods on startup.
 
-```
-Hosted at github.com/manshanko/dt-mod-autopatch﻿
-
-Darktide engine plugin (DLL) that patches Darktide to load mods every time the game starts. Replaces manually running toggle_darktide_mods (dtkit-patch) after updates.
-
-Supports Windows and Linux/Wine.
-
-Contains:
-
-    binaries/plugins/_dt_mod_autopatch.dll
-    toggle_dt_mod_autopatch.cmd
-
+> Hosted at github.com/manshanko/dt-mod-autopatch﻿
+> 
+> Darktide engine plugin (DLL) that patches Darktide to load mods every time the game starts. Replaces manually running toggle_darktide_mods (dtkit-patch) after updates.
+> 
+> Supports Windows and Linux/Wine.
+> 
+> Contains:
+> 
+>     binaries/plugins/_dt_mod_autopatch.dll
+>     toggle_dt_mod_autopatch.cmd
 
 Install by unpacking the zip into the Darktide folder. When successfully installed toggle_dt_mod_autopatch will be next to toggle_darktide_mods from DML.
 
