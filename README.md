@@ -28,7 +28,7 @@
 	- [`Launcher.exe.config`](https://github.com/thyazide/Darktide-Performance-Optimizations#launcherexeconfig)
 - [File locations](https://github.com/thyazide/Darktide-Performance-Optimizations#file-locations)
 - [Using DDU to cleanly remove and reinstall your drivers](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#using-ddu-to-cleanly-remove-and-reinstall-your-drivers)
-- [List of attributions](https://github.com/thyazide/Darktide-Performance-Optimizations#list-of-attributions)\
+- [List of attributions](https://github.com/thyazide/Darktide-Performance-Optimizations#list-of-attributions)
 
 # Mods
 ## Forward about mods
