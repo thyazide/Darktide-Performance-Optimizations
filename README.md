@@ -694,5 +694,3 @@ Some attributions may not appear within the body of the document as I have time 
 - [Clean kills](https://www.nexusmods.com/warhammer40kdarktide/mods/979) -marnhorn
 
 Thank you to everyone on this list, without their hard work and dedication this document would not be possible. 
-
-[^1]: 
