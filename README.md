@@ -464,7 +464,7 @@ Open a `Terminal` window, for my purposes I'm using `Konsole` in `KDE`.
 4. Save an exit the file.
 5. Reboot.
 
-After the reboot any title you run and enable `FSR 3.1` in will automatically upgrade to `FSR4/Redstone`.
+After the reboot any title you run and enable `FSR 3.1` in will automatically upgrade to `FSR4/Redstone`. In Darktides video settings enable `FSR 4.1.1`.
 
 # Additional Linux Optimizations
 
