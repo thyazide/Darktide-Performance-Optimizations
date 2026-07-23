@@ -175,9 +175,9 @@ Commands are entered into the system via the chat dialog box.
 **Recommendations:**
 Use the same sensitivity value for all 3 sliders. The game correctly scales sensitivity by the tangent of `FOV/2` by default. This is opposed to many games simply scaling by `FOV/2`. Zoom is the ratio of focal lengths, not fields of view. Scaling sensitivity by the tangent of `FOV/2` properly emulates the ratio of focal lengths.
 
-[VFX Swapper](https://www.nexusmods.com/warhammer40kdarktide/mods/678) - Default options are fine, this limits VFX in-game to help with frame rate and clarity.
+[VFX Swapper](https://www.nexusmods.com/warhammer40kdarktide/mods/678) - Default options are fine, this limits VFX in-game to help with frame rate and clarity.![Boot Menu](workflow-example-images/01%20-%20Boot%20Menu.png)
 
-[Clean Kills](https://www.nexusmods.com/warhammer40kdarktide/mods/979) - Removes corpses for higher fps. Good for minimum spec PCs. 
+[Clean Kills](https://www.nexusmods.com/warhammer40kdarktide/mods/979) - Removes corpses for higher fps. Good for minimum spec PCs. ![Boot Menu](workflow-example-images/01%20-%20Boot%20Menu.png)
 
 [Darktide Mod Autopatcher](https://www.nexusmods.com/warhammer40kdarktide/mods/709) - Automatically patches darktide for mods on startup.
 
@@ -464,12 +464,52 @@ Open a `Terminal` window, for my purposes I'm using `Konsole` in `KDE`.
 5. Reboot.
 
 After the reboot any title you run and enable `FSR 3.1` in will automatically upgrade to `FSR4/Redstone`.
+
+# Additional Linux Optimizations
+
+These optimizations are for AMD Graphics cards with AMD Processors. Your mileage may vary using these with other processors/cards. 
+
+Current systems specs:
+
+```
+OS: Nobara Linux 44 (KDE Plasma Desktop Edition) x86_64
+Kernel: Linux 7.1.4-200.nobara.fc44.x86_64
+DE: KDE Plasma 6.7.3
+CPU: AMD Ryzen 7 9800X3D (16) @ 5.27 GHz
+GPU: AMD Radeon RX 9070 XT
+Memory: 62.47 GiB
+```
+
+You can use the new `PROTON_USE_OPTISCALER=1` layer that is nested inside proton-cachyos to enable NVIDIA reflex + boost in Darktide. Install `proton-cachyos-11.0-20260703-slr-x86_64_v3` or later using protonqt-up or proton plus. Then select the new proton version in steam for your compatibility layer.
+
+Add this to your launch options: 
+
+`PROTON_USE_OPTISCALER=1 PROTON_FSR4_UPGRADE="4.1.1" PROTON_FSR4_INDICATOR=1 %command%`
+
+Then launch the game. 
+
+We are using `PROTON_FSR4_INDICATOR=1` for proof that the upscaler is still using 4.1.1. Once you are satisfied that things are working correctly in game. You can remove it from the launch options. 
+
+In-game enable FSR 4.1.1 in the video options, and on the NVIDIA reflex setting choose reflex or reflex+boost, [there is no distinction between them](https://github.com/Korthos-Software/low_latency_layer#usage-and-configuration). For me it turned DLSS on in the video options, I just disabled that since we have native FSR 4.1.1 support. Head into the Psykhanium, the character selection screen obscures the FSR watermark. 
+
+Hit insert to bring up the Optiscaler menu. Configure it like this: 
+
+![Optiscaler Menu](images/Optiscaler.png)
+
+You should also be seeing this water mark in the upper left: 
+
+![FSR 4.1.1 Watermark](images/FSR4.1.1watermark.png)
+
+I would also recommend using something like [Falcond-gui](https://github.com/PikaOS-Linux/falcond), or [sched-ext](https://wiki.cachyos.org/configuration/sched-ext/) to swap schedulers, currently I'm using [cosmos](https://wiki.cachyos.org/configuration/sched-ext/#scx_cosmos). Configured these settings using Falcond-gui: 
+
+![Falcond-gui](images/Falcond-darktide-config.png)
+
 # In-Game settings
 
 **Nvidia:**
 Resolution should be set to whatever you use. You can use whatever setting for up-scaling is available, looks best, and provides the best performance for you. `Automatic` will change the internal render resolution dynamically, though it may cause stuttering. I use `performance` at 4K and it runs well and looks good. 
 
-If your card has the option to enable `Nvidia Reflex Low Latency` do so. 
+If your card has the option to enable `Nvidia Reflex+Boost` do so. 
 
 **AMD Radeon:**
 On AMD Radeon Based system enable `FSR 3.1` under the `Performance` section and set it to your desired upscaling setting. I use `Performance` on my 9070XT at 4k and it looks good and runs well. Though I would recommend finding the specific setting that works best for your hardware and has the desired fidelity. 
@@ -656,3 +696,5 @@ Some attributions may not appear within the body of the document as I have time 
 - [Clean kills](https://www.nexusmods.com/warhammer40kdarktide/mods/979) -marnhorn
 
 Thank you to everyone on this list, without their hard work and dedication this document would not be possible. 
+
+[^1]: 
