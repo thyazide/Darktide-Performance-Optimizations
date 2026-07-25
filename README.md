@@ -692,5 +692,9 @@ Some attributions may not appear within the body of the document as I have time 
 - [SMOG Cleaner](https://www.nexusmods.com/warhammer40kdarktide/mods/847) -xxBellatrix
 - [# Fps_Cleaner_Memory_FpsDoctor_LuaHeapCleaner](Ihttps://www.nexusmods.com/warhammer40kdarktide/mods/932) -Artem228337
 - [Clean kills](https://www.nexusmods.com/warhammer40kdarktide/mods/979) -marnhorn
+- [Falcond-gui](https://github.com/PikaOS-Linux/falcond)
+- [sched-ext](https://wiki.cachyos.org/configuration/sched-ext/) 
+- [cosmos](https://wiki.cachyos.org/configuration/sched-ext/#scx_cosmos)****
+- [low_latency_layer.](https://github.com/Korthos-Software/low_latency_layer#low_latency_layer)
 
 Thank you to everyone on this list, without their hard work and dedication this document would not be possible. 
