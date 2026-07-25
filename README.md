@@ -37,7 +37,6 @@ Mods are not required, but are highly advisable as they can provide a sizable pe
 ## Mod installation instructions
 
 These instructions are fairly abstract as the programs you can use to extract the archives and the operating systems individuals choose to use are varied. Though it should be easy enough to follow if you are somewhat familiar with the process of extracting archives. If you have any questions or issue please feel free to contact me either through [Github](https://github.com/thyazide/Darktide-Performance-Optimizations/issues), or via the [Darktide Discord](https://discord.gg/darktide), or the [Darktide Modding Discord](<https://discord.gg/rKYWtaDx4D>).
-￼
 
 There are other ways of handling mod support in Darktide, [Vortex](https://www.nexusmods.com/about/vortex) for example, can be used to install and manage mods, this is simply the way I handle them personally. 
 
