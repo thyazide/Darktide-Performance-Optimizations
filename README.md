@@ -95,6 +95,14 @@ If you have opted to create a [Nexus Mods Account](https://users.nexusmods.com/r
 - [File-Roller for Gnome](https://flathub.org/en/apps/org.gnome.FileRoller)
 ## Necessary Mods
 
+[Impact VFX Limiter](https://www.nexusmods.com/warhammer40kdarktide/mods/424) - Allows the user to limit the maximum amount of flesh/armor impact VFX and surface impact VFX that can be played per frame for better performance.  
+
+Also allows the user to simplify the blood decal casting behavior and the VFX of enemy fire attacks to be more performance friendly.
+
+```
+Set the limiter to 2.
+```  
+
 [VFX Swapper](https://www.nexusmods.com/warhammer40kdarktide/mods/678) - Default options are fine, this limits VFX in-game to help with frame rate and clarity.
 
 [Less Dot](https://www.nexusmods.com/warhammer40kdarktide/mods/521) - This removes effects from enemy characters in-game that chew up a lot of resources thus improving frame rate. More importantly, it keeps framerate stable as large amounts of effects happening simultaneously tanks framerate.
@@ -489,17 +497,17 @@ In-game enable FSR 4.1.1 in the video options, and on the NVIDIA Reflex setting 
 
 Hit insert to bring up the Optiscaler menu. Configure it like this: 
 
-![Optiscaler Menu](images/Optiscaler.png)
+![Optiscaler Menu](Optiscaler.png)
 
 You should also be seeing this water mark in the upper left: 
 
-![FSR 4.1.1 Watermark](images/FSR4.1.1watermark.png)
+![FSR 4.1.1 Watermark](FSR4.1.1watermark.png)
 
 **Scheduler changes**
 
 I would also recommend using something like [Falcond-gui](https://github.com/PikaOS-Linux/falcond), or [sched-ext](https://wiki.cachyos.org/configuration/sched-ext/) to swap schedulers, currently I'm using [cosmos](https://wiki.cachyos.org/configuration/sched-ext/#scx_cosmos). Configured these settings using Falcond-gui: 
 
-![Falcond-gui](images/Falcond-darktide-config.png)
+![Falcond-gui](Falcond-darktide-config.png)
 
 # In-Game settings
 
