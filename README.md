@@ -499,9 +499,15 @@ Hit insert to bring up the Optiscaler menu. Configure it like this:
 
 ![Optiscaler Menu](Optiscaler.png)
 
-You should also be seeing this water mark in the upper left: 
+Open the VRR Frame Cap Calculator and click `Set as FPS Limit` > then click `Apply Limit`. This is important as it helps to properly pace frames going out to your monitor using VRR. 
+
+You should also see this water mark in the upper left (in the Psykhanium): 
 
 ![FSR 4.1.1 Watermark](FSR4.1.1watermark.png)
+
+Once you've confirmed everything is working you can remove `PROTON_FSR4_INDICATOR=1` from your launch options in steam to remove the water mark. 
+
+Also change the `FOV & Camera Values` adjust the `Vert. FOV` to the value you use in game. 
 
 **Scheduler changes**
 
