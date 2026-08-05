@@ -497,13 +497,13 @@ In-game enable FSR 4.1.1 in the video options, and on the NVIDIA Reflex setting 
 
 Hit insert to bring up the Optiscaler menu. Configure it like this: 
 
-![Optiscaler Menu](Optiscaler.png)
+![Optiscaler Menu](/images/Optiscaler.png)
 
 Open the VRR Frame Cap Calculator and click `Set as FPS Limit` > then click `Apply Limit`. This is important as it helps to properly pace frames going out to your monitor using VRR. 
 
 You should also see this water mark in the upper left (in the Psykhanium): 
 
-![FSR 4.1.1 Watermark](FSR4.1.1watermark.png)
+![FSR 4.1.1 Watermark](/images/FSR4.1.1watermark.png)
 
 Once you've confirmed everything is working you can remove `PROTON_FSR4_INDICATOR=1` from your launch options in steam to remove the water mark. 
 
@@ -513,7 +513,7 @@ Also change the `FOV & Camera Values` adjust the `Vert. FOV` to the value you us
 
 I would also recommend using something like [Falcond-gui](https://github.com/PikaOS-Linux/falcond), or [sched-ext](https://wiki.cachyos.org/configuration/sched-ext/) to swap schedulers, currently I'm using [cosmos](https://wiki.cachyos.org/configuration/sched-ext/#scx_cosmos). Configured these settings using Falcond-gui: 
 
-![Falcond-gui](Falcond-darktide-config.png)
+![Falcond-gui](/images/Falcond-darktide-config.png)
 
 # In-Game settings
 
