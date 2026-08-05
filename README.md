@@ -495,7 +495,7 @@ We are using `PROTON_FSR4_INDICATOR=1` for proof that the upscaler is still usin
 
 In-game enable FSR 4.1.1 in the video options, and on the NVIDIA Reflex setting choose Reflex or Reflex+Boost, [there is no distinction between them](https://github.com/Korthos-Software/low_latency_layer#usage-and-configuration). For me it turned DLSS on in the video options, I just disabled that since we have native FSR 4.1.1 support. Head into the Psykhanium, the character selection screen obscures the FSR watermark. 
 
-Hit insert to bring up the Optiscaler menu. Configure it like this: 
+Hit `Insert` to bring up the Optiscaler menu. Configure it like this: 
 
 ![Optiscaler Menu](/images/Optiscaler.png)
 
