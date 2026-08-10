@@ -483,7 +483,7 @@ GPU: AMD Radeon RX 9070 XT
 Memory: 62.47 GiB
 ```
 
-You can use the new `PROTON_USE_OPTISCALER=1` layer that is nested inside proton-CachyOS to enable NVIDIA Reflex in Darktide that uses the [low_latency_layer.](https://github.com/Korthos-Software/low_latency_layer#low_latency_layer) Install `proton-cachyos-11.0-20260703-slr-x86_64_v3` or later using Protonqt-up or Proton Plus. Then select the new proton version in steam for your compatibility layer.
+You can use the new `PROTON_USE_OPTISCALER=1` layer that is nested inside Proton-CachyOS to enable `NVIDIA Reflex` in Darktide that uses the [low_latency_layer.](https://github.com/Korthos-Software/low_latency_layer#low_latency_layer) Install `proton-cachyos-11.0-20260703-slr-x86_64` or later using `Protonqt-up` or `Proton Plus`. Then select the new proton version in steam for your compatibility layer.
 
 Add this to your launch options: 
 
