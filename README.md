@@ -507,11 +507,13 @@ Open a `Terminal` window, for my purposes I'm using `Konsole` in `KDE`.
 
 1. Type `sudo nano /etc/environment`, or copy and paste the command and hit enter. 
 2. Enter your sudo password.
-3. Add a new line `PROTON_FSR4_UPGRADE=1`.
+3. Add a new line `PROTON_FSR4_UPGRADE=1`, or PROTON_FSR4_UPGRADE="4.1.1".
 4. Save an exit the file.
 5. Reboot.
 
-After the reboot any title you run and enable `FSR 3.1` in will automatically upgrade to `FSR4/Redstone`. In Darktides video settings enable `FSR 4.1.1`.
+After the reboot any title you run and enable `FSR 3.1` in will automatically upgrade to `FSR4/Redstone`. In Darktides video settings enable `FSR 4.1.1`. 
+
+There is another way to enable this with out using environtment variables, see the next section for details. 
 
 # Additional Linux Optimizations
 
@@ -520,9 +522,9 @@ These optimizations are for AMD Graphics cards with AMD Processors. Your mileage
 Current systems specs:
 
 ```
-OS: Nobara Linux 44 (KDE Plasma Desktop Edition) x86_64
-Kernel: Linux 7.1.4-200.nobara.fc44.x86_64
-DE: KDE Plasma 6.7.3
+OS: CachyOS x86_64  
+Kernel: Linux 7.1.8-1-cachyos 
+DE: KDE Plasma 6.7.4
 CPU: AMD Ryzen 7 9800X3D (16) @ 5.27 GHz
 GPU: AMD Radeon RX 9070 XT
 Memory: 62.47 GiB
@@ -538,7 +540,7 @@ Then launch the game.
 
 We are using `PROTON_FSR4_INDICATOR=1` for proof that the upscaler is still using 4.1.1. Once you are satisfied that things are working correctly in game. You can remove it from the launch options. 
 
-`PROTON_ENABLE_WAYLAND=1` Will disable steam input and the steam overlay. Disable this if you need to use steam input. The game itself has its own friends list where you can invite people to party, or you can alt+tab to the steam friends list on the desktop to send invites there. This will help increase framerate and 1% lows in game. It cuts xwayland out of the loop which lowers input latency.  
+`PROTON_ENABLE_WAYLAND=1` Will disable steam input and the steam overlay. Remove this if you need to use steam input. The game itself has its own friends list where you can invite people to party, or you can alt+tab to the steam friends list on the desktop to send invites there. This will help increase framerate and 1% lows in game as well as lower latency.
 
 In-game enable FSR 4.1.1 in the video options, and on the NVIDIA Reflex setting choose Reflex or Reflex+Boost, [there is no distinction between them](https://github.com/Korthos-Software/low_latency_layer#usage-and-configuration). For me it turned DLSS on in the video options, I just disabled that since we have native FSR 4.1.1 support. Head into the Psykhanium, the character selection screen obscures the FSR watermark. 
 
