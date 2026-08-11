@@ -7,7 +7,8 @@
 	- [Forward about mods](https://github.com/thyazide/Darktide-Performance-Optimizations#forward-about-mods)
 	- [Mod installation instructions](https://github.com/thyazide/Darktide-Performance-Optimizations#mod-installation-instructions)
 	- [Keeping mods up to date](https://github.com/thyazide/Darktide-Performance-Optimizations#keeping-mods-up-to-date)
-	- [Commonly used Archive programs](https://github.com/thyazide/Darktide-Performance-Optimizations#commonly-used-archive-programs)
+	- [Commonly used Archive programs](https://github.com/thyazide/Darktide-Performance-Optimizations#commonly-used-archive-programs)\
+	- [Config File Importing (optional)](https://github.com/thyazide/Darktide-Performance-Optimizations#config-file-importing-optional)
 	- [Necessary Mods](https://github.com/thyazide/Darktide-Performance-Optimizations#necessary-mods)
 	- [Optional Mods](https://github.com/thyazide/Darktide-Performance-Optimizations/tree/main#optional-mods)
 	- [Launcher Skip](https://github.com/thyazide/Darktide-Performance-Optimizations#launcher-skip)
@@ -93,7 +94,7 @@ If you have opted to create a [Nexus Mods Account](https://users.nexusmods.com/r
 - [Windows native extraction](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5)
 - [Ark for KDE](https://apps.kde.org/ark/)
 - [File-Roller for Gnome](https://flathub.org/en/apps/org.gnome.FileRoller)
-## Config file Importing (optional)
+## Config File Importing (optional)
 
 [Darktide Mod Settings Editor](https://www.nexusmods.com/warhammer40kdarktide/mods/989) - A lightweight, standalone Windows app for editing the mod settings stored in your Fatshark user_settings.config — no more hand-editing SJSON and hoping you didn't break the file.
 
