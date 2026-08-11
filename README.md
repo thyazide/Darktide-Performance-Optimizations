@@ -532,11 +532,13 @@ You can use the new `PROTON_USE_OPTISCALER=1` layer that is nested inside Proton
 
 Add this to your launch options: 
 
-`PROTON_USE_OPTISCALER=1 PROTON_FSR4_UPGRADE="4.1.1" PROTON_FSR4_INDICATOR=1 %command%`
+`PROTON_USE_OPTISCALER=1 PROTON_FSR4_UPGRADE="4.1.1" PROTON_DXVK_LOWLATENCY=1 PROTON_ENABLE_WAYLAND=1 %command%`
 
 Then launch the game. 
 
 We are using `PROTON_FSR4_INDICATOR=1` for proof that the upscaler is still using 4.1.1. Once you are satisfied that things are working correctly in game. You can remove it from the launch options. 
+
+`PROTON_ENABLE_WAYLAND=1` Will disable steam input and the steam overlay. Disable this if you need to use steam input. The game itself has its own friends list where you can invite people to party, or you can alt+tab to the steam friends list on the desktop to send invites there. This will help increase framerate and 1% lows in game. It cuts xwayland out of the loop which lowers input latency.  
 
 In-game enable FSR 4.1.1 in the video options, and on the NVIDIA Reflex setting choose Reflex or Reflex+Boost, [there is no distinction between them](https://github.com/Korthos-Software/low_latency_layer#usage-and-configuration). For me it turned DLSS on in the video options, I just disabled that since we have native FSR 4.1.1 support. Head into the Psykhanium, the character selection screen obscures the FSR watermark. 
 
