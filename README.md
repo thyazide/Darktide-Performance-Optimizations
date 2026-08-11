@@ -534,7 +534,7 @@ You can use the new `PROTON_USE_OPTISCALER=1` layer that is nested inside Proton
 
 Add this to your launch options: 
 
-`PROTON_USE_OPTISCALER=1 PROTON_FSR4_UPGRADE="4.1.1" PROTON_DXVK_LOWLATENCY=1 PROTON_ENABLE_WAYLAND=1 %command%`
+`PROTON_FSR4_INDICATOR=1 PROTON_USE_OPTISCALER=1 PROTON_FSR4_UPGRADE="4.1.1" PROTON_ENABLE_WAYLAND=1 %command%`
 
 Then launch the game. 
 
