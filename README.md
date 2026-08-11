@@ -564,7 +564,7 @@ I would also recommend using something like [Falcond-gui](https://github.com/Pik
 
 ![Falcond-gui](/images/Falcond-darktide-config.png)
 
-If you are on CachyOS you can use Sched-Ext GUI Manager with these options:
+If you are on CachyOS you can use `Sched-Ext GUI Manager` with these options:
 
 ```
 scx_cosmos
