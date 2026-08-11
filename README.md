@@ -93,11 +93,39 @@ If you have opted to create a [Nexus Mods Account](https://users.nexusmods.com/r
 - [Windows native extraction](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5)
 - [Ark for KDE](https://apps.kde.org/ark/)
 - [File-Roller for Gnome](https://flathub.org/en/apps/org.gnome.FileRoller)
+## Config file Importing (optional)
+
+[Darktide Mod Settings Editor](https://www.nexusmods.com/warhammer40kdarktide/mods/989) - A lightweight, standalone Windows app for editing the mod settings stored in your Fatshark user_settings.config — no more hand-editing SJSON and hoping you didn't break the file.
+
+**Usage**
+1. Extract to the darktide folder `*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`
+2. Start the mod editor by opening `DarktideModEditor 989 1.0.1 2026-07-06T18-40Z EGv9eGJBy.exe`
+3. In the upper right click `Open...`
+4. Find the folder `*/users/steamuser/AppData/Roaming/Fatshark/Darktide/` in Windows this is usually located on drive `C:\`
+5. Open the file `user_settings.config`
+6. You should see the left side populate with any mods you have installed that already have confgurations created. You can click through them and make changes. Then save those changes by clicking the `Save` button at the top. 
+7. You can Import settings as well from the settings I've provided here: 
+
+- https://github.com/thyazide/Darktide-Performance-Optimizations/tree/main/modconfigchunks
+
+8. Right click on the .config files on the list and click `Save Link As...` or whatever equivent your browser uses. These instructions are based on Firefox for reference.
+9. Once you have saved the `.config` files you wish to import, go back to the settings editor window and click `Import` then find the `.configs` you saved and import them.
+10. Once you're done editing, click `Save`
+
+I've linked to the specific `.config` files I created for each mod that has one in the mods section as `Config file export` you can right click on them choose `Save Link As...` to download them individually. 
+
+**Linux**
+This works with Wine in Linux as well, you'll need to find your pfx folder for darktide:
+`*/SteamLibrary/steamapps/compatdata/1361210/pfx/drive_c/users/steamuser/AppData/Roaming/Fatshark/Darktide/`
+
+Then follow the usage instructions above. 
 ## Necessary Mods
 
 [Impact VFX Limiter](https://www.nexusmods.com/warhammer40kdarktide/mods/424) - Allows the user to limit the maximum amount of flesh/armor impact VFX and surface impact VFX that can be played per frame for better performance.  
 
 Also allows the user to simplify the blood decal casting behavior and the VFX of enemy fire attacks to be more performance friendly.
+
+- [Config file export](https://github.com/thyazide/Darktide-Performance-Optimizations/blob/main/modconfigchunks/FXlimiter.export.config)
 
 ```
 Set the limiter to 2.
@@ -107,13 +135,19 @@ Set the limiter to 2.
 
 [Less Dot](https://www.nexusmods.com/warhammer40kdarktide/mods/521) - This removes effects from enemy characters in-game that chew up a lot of resources thus improving frame rate. More importantly, it keeps framerate stable as large amounts of effects happening simultaneously tanks framerate.
 
+- [Config file export](https://github.com/thyazide/Darktide-Performance-Optimizations/blob/main/modconfigchunks/LessDoT.export.config) 
+
 ```
 Set all settings to OFF.
 ```
 
 [Clear Smoke](https://www.nexusmods.com/warhammer40kdarktide/mods/517) - Keep default settings. This removes the smoke effect from veteran grenades and replaces it with an area marker.
 
+- [Config file export](https://github.com/thyazide/Darktide-Performance-Optimizations/blob/main/modconfigchunks/clear_smoke.export.config) 
+
 [I Wanna See](https://www.nexusmods.com/warhammer40kdarktide/mods/371) - Removes Psyker bubble fx, but retains the large circle on the ground. Also is able to remove a lot of effects that can hurt performance from the rest of the Psykers kit, fire, lighting etc.
+
+- [Config file export](https://github.com/thyazide/Darktide-Performance-Optimizations/blob/main/modconfigchunks/i_wanna_see.export.config)
 
 I Wanna See
 ```
@@ -136,6 +170,8 @@ Shield AoE Radius (blue) = 255
 
 [Memory Leak Fix](https://www.nexusmods.com/warhammer40kdarktide/mods/406) - Helps by trimming the memory space used by mods to keep it from reaching critical mass as quickly and causing crashing.
 
+- [Config file export](https://github.com/thyazide/Darktide-Performance-Optimizations/blob/main/modconfigchunks/MemLeakFix.export.config)
+
 ```
 GC Pause Time = 1.0
 GC step multiple = 5.0
@@ -143,9 +179,15 @@ GC step multiple = 5.0
 
 [SMOG Cleaner](https://www.nexusmods.com/warhammer40kdarktide/mods/847) - Alternative to Memory Leak Fix, does the same job but in a different way. Considering MLF hasn't been updated since 01/25, this might be a better way moving forward provided it gets better support by the creator. 
 
+- [Config file export](https://github.com/thyazide/Darktide-Performance-Optimizations/blob/main/modconfigchunks/SMOG.export.config)
+
 [Fps_Cleaner_Memory_FpsDoctor_LuaHeapCleaner](https://www.nexusmods.com/warhammer40kdarktide/mods/932) - Yet Another memory leak 'fixing' mod. Please note only one of these types of mods should be used at any one time. 
 
+- [Config file export](https://github.com/thyazide/Darktide-Performance-Optimizations/blob/main/modconfigchunks/FpsDoctor.export.config)
+
 [Clean Force Blocking](https://www.nexusmods.com/warhammer40kdarktide/mods/104) - Removes Psyker Shield VFX.
+
+- [Config file export](https://github.com/thyazide/Darktide-Performance-Optimizations/blob/main/modconfigchunks/CleanForceBlocking.export.config)
 
 ```
 Remove Blocking Visual Effect = on
@@ -205,6 +247,8 @@ Use the same sensitivity value for all 3 sliders. The game correctly scales sens
 > Disable/enable with toggle_dt_mod_autopatch. 
 
 [Enemies Improved (Healthbars - Debuffs - Outlines and more)](https://www.nexusmods.com/warhammer40kdarktide/mods/809 ) - Highly customizable replacement for the visual indicators of debuffs, status effects, health bars of enemies. Along with a host of other nice to have features. You'll need this to replace the VFX removed by Less dot. 
+
+- [Config file export](https://github.com/thyazide/Darktide-Performance-Optimizations/blob/main/modconfigchunks/enemies_improved.export.config)
 ## Launcher Skip
 
 [Launcher Skip](https://www.nexusmods.com/warhammer40kdarktide/mods/131) - instructions for usage taken from the nexus mods page, reformatted for clarity, below.
