@@ -523,8 +523,8 @@ Current systems specs:
 
 
 ```
-OS: CachyOS x86_64  
-Kernel: Linux 7.1.8-1-cachyos 
+OS: CachyOS x86_64
+Kernel: Linux 7.1.8-1-cachyos
 DE: KDE Plasma 6.7.4
 CPU: AMD Ryzen 7 9800X3D (16) @ 5.27 GHz
 GPU: AMD Radeon RX 9070 XT
