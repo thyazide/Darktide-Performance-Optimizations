@@ -542,7 +542,7 @@ You'll have multiple choices for latency reduction using optiscaler:
 
 `Low Latency Layer` is implemeneted directly into the mesa drivers for amd and intel gpus on linux via this command: `ENABLE_LAYER_MESA_ANTI_LAG=1` If this is not in your launch options or environment variables then the layer will be off by default. When not enabled, optiscaler will default to using XeLL. Or you can set the "Force LatencyFlex" setting in optiscaler to use LatencyFlex. I've included screenshots links with the launch options below 
 
-- [Low Latency Layer](Optiscaler-antilag2.png) launch options:
+- [Low Latency Layer](/images/Optiscaler-antilag2.png) launch options:
 ```
 PROTON_FSR4_INDICATOR=1 ENABLE_LAYER_MESA_ANTI_LAG=1 PROTON_USE_OPTISCALER=1 PROTON_FSR4_UPGRADE="4.1.1" PROTON_ENABLE_WAYLAND=1 %command%
 ```
