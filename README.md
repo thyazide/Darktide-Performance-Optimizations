@@ -521,6 +521,7 @@ These optimizations are for AMD Graphics cards with AMD Processors. Your mileage
 
 Current systems specs:
 
+
 ```
 OS: CachyOS x86_64  
 Kernel: Linux 7.1.8-1-cachyos 
@@ -530,33 +531,43 @@ GPU: AMD Radeon RX 9070 XT
 Memory: 62.47 GiB
 ```
 
-You can use the new `PROTON_USE_OPTISCALER=1` layer that is nested inside Proton-CachyOS to enable `NVIDIA Reflex` in Darktide that uses the [low_latency_layer.](https://github.com/Korthos-Software/low_latency_layer#low_latency_layer) Install `proton-cachyos-11.0-20260703-slr-x86_64` or later using `Protonqt-up` or `Proton Plus`. Then select the new proton version in steam for your compatibility layer.
+You can use the new `PROTON_USE_OPTISCALER=1` layer that is nested inside Proton-CachyOS to enable `NVIDIA Reflex` in Darktide. Install `proton-cachyos-11.0-20260703-slr-x86_64` or later using `Protonqt-up` or `Proton Plus`. Then select the new proton version in steam for your compatibility layer.
 
-Add this to your launch options: 
+You'll have multiple choices for latency reduction using optiscaler:
 
-`PROTON_FSR4_INDICATOR=1 ENABLE_LAYER_MESA_ANTI_LAG=1 PROTON_USE_OPTISCALER=1 PROTON_FSR4_UPGRADE="4.1.1" PROTON_ENABLE_WAYLAND=1 %command%`
+- [low_latency_layer](https://github.com/Korthos-Software/low_latency_layer) - A C++23 implicit Vulkan layer that reduces click-to-photon latency by implementing both AMD and NVIDIA's latency reduction technologies.
+- [Xe Low Latency (XeLL)](https://github.com/intel/xess) - Minimizes input lag for a more responsive gaming experience; available on discrete and integrated Intel® Arc™ GPUs, as well as non-Intel GPUs when combined with XeSS-FG.
+- [Latecy Flex](https://github.com/ishitatsuyuki/LatencyFleX) - Vendor agnostic latency reduction middleware. An alternative to NVIDIA Reflex.
 
-Then launch the game. 
 
-We are using `PROTON_FSR4_INDICATOR=1` for proof that the upscaler is still using 4.1.1. Once you are satisfied that things are working correctly in game. You can remove it from the launch options. 
+`Low Latency Layer` is implemeneted directly into the mesa drivers for amd and intel gpus on linux via this command: `ENABLE_LAYER_MESA_ANTI_LAG=1` If this is not in your launch options or environment variables then the layer will be off by default. When not enabled, optiscaler will default to using XeLL. Or you can set the "Force LatencyFlex" setting in optiscaler to use LatencyFlex. I've included screenshots links with the launch options below 
 
-`PROTON_ENABLE_WAYLAND=1` Will disable steam input and the steam overlay. Remove this if you need to use steam input. The game itself has its own friends list where you can invite people to party, or you can alt+tab to the steam friends list on the desktop to send invites there. This will help increase framerate and 1% lows in game as well as lower latency.
+- [Low Latency Layer](Optiscaler-antilag2.png) launch options:
+```
+PROTON_FSR4_INDICATOR=1 ENABLE_LAYER_MESA_ANTI_LAG=1 PROTON_USE_OPTISCALER=1 PROTON_FSR4_UPGRADE="4.1.1" PROTON_ENABLE_WAYLAND=1 %command%
+```
 
-In-game enable FSR 4.1.1 in the video options, and on the NVIDIA Reflex setting choose Reflex. For me it turned DLSS on in the video options, I just disabled that since we have native FSR 4.1.1 support. Head into the Psykhanium, the character selection screen obscures the FSR watermark. 
+- [XeLL](/images/Optiscaler-Xell.png) and [LatencyFlex](/images/Optiscaler-latencyflex.png) launch options: 
+```
+PROTON_FSR4_INDICATOR=1 PROTON_USE_OPTISCALER=1 PROTON_FSR4_UPGRADE="4.1.1" PROTON_ENABLE_WAYLAND=1 %command%
+```
 
-Hit `Insert` to bring up the Optiscaler menu. Configure it like this: 
+For any of the configuration types open the VRR Frame Cap Calculator and click `Set as FPS Limit` then click `Apply Limit`. This is important as it helps to properly pace frames going out to your monitor using VRR. Then save settings at the bottom fo the Optiscaler window. 
 
-![Optiscaler Menu](/images/Optiscaler.png)
+Change the `FOV & Camera Values` adjust the `Vert. FOV` to the value you use in game. 
 
-Open the VRR Frame Cap Calculator and click `Set as FPS Limit` > then click `Apply Limit`. This is important as it helps to properly pace frames going out to your monitor using VRR. 
+`PROTON_ENABLE_WAYLAND=1` Disables steam input and the steam overlay. Remove this if you need to use steam input. The game itself has its own friends list where you can invite people to party, or you can alt+tab to the steam friends list on the desktop to send invites there. This will help increase framerate and 1% lows in game as well as lower latency.
 
-You should also see this water mark in the upper left (in the Psykhanium): 
+**In-Game Video Options:**
+1. Hit Escape 
+2. Open `Options` 
+3. Open `Video` 
+4. Set `Nvidia DLSS` to `OFF` 
+5. Set `Nvidia Reflex Low Latency` to `Enabled + BOOST` 
+6. Set `AMD FSR Upscaling Performance` to whatever level you are comfortable with. I use Performance. 
+7. Set `FSR Upscaling Version` to `4.1.1 *`
 
-![FSR 4.1.1 Watermark](/images/FSR4.1.1watermark.png)
-
-Once you've confirmed everything is working you can remove `PROTON_FSR4_INDICATOR=1` from your launch options in steam to remove the water mark. 
-
-Also change the `FOV & Camera Values` adjust the `Vert. FOV` to the value you use in game. 
+`PROTON_FSR4_INDICATOR=1` Shows proof that the upscaler is using 4.1.1. (using the Psykhanium, or the hub. Once you are satisfied that things are working correctly in game. You can remove it from the launch options. 
 
 **Scheduler changes**
 
