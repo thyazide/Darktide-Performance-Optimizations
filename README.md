@@ -310,16 +310,16 @@ Find and replace the `feedback_streamer_settings` and `streaming_buffer_size` se
 
 ```
 feedback_streamer_settings = {
-    feedback_buffer_size = 4
-    max_age_out_tiles_per_frame = 16 
-    max_streaming_tiles_per_frame = 16 
-    max_texture_pool_size = 1024
-    max_write_feedback_threshold = 0.009
-    min_write_feedback_threshold = 0.005
-    staging_buffer_size = 4
-    threaded_streamer = true
-    tile_age_out_time_ms = 5000
-    tile_staging_buffer_size = 128 
+	feedback_buffer_size = 4
+	max_age_out_tiles_per_frame = 16 
+	max_streaming_tiles_per_frame = 16 
+	max_texture_pool_size = 1024
+	max_write_feedback_threshold = 0.009
+	min_write_feedback_threshold = 0.005
+	staging_buffer_size = 4
+	threaded_streamer = true
+	tile_age_out_time_ms = 5000
+	tile_staging_buffer_size = 128 
 `````
 
 ```
@@ -328,8 +328,8 @@ streaming_max_open_streams = 38
 streaming_texture_pool_size = 1024
 surface_properties = "application_settings/global"
 texture_streamer_settings = {
-    streaming_buffer_size = 128 
-    streaming_texture_pool_size = 1024 
+	streaming_buffer_size = 128 
+	streaming_texture_pool_size = 1024 
 ```
 # `win32_settings.ini`
 
