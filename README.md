@@ -10,7 +10,7 @@
 	- [Commonly used Archive programs](https://github.com/thyazide/Darktide-Performance-Optimizations#commonly-used-archive-programs)\
 	- [Config File Importing (optional)](https://github.com/thyazide/Darktide-Performance-Optimizations#config-file-importing-optional)
 	- [Necessary Mods](https://github.com/thyazide/Darktide-Performance-Optimizations#necessary-mods)
-		- Lua Memory Management 
+		- [Lua Memory Management](https://github.com/thyazide/Darktide-Performance-Optimizations#lua-memory-management)
 	- [Optional Mods](https://github.com/thyazide/Darktide-Performance-Optimizations/tree/main#optional-mods)
 	- [Launcher Skip](https://github.com/thyazide/Darktide-Performance-Optimizations#launcher-skip)
 - [INI & config file changes optimize the game engine](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#ini--config-file-changes-optimize-the-game-engine)
