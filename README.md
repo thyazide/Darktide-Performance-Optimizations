@@ -669,5 +669,6 @@ Some attributions may not appear within the body of the document as I have time 
 - [cosmos](https://wiki.cachyos.org/configuration/sched-ext/#scx_cosmos)
 - [low_latency_layer.](https://github.com/Korthos-Software/low_latency_layer#low_latency_layer)
 - [Darktide Mod Settings Editor](https://www.nexusmods.com/warhammer40kdarktide/mods/989) - iboxful
+- [Tertium Fixes](https://www.nexusmods.com/warhammer40kdarktide/mods/1187) - Chronos
 
 Thank you to everyone on this list, without their hard work and dedication this document would not be possible. 
