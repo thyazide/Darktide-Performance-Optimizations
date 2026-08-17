@@ -77,7 +77,7 @@ There are other ways of handling mod support in Darktide, [Vortex](https://www.n
 
 If DML is updated at any point after the initial install is finished you will need to download and extract AML into the mods folder to re-enable AML so mods can be loaded automatically. 
 
-**Linux/Windows:** 
+**Enable mods automatically after each patch Linux/Windows:** 
 
 If you want to have mods automatically enabled after each update you can use [dtkit-patch](https://www.nexusmods.com/profile/manshanko/mods?gameId=4943) .
 
