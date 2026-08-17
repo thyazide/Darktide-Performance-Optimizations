@@ -76,8 +76,8 @@ There are other ways of handling mod support in Darktide, [Vortex](https://www.n
 **AML notes:**
 If DML is updated at any point after the initial install is finished you will need to download and extract AML into the mods folder to re-enable AML so mods can be loaded automatically. 
 
-**Linux specific:** 
-If you are on linux you can use [dtkit-patch](https://www.nexusmods.com/profile/manshanko/mods?gameId=4943) to enable mods. Extract the archive into the Darktide folder (`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`), make it executable. Then double click it, or run the file from the terminal of your choice to enable mods. Do this after finishing the instructions above for enabling mods.
+**Linux/Windows:** 
+If you want to have mods automatically enabled after each update you can use [dtkit-patch](https://www.nexusmods.com/profile/manshanko/mods?gameId=4943) . Extract the archive into the Darktide folder (`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`), make `toggle_dt_mod_autopatch.cmd` executable if you're using Linux. Then double click `toggle_dt_mod_autopatch.cmd`, or run the file from the terminal of your choice (Linux) to enable mods. Do this after finishing the instructions above for enabling mods.
 
 - [DMF Docs official mod installation guide](https://dmf-docs.darkti.de/#/installing-mods) 
 - [Install Darktide Mods Fast](https://youtu.be/xQtXFlxPiho) - **Video guide** 
