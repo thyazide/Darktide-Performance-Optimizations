@@ -10,7 +10,7 @@
 	- [Commonly used Archive programs](https://github.com/thyazide/Darktide-Performance-Optimizations#commonly-used-archive-programs)\
 	- [Config File Importing (optional)](https://github.com/thyazide/Darktide-Performance-Optimizations#config-file-importing-optional)
 	- [Necessary Mods](https://github.com/thyazide/Darktide-Performance-Optimizations#necessary-mods)
-		- [Lua Memory Management](https://github.com/thyazide/Darktide-Performance-Optimizations#lua-memory-management)
+	- [Lua Memory Management](https://github.com/thyazide/Darktide-Performance-Optimizations#lua-memory-management)
 	- [Optional Mods](https://github.com/thyazide/Darktide-Performance-Optimizations/tree/main#optional-mods)
 	- [Launcher Skip](https://github.com/thyazide/Darktide-Performance-Optimizations#launcher-skip)
 - [INI & config file changes optimize the game engine](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#ini--config-file-changes-optimize-the-game-engine)
@@ -24,10 +24,7 @@
 	- [Enable FSR Redstone](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#enable-fsr-redstone)
 - [Additional Linux Optimizations](https://github.com/thyazide/Darktide-Performance-Optimizations#additional-linux-optimizations)
 - [In-Game settings](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#in-game-settings)
-- [Default settings for edited files](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-for-edited-files)
-	- [`settings_common.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#settings_commonini)
-	- [`win32_settings.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#win32_settingsini-1) 
-	- [`Launcher.exe.config`](https://github.com/thyazide/Darktide-Performance-Optimizations#launcherexeconfig)
+- [Restore defaults for `application_settings`, and `Launcher.exe.config`]([https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-for-edited-files](https://github.com/thyazide/Darktide-Performance-Optimizations#restore-defaults-for-appliactions_settings-and-launcherexeconfig))
 - [File locations](https://github.com/thyazide/Darktide-Performance-Optimizations#file-locations)
 - [Using DDU to cleanly remove and reinstall your drivers](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#using-ddu-to-cleanly-remove-and-reinstall-your-drivers)
 - [List of attributions](https://github.com/thyazide/Darktide-Performance-Optimizations#list-of-attributions)
@@ -563,7 +560,7 @@ Enemy Wounds = on
 Ragdoll Interactions = on
 ```
 
-## Restore defaults for `appliactions_settings`, and `Launcher.exe.config`
+## Restore defaults for `application_settings`, and `Launcher.exe.config`
 
 1. Open your Steam Library 
 2. right-click Warhammer 40,000 Darktide
