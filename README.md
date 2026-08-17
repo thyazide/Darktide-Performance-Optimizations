@@ -358,7 +358,7 @@ Find and replace the `ExeArgs` lines with the settings below:
 
 ```
 <setting name="ExeArgs" serializeAs="String">  
-       <value>--bundle-dir ../bundle --ini settings --lua-heap-mb-size 2048</value>
+		<value>--bundle-dir ../bundle --ini settings --lua-heap-mb-size 2048</value>
 ```
 
 **Linux:**
