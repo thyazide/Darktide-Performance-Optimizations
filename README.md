@@ -190,6 +190,13 @@ Remove Push Attack Visual Effect = on
 Remove Blocking Sound Effect = off
 ```
 
+
+[Enemies Improved (Healthbars - Debuffs - Outlines and more)](https://www.nexusmods.com/warhammer40kdarktide/mods/809 ) - Highly customizable replacement for the visual indicators of debuffs, status effects, health bars of enemies. Along with a host of other nice to have features. You'll need this to replace the VFX removed by Less dot. 
+
+- [Config file export](https://github.com/thyazide/Darktide-Performance-Optimizations/blob/main/modconfigchunks/enemies_improved.export.config)
+
+[Alf's DMF (Mod Settings) Extensions](https://www.nexusmods.com/warhammer40kdarktide/mods/864) - Required for running Enemies Improved. 
+
 ## Lua Memory Management
 
 >There are 4 memory management mods available. The first three listed here are stand alone, pick one of them and install it by itself. The 4th option has fixes for the game which maybe useful and it has its own lua memory managment bundle built in. You can install it and then disable its built in manager, either with my config file export, or by manually disabling it in the mod options menu. Then you can use the fixes, and another one of the first 3 memory management mods together. 
@@ -247,29 +254,6 @@ Commands are entered into the system via the chat dialog box.
 Use the same sensitivity value for all 3 sliders. The game correctly scales sensitivity by the tangent of `FOV/2` by default. This is opposed to many games simply scaling by `FOV/2`. Zoom is the ratio of focal lengths, not fields of view. Scaling sensitivity by the tangent of `FOV/2` properly emulates the ratio of focal lengths.
 
 [Clean Kills](https://www.nexusmods.com/warhammer40kdarktide/mods/979) - Removes corpses for higher fps. Good for minimum spec PCs. 
-
-[Darktide Mod Autopatcher](https://www.nexusmods.com/warhammer40kdarktide/mods/709) - Automatically patches darktide for mods on startup.
-
-> Hosted at github.com/manshanko/dt-mod-autopatch﻿
-> 
-> Darktide engine plugin (DLL) that patches Darktide to load mods every time the game starts. Replaces manually running toggle_darktide_mods (dtkit-patch) after updates.
-> 
-> Supports Windows and Linux/Wine.
-> 
-> Contains:
-> 
->     binaries/plugins/_dt_mod_autopatch.dll
->     toggle_dt_mod_autopatch.cmd
-> 
-> Install by unpacking the zip into the Darktide folder. When successfully installed toggle_dt_mod_autopatch will be next to toggle_darktide_mods from DML.
-> 
-> Uninstall by deleting _dt_mod_autopatch.dll (binaries/plugins/_dt_mod_autopatch.dll).
-> 
-> Disable/enable with toggle_dt_mod_autopatch. 
-
-[Enemies Improved (Healthbars - Debuffs - Outlines and more)](https://www.nexusmods.com/warhammer40kdarktide/mods/809 ) - Highly customizable replacement for the visual indicators of debuffs, status effects, health bars of enemies. Along with a host of other nice to have features. You'll need this to replace the VFX removed by Less dot. 
-
-- [Config file export](https://github.com/thyazide/Darktide-Performance-Optimizations/blob/main/modconfigchunks/enemies_improved.export.config)
 ## Launcher Skip
 
 [Launcher Skip](https://www.nexusmods.com/warhammer40kdarktide/mods/131) - instructions for usage taken from the nexus mods page, reformatted for clarity, below.
@@ -671,7 +655,8 @@ Some attributions may not appear within the body of the document as I have time 
 - [Vizra's Darktide Configs](https://discord.gg/TE6YwF5sWQ)
 - [Darktide Mod Autopatcher](https://www.nexusmods.com/warhammer40kdarktide/mods/709) -manshanko
 - [Digital Foundry](https://www.digitalfoundry.net/features/dlss-4-5-preset-l-tested-how-good-can-a-4k-upscale-from-720p-look)
-- [Enemies Improved (Healthbars - Debuffs - Outlines and more)](https://www.nexusmods.com/warhammer40kdarktide/mods/809 ) 
+- [Alf's DMF (Mod Settings) Extensions](https://www.nexusmods.com/warhammer40kdarktide/mods/864)
+- [Enemies Improved (Healthbars - Debuffs - Outlines and more)](https://www.nexusmods.com/warhammer40kdarktide/mods/809 ) -Alfthebigheaded
 - [SMOG Cleaner](https://www.nexusmods.com/warhammer40kdarktide/mods/847) -xxBellatrix
 - [Fps_Cleaner_Memory_FpsDoctor_LuaHeapCleaner](https://www.nexusmods.com/warhammer40kdarktide/mods/932) -Artem228337
 - [Clean kills](https://www.nexusmods.com/warhammer40kdarktide/mods/979) -marnhorn
@@ -680,6 +665,6 @@ Some attributions may not appear within the body of the document as I have time 
 - [cosmos](https://wiki.cachyos.org/configuration/sched-ext/#scx_cosmos)
 - [low_latency_layer.](https://github.com/Korthos-Software/low_latency_layer#low_latency_layer)
 - [Darktide Mod Settings Editor](https://www.nexusmods.com/warhammer40kdarktide/mods/989) - iboxful
-- [Tertium Fixes](https://www.nexusmods.com/warhammer40kdarktide/mods/1187) - Chronos
+- [Tertium Fixes](https://www.nexusmods.com/warhammer40kdarktide/mods/1187) -Chronos
 
 Thank you to everyone on this list, without their hard work and dedication this document would not be possible. 
