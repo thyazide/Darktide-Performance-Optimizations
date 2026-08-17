@@ -24,7 +24,7 @@
 	- [Enable FSR Redstone](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#enable-fsr-redstone)
 - [Additional Linux Optimizations](https://github.com/thyazide/Darktide-Performance-Optimizations#additional-linux-optimizations)
 - [In-Game settings](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#in-game-settings)
-- [Restore defaults for `application_settings`, and `Launcher.exe.config`]([https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-for-edited-files](https://github.com/thyazide/Darktide-Performance-Optimizations#restore-defaults-for-appliactions_settings-and-launcherexeconfig))
+- [Restore defaults for `application_settings`, and `Launcher.exe.config`](https://github.com/thyazide/Darktide-Performance-Optimizations#restore-defaults-for-appliactions_settings-and-launcherexeconfig)
 - [File locations](https://github.com/thyazide/Darktide-Performance-Optimizations#file-locations)
 - [Using DDU to cleanly remove and reinstall your drivers](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#using-ddu-to-cleanly-remove-and-reinstall-your-drivers)
 - [List of attributions](https://github.com/thyazide/Darktide-Performance-Optimizations#list-of-attributions)
