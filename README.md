@@ -585,7 +585,7 @@ Darktide base folder:
 *\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\
 ```
 - Default installation folder for Steam.  
-- Location of `toggle_darktide_mods.bat` and `dtkit-patch`
+- Location of `toggle_darktide_mods.bat` and `toggle_dt_mod_autopatch.cmd`
 
 Darktide Launcher folder: 
 
