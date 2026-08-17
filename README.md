@@ -120,7 +120,7 @@ If you have opted to create a [Nexus Mods Account](https://users.nexusmods.com/r
 
 8. Right click on the .config files on the list and click `Save Link As...` or whatever equivent your browser uses. These instructions are based on Firefox for reference.
 9. Once you have saved the `.config` files you wish to import, go back to the settings editor window and click `Import` then find the `.configs` you saved and import them.
-10. Once you're done editing, click `Save`
+10. Once you're done editing/importing, click `Save`
 
 I've linked to the specific `.config` files I created for each mod that has one in the mods section as `Config file export` you can right click on them choose `Save Link As...` to download them individually. 
 
