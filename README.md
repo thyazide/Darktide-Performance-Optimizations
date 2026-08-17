@@ -190,7 +190,7 @@ GC step multiple = 5.0
 
 This is effectivily the 4th of the memory leak cleaning mods. Though this one provides a lot of fixes for other things. You can simply run it by itself, but if you would like to run this in conjunction with one of the other lua memory mods above you can do so by disabling its in-built lua heap cleaning feature. My config file export for this mod has the lua heap cleaning disabled as I use one of the other listed mods. 
 
--[Config file export]()
+-[Config file export](https://github.com/thyazide/Darktide-Performance-Optimizations/blob/main/modconfigchunks/TertiumFixes.export.config)
 
 [Clean Force Blocking](https://www.nexusmods.com/warhammer40kdarktide/mods/104) - Removes Psyker Shield VFX.
 
