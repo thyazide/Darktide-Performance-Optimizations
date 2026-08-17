@@ -10,6 +10,7 @@
 	- [Commonly used Archive programs](https://github.com/thyazide/Darktide-Performance-Optimizations#commonly-used-archive-programs)\
 	- [Config File Importing (optional)](https://github.com/thyazide/Darktide-Performance-Optimizations#config-file-importing-optional)
 	- [Necessary Mods](https://github.com/thyazide/Darktide-Performance-Optimizations#necessary-mods)
+		- Lua Memory Management 
 	- [Optional Mods](https://github.com/thyazide/Darktide-Performance-Optimizations/tree/main#optional-mods)
 	- [Launcher Skip](https://github.com/thyazide/Darktide-Performance-Optimizations#launcher-skip)
 - [INI & config file changes optimize the game engine](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#ini--config-file-changes-optimize-the-game-engine)
@@ -169,6 +170,22 @@ Shield AoE Radius (blue) = 255
 <display_shield_health> = on
 ```
 
+[Clean Force Blocking](https://www.nexusmods.com/warhammer40kdarktide/mods/104) - Removes Psyker Shield VFX.
+
+- [Config file export](https://github.com/thyazide/Darktide-Performance-Optimizations/blob/main/modconfigchunks/CleanForceBlocking.export.config)
+
+```
+Remove Blocking Visual Effect = on
+Remove Pushing Visual Effect = on
+Remove Push Attack Visual Effect = on 
+Remove Blocking Sound Effect = off
+```
+
+# Lua Memory Management
+
+>There are 4 memory management mods available. The first three listed here are stand alone, pick one of them and install it by itself. The 4th option has fixes for the game which maybe useful and it has its own lua memory managment bundle built in. You can install it and then disable its built in manager, either with my config file export, or by manually disabling it in the mod options menu. Then you can use the fixes, and another one of the first 3 memory management mods together. 
+
+
 [Memory Leak Fix](https://www.nexusmods.com/warhammer40kdarktide/mods/406) - Helps by trimming the memory space used by mods to keep it from reaching critical mass as quickly and causing crashing.
 
 - [Config file export](https://github.com/thyazide/Darktide-Performance-Optimizations/blob/main/modconfigchunks/MemLeakFix.export.config)
@@ -188,21 +205,9 @@ GC step multiple = 5.0
 
 [Tertium Fixes](https://www.nexusmods.com/warhammer40kdarktide/mods/1187)- Client-side fixes for the problems that kept getting in the way: stuck menus, missed inputs, wrong HUD and talent info, leaked audio and effects, stale buff state, and avoidable Lua memory pressure. No balance changes or reduced visual/audio quality.
 
-This is effectivily the 4th of the memory leak cleaning mods. Though this one provides a lot of fixes for other things. You can simply run it by itself, but if you would like to run this in conjunction with one of the other lua memory mods above you can do so by disabling its in-built lua heap cleaning feature. My config file export for this mod has the lua heap cleaning disabled as I use one of the other listed mods. 
+>This is effectivily the 4th of the memory leak cleaning mods. Though this one provides a lot of fixes for other things. You can simply run it by itself, but if you would like to run this in conjunction with one of the other lua memory mods above you can do so by disabling its in-built lua heap cleaning feature. My config file export for this mod has the lua heap cleaning disabled as I use one of the other listed mods. 
 
--[Config file export](https://github.com/thyazide/Darktide-Performance-Optimizations/blob/main/modconfigchunks/TertiumFixes.export.config)
-
-[Clean Force Blocking](https://www.nexusmods.com/warhammer40kdarktide/mods/104) - Removes Psyker Shield VFX.
-
-- [Config file export](https://github.com/thyazide/Darktide-Performance-Optimizations/blob/main/modconfigchunks/CleanForceBlocking.export.config)
-
-```
-Remove Blocking Visual Effect = on
-Remove Pushing Visual Effect = on
-Remove Push Attack Visual Effect = on 
-Remove Blocking Sound Effect = off
-```
-
+- [Config file export](https://github.com/thyazide/Darktide-Performance-Optimizations/blob/main/modconfigchunks/TertiumFixes.export.config)
 ## Optional Mods
 
 [Zealot Fire Particle Swap](https://www.nexusmods.com/warhammer40kdarktide/mods/230) - Allows you to configure the particle effects for Zealot fire grenades to make them distinct from bomber grenades. 
