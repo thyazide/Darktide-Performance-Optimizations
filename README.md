@@ -203,7 +203,7 @@ GC step multiple = 5.0
 
 [Tertium Fixes](https://www.nexusmods.com/warhammer40kdarktide/mods/1187)- Client-side fixes for the problems that kept getting in the way: stuck menus, missed inputs, wrong HUD and talent info, leaked audio and effects, stale buff state, and avoidable Lua memory pressure. No balance changes or reduced visual/audio quality.
 
->This is effectivily the 4th of the memory leak cleaning mods. Though this one provides a lot of fixes for other things. You can simply run it by itself, but if you would like to run this in conjunction with one of the other lua memory mods above you can do so by disabling its in-built lua heap cleaning feature. My config file export for this mod has the lua heap cleaning disabled as I use one of the other listed mods. 
+>This is the 4th of the memory leak cleaning mods. Though this one provides a lot of fixes for other things. You can simply run it by itself, but if you would like to run this in conjunction with one of the other lua memory mods above you can do so by disabling its in-built lua heap cleaning feature. My config file export for this mod has the lua heap cleaning disabled as I use one of the other listed mods. 
 
 - [Config file export](https://github.com/thyazide/Darktide-Performance-Optimizations/blob/main/modconfigchunks/TertiumFixes.export.config)
 ## Optional Mods
