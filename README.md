@@ -114,6 +114,7 @@ If you have opted to create a [Nexus Mods Account](https://users.nexusmods.com/r
 I've linked to the specific `.config` files I created for each mod that has one in the mods section as `Config file export` you can right click on them choose `Save Link As...` to download them individually. 
 
 **Linux**
+
 This works with Wine in Linux as well, you'll need to find your pfx folder for darktide:
 `*/SteamLibrary/steamapps/compatdata/1361210/pfx/drive_c/users/steamuser/AppData/Roaming/Fatshark/Darktide/`
 
@@ -178,7 +179,7 @@ Remove Push Attack Visual Effect = on
 Remove Blocking Sound Effect = off
 ```
 
-# Lua Memory Management
+## Lua Memory Management
 
 >There are 4 memory management mods available. The first three listed here are stand alone, pick one of them and install it by itself. The 4th option has fixes for the game which maybe useful and it has its own lua memory managment bundle built in. You can install it and then disable its built in manager, either with my config file export, or by manually disabling it in the mod options menu. Then you can use the fixes, and another one of the first 3 memory management mods together. 
 
@@ -475,7 +476,6 @@ You'll have multiple choices for latency reduction using optiscaler:
 - [low_latency_layer](https://github.com/Korthos-Software/low_latency_layer) - A C++23 implicit Vulkan layer that reduces click-to-photon latency by implementing both AMD and NVIDIA's latency reduction technologies.
 - [Xe Low Latency (XeLL)](https://github.com/intel/xess) - Minimizes input lag for a more responsive gaming experience; available on discrete and integrated Intel® Arc™ GPUs, as well as non-Intel GPUs when combined with XeSS-FG.
 - [Latecy Flex](https://github.com/ishitatsuyuki/LatencyFleX) - Vendor agnostic latency reduction middleware. An alternative to NVIDIA Reflex.
-
 
 `Low Latency Layer` is implemeneted directly into the mesa drivers for amd and intel gpus on linux via this command: `ENABLE_LAYER_MESA_ANTI_LAG=1` If this is not in your launch options or environment variables then the layer will be off by default. When not enabled, optiscaler will default to using XeLL. Or you can set the "Force LatencyFlex" setting in optiscaler to use LatencyFlex. I've included screenshots links with the launch options below 
 
