@@ -77,7 +77,7 @@ There are other ways of handling mod support in Darktide, [Vortex](https://www.n
 If DML is updated at any point after the initial install is finished you will need to download and extract AML into the mods folder to re-enable AML so mods can be loaded automatically. 
 
 **Linux specific:** 
-If you are on linux you can use [dtkit-patch](https://github.com/manshanko/dtkit-patch) to enable mods. Extract the archive into the Darktide folder (`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`), make it executable. Then double click it, or run the file from the terminal of your choice to enable mods. Do this after finishing the instructions above for enabling mods.
+If you are on linux you can use [dtkit-patch](https://www.nexusmods.com/profile/manshanko/mods?gameId=4943) to enable mods. Extract the archive into the Darktide folder (`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`), make it executable. Then double click it, or run the file from the terminal of your choice to enable mods. Do this after finishing the instructions above for enabling mods.
 
 - [DMF Docs official mod installation guide](https://dmf-docs.darkti.de/#/installing-mods) 
 - [Install Darktide Mods Fast](https://youtu.be/xQtXFlxPiho) - **Video guide** 
@@ -650,7 +650,7 @@ Some attributions may not appear within the body of the document as I have time 
 - [Ark for KDE](https://apps.kde.org/ark/)
 - [File-Roller for Gnome](https://flathub.org/en/apps/org.gnome.FileRoller)
 - [Direct Storage Nupkg](https://www.nuget.org/packages/Microsoft.Direct3D.DirectStorage)
-- [dtkit-patch](https://github.com/manshanko/dtkit-patch) - manshanko
+- [dtkit-patch](https://www.nexusmods.com/profile/manshanko/mods?gameId=4943) - manshanko
 - [How to Enable Dlss 4.5 - Huge Visual Upgrade](https://www.youtube.com/watch?v=1lAMbO0saAw) -Benchmark Boy
 - [VFX Swapper](https://www.nexusmods.com/warhammer40kdarktide/mods/678) -tdopz, with original mod credit going to leerH
 - [NoCorpses](https://www.nexusmods.com/warhammer40kdarktide/mods/689) -7878949696
