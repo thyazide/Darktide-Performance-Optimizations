@@ -17,7 +17,7 @@
 	- [`settings_common.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#settings_commonini)
 	- [`win32_settings.ini`](https://github.com/thyazide/Darktide-Performance-Optimizations#win32_settingsini)
 	- [`Launcher.exe.config`](https://github.com/thyazide/Darktide-Performance-Optimizations#launcherexeconfig)
--  Shader cache clear and rebuild
+-  [Shader cache clear and rebuild](https://github.com/thyazide/Darktide-Performance-Optimizations#shader-cache-clear-and-rebuild)
 - [Increase Nvidia Shader Cache Size](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#increase-nvidia-shader-cache-size)
 - [Nvidia App Settings](https://github.com/thyazide/Darktide-Performance-Optimizations?tab=readme-ov-file#nvidia-app-settings)
 - [AMD Software: Adrenalin Edition software settings](https://github.com/thyazide/Darktide-Performance-Optimizations#amd-software-adrenalin-edition-software-settings)
@@ -380,7 +380,6 @@ At times new shaders are added (Hivescum did this) or crashes might cause the ca
 	- If you are using [Launcher Skip](https://github.com/thyazide/Darktide-Performance-Optimizations#launcher-skip) in Windows, swap back to original launcher, or run verify to restore original launcher, then run launcher. 
 
 # Increase Nvidia Shader Cache Size 
-[AMD Software: Adrenalin Edition software settings](https://github.com/thyazide/Darktide-Performance-Optimizations#amd-software-adrenalin-edition-software-settings)￼
 In some instances increasing the `Nvidia Shader Cache Size` can assist with reducing or eliminating stuttering in games. 
 
 Normally the `Nvidia Control Panel` can be found in the `Windows Control Panel`. If its not there, or not installed you can [grab it from here.](https://apps.microsoft.com/detail/9nf8h0h7wmlt?hl=en-US&gl=US) 
