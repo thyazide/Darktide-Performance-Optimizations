@@ -380,20 +380,20 @@ At times new shaders are added (Hivescum did this) or crashes might cause the ca
 	- If you are using [Launcher Skip](https://github.com/thyazide/Darktide-Performance-Optimizations#launcher-skip) in Windows, swap back to original launcher, or run verify to restore original launcher, then run launcher. 
 
 # Increase Nvidia Shader Cache Size 
-In some instances increasing the `Nvidia Shader Cache Size` can assist with reducing or eliminating stuttering in games. 
+In some instances increasing the `Nvidia Shader Cache Size` can assist with reducing or eliminating stuttering in games. Nvidia recently moved away from the Nvidia Control Panel. This section needs to be updated. Should be completed soon. 
 
-Normally the `Nvidia Control Panel` can be found in the `Windows Control Panel`. If its not there, or not installed you can [grab it from here.](https://apps.microsoft.com/detail/9nf8h0h7wmlt?hl=en-US&gl=US) 
+~~Normally the `Nvidia Control Panel` can be found in the `Windows Control Panel`. If its not there, or not installed you can [grab it from here.](https://apps.microsoft.com/detail/9nf8h0h7wmlt?hl=en-US&gl=US)~~ 
 
-1. Right Click the `Windows Desktop`. 
-2. Click `Show more options`.
-3. Click `Nvidia Control Panel`. 
-4. Click `Manage 3D settings` on the left of the `Nvidia Control Panel` window.
-5. On the right Click on the `Global Settings` tab.
-6. Below in the settings section find `Shader Cache Size`.
-7. On the right change the setting to `100GB`. 
-8. Click `Apply`.
-9. Exit the `Nvidia Control Panel`.
-10. Reboot.
+1. ~~Right Click the `Windows Desktop`.~~ 
+2. ~~Click `Show more options`.~~
+3. ~~Click `Nvidia Control Panel`.~~ 
+4. ~~Click `Manage 3D settings` on the left of the `Nvidia Control Panel` window.~~
+5. ~~On the right Click on the `Global Settings` tab.~~
+6. ~~Below in the settings section find `Shader Cache Size`.~~
+7. ~~On the right change the setting to `100GB`.~~ 
+8. ~~Click `Apply`.~~
+9. ~~Exit the `Nvidia Control Panel`.~~
+10. ~~Reboot.~~
 
 Once enabled this will increase the amount of disk space that can be used to store shaders created/used by games for the Nvidia Drivers. It won't take up the whole `100GB` of storage space at once, but will only trim unused shaders once the cache hits the `100GB` limit. This should keep games from stuttering when loading shaders as the drivers are not having to re-cache them after each run of a different title. 
 # Nvidia App Settings
