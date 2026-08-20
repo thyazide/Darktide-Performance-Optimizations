@@ -381,7 +381,7 @@ At times new shaders are added (Hivescum did this) or crashes might cause the ca
 
 # Increase Nvidia Shader Cache Size 
 
-In some instances increasing the `Nvidia Shader Cache Size` can assist with reducing or eliminating stuttering in games. Nvidia recently moved away from the Nvidia Control Panel. This section needs to be updated. Should be completed soon. 
+In some instances increasing the `Nvidia Shader Cache Size` can assist with reducing or eliminating stuttering in games. 
 
 1. Open the Nvidia App
 2. Click Graphics on the left
