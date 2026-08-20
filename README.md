@@ -380,22 +380,20 @@ At times new shaders are added (Hivescum did this) or crashes might cause the ca
 	- If you are using [Launcher Skip](https://github.com/thyazide/Darktide-Performance-Optimizations#launcher-skip) in Windows, swap back to original launcher, or run verify to restore original launcher, then run launcher. 
 
 # Increase Nvidia Shader Cache Size 
+
 In some instances increasing the `Nvidia Shader Cache Size` can assist with reducing or eliminating stuttering in games. Nvidia recently moved away from the Nvidia Control Panel. This section needs to be updated. Should be completed soon. 
 
-~~Normally the `Nvidia Control Panel` can be found in the `Windows Control Panel`. If its not there, or not installed you can [grab it from here.](https://apps.microsoft.com/detail/9nf8h0h7wmlt?hl=en-US&gl=US)~~ 
+1. Open the Nvidia App
+2. Click Graphics on the left
+3. Click Global settings at the top of the page
+4. Click Shader Cache on the list, you may need to scroll down to get to it
+5. Set Cache Size with the drop down to 100gb or unlimited 
+6. Click apply
 
-1. ~~Right Click the `Windows Desktop`.~~ 
-2. ~~Click `Show more options`.~~
-3. ~~Click `Nvidia Control Panel`.~~ 
-4. ~~Click `Manage 3D settings` on the left of the `Nvidia Control Panel` window.~~
-5. ~~On the right Click on the `Global Settings` tab.~~
-6. ~~Below in the settings section find `Shader Cache Size`.~~
-7. ~~On the right change the setting to `100GB`.~~ 
-8. ~~Click `Apply`.~~
-9. ~~Exit the `Nvidia Control Panel`.~~
-10. ~~Reboot.~~
+Once enabled this will increase the amount of disk space that can be used to store shaders created/used by games for the Nvidia Drivers. 
 
-Once enabled this will increase the amount of disk space that can be used to store shaders created/used by games for the Nvidia Drivers. It won't take up the whole `100GB` of storage space at once, but will only trim unused shaders once the cache hits the `100GB` limit. This should keep games from stuttering when loading shaders as the drivers are not having to re-cache them after each run of a different title. 
+You can also enable precompiling shaders this is similiar to the shader compliation that happens in steam. Shaders for darktide are compiled by the launcher and saved. Its necessary to enable this unless you want it turned on for other games. 
+
 # Nvidia App Settings
 
 The introduction of DLSS 4.5 cause FPS loss for GPUs below the 5000 series as it contains FP8 calculations. Those calculations don't run as efficiently on older Nvidia GPUs. Sticking to the older 4.0 model, `PRESET K`, if your card is below the 5000 series. 
