@@ -80,7 +80,7 @@ If DML is updated at any point after the initial install is finished you will ne
 
 **Enable mods automatically after each patch Linux/Windows:** 
 
-If you want to have mods automatically enabled after each update you can use [dtkit-patch](https://www.nexusmods.com/profile/manshanko/mods?gameId=4943) .
+If you want to have mods automatically enabled after each update you can use [dt-mod-autopatch](https://www.nexusmods.com/warhammer40kdarktide/mods/709).
 
 1. Extract the archive into the Darktide folder:
 	 
