@@ -7,7 +7,7 @@
 	- [Forward about mods](https://github.com/thyazide/Darktide-Performance-Optimizations#forward-about-mods)
 	- [Mod installation instructions](https://github.com/thyazide/Darktide-Performance-Optimizations#mod-installation-instructions)
 	- [Keeping mods up to date](https://github.com/thyazide/Darktide-Performance-Optimizations#keeping-mods-up-to-date)
-	- [Commonly used Archive programs](https://github.com/thyazide/Darktide-Performance-Optimizations#commonly-used-archive-programs)\
+	- [Commonly used Archive programs](https://github.com/thyazide/Darktide-Performance-Optimizations#commonly-used-archive-programs)
 	- [Config File Importing (optional)](https://github.com/thyazide/Darktide-Performance-Optimizations#config-file-importing-optional)
 	- [Necessary Mods](https://github.com/thyazide/Darktide-Performance-Optimizations#necessary-mods)
 	- [Lua Memory Management](https://github.com/thyazide/Darktide-Performance-Optimizations#lua-memory-management)
