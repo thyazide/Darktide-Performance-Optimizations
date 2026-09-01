@@ -7,7 +7,7 @@
 	- [Forward about mods](https://github.com/thyazide/Darktide-Performance-Optimizations#forward-about-mods)
 	- [Mod installation instructions](https://github.com/thyazide/Darktide-Performance-Optimizations#mod-installation-instructions)
 	- [Keeping mods up to date](https://github.com/thyazide/Darktide-Performance-Optimizations#keeping-mods-up-to-date)
-	- [Commonly used Archive programs](https://github.com/thyazide/Darktide-Performance-Optimizations#commonly-used-archive-programs)
+	- [Commonly used Archive programs](https://github.com/thyazide/Darktide-Performance-Optimizations#commonly-used-archive-programs)\
 	- [Config File Importing (optional)](https://github.com/thyazide/Darktide-Performance-Optimizations#config-file-importing-optional)
 	- [Necessary Mods](https://github.com/thyazide/Darktide-Performance-Optimizations#necessary-mods)
 	- [Lua Memory Management](https://github.com/thyazide/Darktide-Performance-Optimizations#lua-memory-management)
@@ -80,7 +80,7 @@ If DML is updated at any point after the initial install is finished you will ne
 
 **Enable mods automatically after each patch Linux/Windows:** 
 
-If you want to have mods automatically enabled after each update you can use [dt-mod-autopatch](https://www.nexusmods.com/warhammer40kdarktide/mods/709).
+If you want to have mods automatically enabled after each update you can use [dtkit-patch](https://www.nexusmods.com/profile/manshanko/mods?gameId=4943) .
 
 1. Extract the archive into the Darktide folder:
 	 
@@ -212,9 +212,11 @@ GC Pause Time = 1.0
 GC step multiple = 5.0
 ```
 
-[SMOG Cleaner](https://www.nexusmods.com/warhammer40kdarktide/mods/847) - Alternative to Memory Leak Fix, does the same job but in a different way. Considering MLF hasn't been updated since 01/25, this might be a better way moving forward provided it gets better support by the creator. 
+~~[SMOG Cleaner](https://www.nexusmods.com/warhammer40kdarktide/mods/847) - Alternative to Memory Leak Fix, does the same job but in a different way. Considering MLF hasn't been updated since 01/25, this might be a better way moving forward provided it gets better support by the creator.~~ 
 
-- [Config file export](https://github.com/thyazide/Darktide-Performance-Optimizations/blob/main/modconfigchunks/SMOG.export.config)
+- [~~Config file export~~](https://github.com/thyazide/Darktide-Performance-Optimizations/blob/main/modconfigchunks/SMOG.export.config)
+
+Removing this mod as the author is banned from nexusmods. As the modder was abusive to nexusmods staff I will be removing this from this document when I have additional time to update things properly. 
 
 [Fps_Cleaner_Memory_FpsDoctor_LuaHeapCleaner](https://www.nexusmods.com/warhammer40kdarktide/mods/932) - Yet Another memory leak 'fixing' mod. Please note only one of these types of mods should be used at any one time. 
 
