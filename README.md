@@ -212,19 +212,13 @@ GC Pause Time = 1.0
 GC step multiple = 5.0
 ```
 
-~~[SMOG Cleaner](https://www.nexusmods.com/warhammer40kdarktide/mods/847) - Alternative to Memory Leak Fix, does the same job but in a different way. Considering MLF hasn't been updated since 01/25, this might be a better way moving forward provided it gets better support by the creator.~~ 
-
-- [~~Config file export~~](https://github.com/thyazide/Darktide-Performance-Optimizations/blob/main/modconfigchunks/SMOG.export.config)
-
-Removing this mod as the author is banned from nexusmods. As the modder was abusive to nexusmods staff I will be removing this from this document when I have additional time to update things properly. 
-
 [Fps_Cleaner_Memory_FpsDoctor_LuaHeapCleaner](https://www.nexusmods.com/warhammer40kdarktide/mods/932) - Yet Another memory leak 'fixing' mod. Please note only one of these types of mods should be used at any one time. 
 
 - [Config file export](https://github.com/thyazide/Darktide-Performance-Optimizations/blob/main/modconfigchunks/FpsDoctor.export.config)
 
 [Tertium Fixes](https://www.nexusmods.com/warhammer40kdarktide/mods/1187)- Client-side fixes for the problems that kept getting in the way: stuck menus, missed inputs, wrong HUD and talent info, leaked audio and effects, stale buff state, and avoidable Lua memory pressure. No balance changes or reduced visual/audio quality.
 
->This is the 4th of the memory leak cleaning mods. Though this one provides a lot of fixes for other things. You can simply run it by itself, but if you would like to run this in conjunction with one of the other lua memory mods above you can do so by disabling its in-built lua heap cleaning feature. My config file export for this mod has the lua heap cleaning disabled as I use one of the other listed mods. 
+>This is the 3rd of the memory leak cleaning mods. Though this one provides a lot of fixes for other things. You can simply run it by itself, but if you would like to run this in conjunction with one of the other lua memory mods above you can do so by disabling its in-built lua heap cleaning feature. My config file export for this mod has the lua heap cleaning disabled as I use one of the other listed mods. 
 
 - [Config file export](https://github.com/thyazide/Darktide-Performance-Optimizations/blob/main/modconfigchunks/TertiumFixes.export.config)
 ## Optional Mods
@@ -674,7 +668,6 @@ Some attributions may not appear within the body of the document as I have time 
 - [Digital Foundry](https://www.digitalfoundry.net/features/dlss-4-5-preset-l-tested-how-good-can-a-4k-upscale-from-720p-look)
 - [Alf's DMF (Mod Settings) Extensions](https://www.nexusmods.com/warhammer40kdarktide/mods/864)
 - [Enemies Improved (Healthbars - Debuffs - Outlines and more)](https://www.nexusmods.com/warhammer40kdarktide/mods/809 ) -Alfthebigheaded
-- [SMOG Cleaner](https://www.nexusmods.com/warhammer40kdarktide/mods/847) -xxBellatrix
 - [Fps_Cleaner_Memory_FpsDoctor_LuaHeapCleaner](https://www.nexusmods.com/warhammer40kdarktide/mods/932) -Artem228337
 - [Clean kills](https://www.nexusmods.com/warhammer40kdarktide/mods/979) -marnhorn
 - [Falcond-gui](https://github.com/PikaOS-Linux/falcond)
