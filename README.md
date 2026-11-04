@@ -1,6 +1,8 @@
 
 # Darktide Performance Optimizations
 
+[**Depths of the Damned patch** ](https://discord.com/channels/1048312349867646996/1079236212239384597/1554486626749513793)- Broken mod list by Wobin
+
 # Table of Contents
 
 - [Mods](https://github.com/thyazide/Darktide-Performance-Optimizations#mods)
@@ -282,6 +284,10 @@ You can also replace the Original Launcher entirely, this will allow you to laun
 6. Set the name to `Launcher.exe`
 
 When you open the game from Steam/Game Pass Launcher it will open the game directly. You will need to re-do these steps after any updates as the original launcher will be restored by Fatshark. So I would recommend keeping a copy of the `LauncherSkip.exe` in a safe location so it can be moved back into the launcher folder and renamed later. 
+
+## A new way to optimize the INI files!
+
+Check this out: [Performance Tweaks](https://www.nexusmods.com/warhammer40kdarktide/mods/1587) Now you can edit the INI files in game, just find the corresponding setting in game and update it to the ones below in the next section!
 # INI & config file changes optimize the game engine
 
 Tabbing and spacing are important when editing these files or the game will not work. These changes will need to be reapplied after every game update. They need to be done manually, as these files are updated by Fatshark after each patch/hotfix. If something gets broken, you can always [run an integrity check on the game in Steam](https://help.steampowered.com/en/faqs/view/0C48-FCBD-DA71-93EB), doing so will remove any changes you’ve made and disable mods. You’ll need to re-run the `toogle_darktide_mods.bat`, re-edit the INI files and the `launcher.exe.config` once the integrity check has completed. Or you can restore the original settings, they are included [here](https://github.com/thyazide/Darktide-Performance-Optimizations#default-settings-for-edited-files).  
