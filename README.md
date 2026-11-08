@@ -1,8 +1,6 @@
 
 # Darktide Performance Optimizations
 
-[**Depths of the Damned patch** ](https://discord.com/channels/1048312349867646996/1079236212239384597/1554486626749513793)- Broken mod list by Wobin
-
 # Table of Contents
 
 - [Mods](https://github.com/thyazide/Darktide-Performance-Optimizations#mods)
