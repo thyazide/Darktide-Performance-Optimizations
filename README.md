@@ -49,7 +49,7 @@ From the Nexus description page:
 > - Check for empty folders.
 > - Check for conflicts.
 > - Check for missing dependencies.  
->**Mod management:**  
+**Mod management:**  
 > - **Easily install mods** from Nexus, by dragging and dropping the archive onto the program window.
 > - Disable a mods in the list by unchecking them.
 > - Delete a mods.
