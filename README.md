@@ -40,7 +40,7 @@ Mods are not required, but are highly advisable as they can provide a sizable pe
 
 It is recommended that you crate a [Nexus Mods Account](https://users.nexusmods.com/register) to take advantage of these programs.
 
- [Servo-ModQuisitor 2](https://www.nexusmods.com/warhammer40kdarktide/mods/139) - SMQ2 is a mod manager specifically for darktide, if you've used something like `Nexus Mod Manger` in the past to handle other games in the past. This should be right up your alley.  It will handle the installation of `DML` and `DMF` for you, and generate the required mod load order file. You get browser integration for a simple click to download/install. 
+ [Servo-ModQuisitor 2](https://www.nexusmods.com/warhammer40kdarktide/mods/139) - (Linux/Windows) SMQ2 is a mod manager specifically for darktide, if you've used something like `Nexus Mod Manger` in the past to handle other games in the past. This should be right up your alley.  It will handle the installation of `DML` and `DMF` for you, and generate the required mod load order file. You get browser integration for a simple click to download/install. 
  
 From the Nexus description page: 
 > **Features** 
