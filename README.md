@@ -43,31 +43,30 @@ It is recommended that you crate a [Nexus Mods Account](https://users.nexusmods.
  [Servo-ModQuisitor 2](https://www.nexusmods.com/warhammer40kdarktide/mods/139) - SMQ2 is a mod manager specifically for darktide, if you've used something like `Nexus Mod Manger` in the past to handle other games in the past. This should be right up your alley.  It will handle the installation of `DML` and `DMF` for you, and generate the required mod load order file. You get browser integration for a simple click to download/install. 
  
  From the Nexus description page: 
-```
-**+++ Features**  
-- Check for outdated mods.
-- Check for malformed folders.
-- Check for empty folders.
-- Check for conflicts.
-- Check for missing dependencies.  
+
+	**+++ Features**  
+	- Check for outdated mods.
+	- Check for malformed folders.
+	- Check for empty folders.
+	- Check for conflicts.
+	- Check for missing dependencies.  
     
-- **Mod management:**  
-    
-- **Easily install mods** from Nexus, by dragging and dropping the archive onto the program window.
-- Disable a mods in the list by unchecking them.
-- Delete a mods.
-- Automatic checking and sorting.
-- Manual mod management mode:  
-        - Manage individual mods,  
-        - Manage groups of mods.
-- Toggle Darktide mods.
-- Launching the game directly from the Steam and Xbox:  
-        - Standard launch via the launcher  
-        - Quick launch without the launcher
-- List of mods with descriptions and links to Nexus and GitHub
-- Notes on mod usage, such as whether there are any mod fixes
-- Support for custom lists has been retained: _english_sort_order.txt and russian_sort_order.txt_
-```
+	- **Mod management:**  
+	- **Easily install mods** from Nexus, by dragging and dropping the archive onto the program window.
+	- Disable a mods in the list by unchecking them.
+	- Delete a mods.
+	- Automatic checking and sorting.
+	- Manual mod management mode:  
+	        - Manage individual mods,  
+	        - Manage groups of mods.
+	- Toggle Darktide mods.
+	- Launching the game directly from the Steam and Xbox:  
+	        - Standard launch via the launcher  
+	        - Quick launch without the launcher
+	- List of mods with descriptions and links to Nexus and GitHub
+	- Notes on mod usage, such as whether there are any mod fixes
+	- Support for custom lists has been retained: _english_sort_order.txt and russian_sort_order.txt_
+
  
 [Vortex](https://www.nexusmods.com/about/vortex)- Vortex can be used to install and manage mods. This is the native way of handling mods with the nexus mods site, but [Darktide compatibility](https://www.nexusmods.com/site/mods/684) is provided through a plugin. As I do not use Vortex, this guide is not the best source of instructions for setting up Vortex for Darktide compatibility. There are instructions on the plugin page for setting things up. 
 
@@ -260,11 +259,10 @@ https://www.nexusmods.com/warhammer40kdarktide/mods/1546
 
 [HeapGuard](https://www.nexusmods.com/warhammer40kdarktide/mods/1546) - This is another layer of protection from crashing that can be applied, and used in conjunction with the in game mods. This is a patch for the Darktide executable itself to attempt to provide better handling of lua heap memory.
 
-```
-**Description (short)**  
-Experimental Darktide memory patch. Created due to my friend's issues with a constant hit on their Lua memory ceiling and Out of Memory crashes. Reliability benefits are still being tested; in some cases, usage improves by 30%-40 %, though your mod list and usage may vary, and it is not guaranteed to be this high. I still need to figure out the final metrics. Releasing as alpha to see if the rest of the community will see an improvement.  
-Primarily, it is to combat OOM crashes
-```
+	**Description (short)**  
+	Experimental Darktide memory patch. Created due to my friend's issues with a constant hit on their Lua memory ceiling and Out of Memory crashes. Reliability benefits are still being tested; in some cases, usage improves by 30%-40 %, though your mod list and usage may vary, and it is not guaranteed to be this high. I still need to figure out the final metrics. Releasing as alpha to see if the rest of the community will see an improvement.  
+	Primarily, it is to combat OOM crashes
+
 ## Optional Mods
 
 [Zealot Fire Particle Swap](https://www.nexusmods.com/warhammer40kdarktide/mods/230) - Allows you to configure the particle effects for Zealot fire grenades to make them distinct from bomber grenades. 
