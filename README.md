@@ -5,7 +5,8 @@
 
 - [Mods](https://github.com/thyazide/Darktide-Performance-Optimizations#mods)
 	- [Forward about mods](https://github.com/thyazide/Darktide-Performance-Optimizations#forward-about-mods)
-	- [Mod installation instructions](https://github.com/thyazide/Darktide-Performance-Optimizations#mod-installation-instructions)
+	- [Automatic Mod Installation](https://github.com/thyazide/Darktide-Performance-Optimizations#automatic-mod-installation)
+	- [Manual Mod installation instructions](https://github.com/thyazide/Darktide-Performance-Optimizations#mod-installation-instructions)
 	- [Keeping mods up to date](https://github.com/thyazide/Darktide-Performance-Optimizations#keeping-mods-up-to-date)
 	- [Commonly used Archive programs](https://github.com/thyazide/Darktide-Performance-Optimizations#commonly-used-archive-programs)
 	- [Config File Importing (optional)](https://github.com/thyazide/Darktide-Performance-Optimizations#config-file-importing-optional)
@@ -34,16 +35,49 @@
 ## Forward about mods
 
 Mods are not required, but are highly advisable as they can provide a sizable performance gain over all. You can skip them and go directly to the INI edits and other changes in this document. Though as I advise their use, instructions for installing/enabling them are front and center. 
-## Mod installation instructions
+
+## Automatic Mod Installation
+
+It is recommended that you crate a [Nexus Mods Account](https://users.nexusmods.com/register) to take advantage of these programs.
+
+ [Servo-ModQuisitor 2](https://www.nexusmods.com/warhammer40kdarktide/mods/139) - SMQ2 is a mod manager specifically for darktide, if you've used something like `Nexus Mod Manger` in the past to handle other games in the past. This should be right up your alley.  It will handle the installation of `DML` and `DMF` for you, and generate the required mod load order file. You get browser integration for a simple click to download/install. 
+ 
+ From the Nexus description page: 
+```
+**+++ Features**  
+- Check for outdated mods.
+- Check for malformed folders.
+- Check for empty folders.
+- Check for conflicts.
+- Check for missing dependencies.  
+    
+- **Mod management:**  
+    
+- **Easily install mods** from Nexus, by dragging and dropping the archive onto the program window.
+- Disable a mods in the list by unchecking them.
+- Delete a mods.
+- Automatic checking and sorting.
+- Manual mod management mode:  
+        - Manage individual mods,  
+        - Manage groups of mods.
+- Toggle Darktide mods.
+- Launching the game directly from the Steam and Xbox:  
+        - Standard launch via the launcher  
+        - Quick launch without the launcher
+- List of mods with descriptions and links to Nexus and GitHub
+- Notes on mod usage, such as whether there are any mod fixes
+- Support for custom lists has been retained: _english_sort_order.txt and russian_sort_order.txt_
+```
+ 
+[Vortex](https://www.nexusmods.com/about/vortex)- Vortex can be used to install and manage mods. This is the native way of handling mods with the nexus mods site, but [Darktide compatibility](https://www.nexusmods.com/site/mods/684) is provided through a plugin. As I do not use Vortex, this guide is not the best source of instructions for setting up Vortex for Darktide compatibility. There are instructions on the plugin page for setting things up. 
+
+## Manual Mod installation instructions
 
 These instructions are fairly abstract as the programs you can use to extract the archives and the operating systems individuals choose to use are varied. Though it should be easy enough to follow if you are somewhat familiar with the process of extracting archives. If you have any questions or issue please feel free to contact me either through [Github](https://github.com/thyazide/Darktide-Performance-Optimizations/issues), or via the [Darktide Discord](https://discord.gg/darktide), or the [Darktide Modding Discord](<https://discord.gg/rKYWtaDx4D>).
 
-There are other ways of handling mod support in Darktide, [Vortex](https://www.nexusmods.com/about/vortex) for example, can be used to install and manage mods, this is simply the way I handle them personally. 
-
-**Instructions:**
+**Manual Installation Instructions:**
 
 1. Create a [Nexus Mods Account](https://users.nexusmods.com/register), or not, downloads will be slower and capped if you do not. 
-
 	- Download [Darktide Mod Loader](https://www.nexusmods.com/warhammer40kdarktide/mods/19) (referred to as DML from here on out).
 	- Download [Darktide Mod Framework](https://www.nexusmods.com/warhammer40kdarktide/mods/8) (referred to as DMF from here on out).
 	- Download [Auto Mod Loading and Ordering](https://www.nexusmods.com/warhammer40kdarktide/mods/246) (referred to as AML from here on out).
@@ -76,6 +110,7 @@ There are other ways of handling mod support in Darktide, [Vortex](https://www.n
 
 **AML notes:**
 
+
 If DML is updated at any point after the initial install is finished you will need to download and extract AML into the mods folder to re-enable AML so mods can be loaded automatically. 
 
 **Enable mods automatically after each patch Linux/Windows:** 
@@ -85,15 +120,15 @@ If you want to have mods automatically enabled after each update you can use [dt
 1. Extract the archive into the Darktide folder:
 	 
 	`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\`
-	
-3. Make `toggle_dt_mod_autopatch.cmd` executable if you're using Linux. If you are on windows skip to the next step.
-4. Then double click `toggle_dt_mod_autopatch.cmd`, or run the file from the terminal of your choice (Linux) to enable mods. 
+	https://www.nexusmods.com/warhammer40kdarktide/mods/139
+1. Make `toggle_dt_mod_autopatch.cmd` executable if you're using Linux. If you are on windows skip to the next step.
+2. Then double click `toggle_dt_mod_autopatch.cmd`, or run the file from the terminal of your choice (Linux) to enable mods. 
 
 Do this after finishing the instructions above for enabling mods.
 
 - [DMF Docs official mod installation guide](https://dmf-docs.darkti.de/#/installing-mods) 
 - [Install Darktide Mods Fast](https://youtu.be/xQtXFlxPiho) - **Video guide** 
-## Keeping mods up to date
+## Keeping mods up to date (manual)
 
 If you have opted to create a [Nexus Mods Account](https://users.nexusmods.com/register) your previous downloads will be tracked and tagged with a `check mark` to denote they have been downloaded. They will also display an `Update available` marker if they have been updated. You can then click on them and `download > extract them` to the mods folder, `overwriting the existing files`. You can make a bookmark in your browser [for this page](https://www.nexusmods.com/games/warhammer40kdarktide/mods?timeRange=14&sort=updatedAt). It will show you any mods that have been updated in the last two weeks. This is extremely helpful at times when large game updates are released. It also shows a list of mods that were added to the site within that same period. 
 ## Commonly used Archive programs
@@ -132,6 +167,8 @@ This works with Wine in Linux as well, you'll need to find your pfx folder for d
 
 Then follow the usage instructions above. 
 ## Necessary Mods
+
+[HUD Studio](https://www.nexusmods.com/warhammer40kdarktide/mods/1263) - With the ability of Hud Studio to rate limit the amount of draw calls for each part of the UI makes it invaluable as a means to claw back performance. Prior to this the hud in the game was drawn for every frame. So if your FPS was 60, the hud was being drawn once for each frame. Now it can be set to a static value (like 30, or 60), or be allowed to dynamically change up to a cap of 60 for each element independently. It also allows you to edit the hud, as its a fully visual HUD creator running live in game. Just jump in the meatgrinder, hit F3 and check it out. 
 
 [Impact VFX Limiter](https://www.nexusmods.com/warhammer40kdarktide/mods/424) - Allows the user to limit the maximum amount of flesh/armor impact VFX and surface impact VFX that can be played per frame for better performance.  
 
@@ -192,7 +229,7 @@ Remove Blocking Sound Effect = off
 ```
 
 
-[Enemies Improved (Healthbars - Debuffs - Outlines and more)](https://www.nexusmods.com/warhammer40kdarktide/mods/809 ) - Highly customizable replacement for the visual indicators of debuffs, status effects, health bars of enemies. Along with a host of other nice to have features. You'll need this to replace the VFX removed by Less dot. 
+[Enemies Improved (Healthbars - Debuffs - Outlines and more)](https://www.nexusmods.com/warhammer40kdarktide/mods/809 ) - Highly customizable replacement for the visual indicators of debuffs, status effects, health bars of enemies. Along with a host of other nice to have features. You'll need this to replace the VFX removed by Less dot. Enemies improved has also implemented spatial culling of health bars to limit its overall impact on framerate limiting it to 20-25 health bars on screen at any given time based on distance and the number of bars you wish it to display. 
 
 - [Config file export](https://github.com/thyazide/Darktide-Performance-Optimizations/blob/main/modconfigchunks/enemies_improved.export.config)
 
@@ -200,8 +237,9 @@ Remove Blocking Sound Effect = off
 
 ## Lua Memory Management
 
->There are 4 memory management mods available. The first three listed here are stand alone, pick one of them and install it by itself. The 4th option has fixes for the game which maybe useful and it has its own lua memory managment bundle built in. You can install it and then disable its built in manager, either with my config file export, or by manually disabling it in the mod options menu. Then you can use the fixes, and another one of the first 3 memory management mods together. 
+There are multiple Memory leak management mods that all attempt to free up memory to keep the game from crashing. You'll only need one of these, which one is up to you.
 
+## In-Game Mods
 
 [Memory Leak Fix](https://www.nexusmods.com/warhammer40kdarktide/mods/406) - Helps by trimming the memory space used by mods to keep it from reaching critical mass as quickly and causing crashing.
 
@@ -216,11 +254,17 @@ GC step multiple = 5.0
 
 - [Config file export](https://github.com/thyazide/Darktide-Performance-Optimizations/blob/main/modconfigchunks/FpsDoctor.export.config)
 
-[Tertium Fixes](https://www.nexusmods.com/warhammer40kdarktide/mods/1187)- Client-side fixes for the problems that kept getting in the way: stuck menus, missed inputs, wrong HUD and talent info, leaked audio and effects, stale buff state, and avoidable Lua memory pressure. No balance changes or reduced visual/audio quality.
+https://www.nexusmods.com/warhammer40kdarktide/mods/1546
 
->This is the 3rd of the memory leak cleaning mods. Though this one provides a lot of fixes for other things. You can simply run it by itself, but if you would like to run this in conjunction with one of the other lua memory mods above you can do so by disabling its in-built lua heap cleaning feature. My config file export for this mod has the lua heap cleaning disabled as I use one of the other listed mods. 
+## Executable edits 
 
-- [Config file export](https://github.com/thyazide/Darktide-Performance-Optimizations/blob/main/modconfigchunks/TertiumFixes.export.config)
+[HeapGuard](https://www.nexusmods.com/warhammer40kdarktide/mods/1546) - This is another layer of protection from crashing that can be applied, and used in conjunction with the in game mods. This is a patch for the Darktide executable itself to attempt to provide better handling of lua heap memory.
+
+```
+```**Description (short)**  
+Experimental Darktide memory patch. Created due to my friend's issues with a constant hit on their Lua memory ceiling and Out of Memory crashes. Reliability benefits are still being tested; in some cases, usage improves by 30%-40 %, though your mod list and usage may vary, and it is not guaranteed to be this high. I still need to figure out the final metrics. Releasing as alpha to see if the rest of the community will see an improvement.  
+Primarily, it is to combat OOM crashes
+```
 ## Optional Mods
 
 [Zealot Fire Particle Swap](https://www.nexusmods.com/warhammer40kdarktide/mods/230) - Allows you to configure the particle effects for Zealot fire grenades to make them distinct from bomber grenades. 
@@ -356,7 +400,50 @@ Find and replace the `ExeArgs` lines with the settings below:
 
 **Linux - Generating the launcher.exe.config, and shader cache:**
 
-The `Launcher.exe.config` file should be generated by running the darktide launcher at least once. Use the latest verison of Steam Proton at least once before swapping to another version of proton and the file should appear normally, then it can be edited. 
+The `Launcher.exe.config` file should be generate
+- [Darktide Mod Framework](https://www.nexusmods.com/warhammer40kdarktide/mods/8)￼ -Aussiemon
+- [Auto Mod Loading and Ordering](https://www.nexusmods.com/warhammer40kdarktide/mods/246)￼ -Altarion
+- [Impact VFX Limiter](https://www.nexusmods.com/warhammer40kdarktide/mods/424)￼ -fugsystem
+- [Less Dot](https://www.nexusmods.com/warhammer40kdarktide/mods/521)￼ -SanctionedPsyker
+- [Clear Smoke](https://www.nexusmods.com/warhammer40kdarktide/mods/517)￼ -leerH
+- [I Wanna See](https://www.nexusmods.com/warhammer40kdarktide/mods/371)￼ -d3fallt
+- [Memory Leak Fix](https://www.nexusmods.com/warhammer40kdarktide/mods/406)￼ -PaimonKawaii
+- [Clean Force Blocking](https://www.nexusmods.com/warhammer40kdarktide/mods/104)￼ -deluxghost
+- [Debuff Indicator](https://www.nexusmods.com/warhammer40kdarktide/mods/137)￼ -Zombine04
+- [Granular Settings](https://www.nexusmods.com/warhammer40kdarktide/mods/38)￼ -Skwuruhl
+- [Zealot Fire Particle Swap](https://www.nexusmods.com/warhammer40kdarktide/mods/230)￼ -JCaleb
+- Direct storage DLL update -pttgo
+- [More Graphics Options - Performance boost](https://www.nexusmods.com/warhammer40kdarktide/mods/236)￼ -yakuzadeso
+- [Winrar](https://www.win-rar.com/download.html?&L=0)￼
+- [Peazip](https://peazip.github.io/)￼
+- [7-Zip](https://www.7-zip.org/download.html)￼
+- [Windows native extraction](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5)￼
+- [Ark for KDE](https://apps.kde.org/ark/)￼
+- [File-Roller for Gnome](https://flathub.org/en/apps/org.gnome.FileRoller)￼
+- [Direct Storage Nupkg](https://www.nuget.org/packages/Microsoft.Direct3D.DirectStorage)￼
+- [dtkit-patch](https://www.nexusmods.com/profile/manshanko/mods?gameId=4943)￼ - manshanko
+- [How to Enable Dlss 4.5 - Huge Visual Upgrade](https://www.youtube.com/watch?v=1lAMbO0saAw)￼ -Benchmark Boy
+- [VFX Swapper](https://www.nexusmods.com/warhammer40kdarktide/mods/678)￼ -tdopz, with original mod credit going to leerH
+- [NoCorpses](https://www.nexusmods.com/warhammer40kdarktide/mods/689)￼ -7878949696
+- [Nvidia Control Panel](https://apps.microsoft.com/detail/9nf8h0h7wmlt?hl=en-US&gl=US)￼ 
+- [How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial](https://www.wagnardsoft.com/content/How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial)￼ 
+- [DDU Download Page.](https://www.guru3d.com/download/display-driver-uninstaller-download/)￼
+- [Vizra's Darktide Configs](https://discord.gg/TE6YwF5sWQ)￼
+- [Darktide Mod Autopatcher](https://www.nexusmods.com/warhammer40kdarktide/mods/709)￼ -manshanko
+- [Digital Foundry](https://www.digitalfoundry.net/features/dlss-4-5-preset-l-tested-how-good-can-a-4k-upscale-from-720p-look)￼
+- [Alf's DMF (Mod Settings) Extensions](https://www.nexusmods.com/warhammer40kdarktide/mods/864)￼
+- [Enemies Improved (Healthbars - Debuffs - Outlines and more)](https://www.nexusmods.com/warhammer40kdarktide/mods/809 )￼ -Alfthebigheaded
+- [Fps_Cleaner_Memory_FpsDoctor_LuaHeapCleaner](https://www.nexusmods.com/warhammer40kdarktide/mods/932)￼ -Artem228337
+- [Clean kills](https://www.nexusmods.com/warhammer40kdarktide/mods/979)￼ -marnhorn
+- [Falcond-gui](https://github.com/PikaOS-Linux/falcond)￼
+- [sched-ext](https://wiki.cachyos.org/configuration/sched-ext/)￼ 
+- [cosmos](https://wiki.cachyos.org/configuration/sched-ext/#scx_cosmos)￼
+- [low_latency_layer.](https://github.com/Korthos-Software/low_latency_layer#low_latency_layer)￼
+- [Darktide Mod Settings Editor](https://www.nexusmods.com/warhammer40kdarktide/mods/989)￼ - iboxful
+- [Tertium Fixes](https://www.nexusmods.com/warhammer40kdarktide/mods/1187)￼ -Chronos
+
+Thank you to everyone on this list, without their hard work and dedication this document would not be possible. 
+d by running the darktide launcher at least once. Use the latest verison of Steam Proton at least once before swapping to another version of proton and the file should appear normally, then it can be edited. 
 
 The shader cache is also generated at runtime of the launcher. Ensure that you run the launcher at least once before changing to antoher version of Proton. 
 
@@ -367,7 +454,50 @@ Swapping back to Steam Proton will always regenerate the shader cache and `Launc
 At times new shaders are added (Hivescum did this) or crashes might cause the cache to become broken in some way. On linux if you are using something other than Steam Proton the normal launcher maybe being bypassed by your specific proton version (GE-Proton and Proton-CachyOS do this as an example.) If you wish to remove the shader cache and rebuild it from scratch for any reason do the following.
 
 1. Open this directory in your file manager: 
-	`*/users/steamuser/AppData/Roaming/Fatshark/Darktide/` 
+	`*/users/steamuser/AppData/Roaming/Fat
+- [Darktide Mod Framework](https://www.nexusmods.com/warhammer40kdarktide/mods/8)￼ -Aussiemon
+- [Auto Mod Loading and Ordering](https://www.nexusmods.com/warhammer40kdarktide/mods/246)￼ -Altarion
+- [Impact VFX Limiter](https://www.nexusmods.com/warhammer40kdarktide/mods/424)￼ -fugsystem
+- [Less Dot](https://www.nexusmods.com/warhammer40kdarktide/mods/521)￼ -SanctionedPsyker
+- [Clear Smoke](https://www.nexusmods.com/warhammer40kdarktide/mods/517)￼ -leerH
+- [I Wanna See](https://www.nexusmods.com/warhammer40kdarktide/mods/371)￼ -d3fallt
+- [Memory Leak Fix](https://www.nexusmods.com/warhammer40kdarktide/mods/406)￼ -PaimonKawaii
+- [Clean Force Blocking](https://www.nexusmods.com/warhammer40kdarktide/mods/104)￼ -deluxghost
+- [Debuff Indicator](https://www.nexusmods.com/warhammer40kdarktide/mods/137)￼ -Zombine04
+- [Granular Settings](https://www.nexusmods.com/warhammer40kdarktide/mods/38)￼ -Skwuruhl
+- [Zealot Fire Particle Swap](https://www.nexusmods.com/warhammer40kdarktide/mods/230)￼ -JCaleb
+- Direct storage DLL update -pttgo
+- [More Graphics Options - Performance boost](https://www.nexusmods.com/warhammer40kdarktide/mods/236)￼ -yakuzadeso
+- [Winrar](https://www.win-rar.com/download.html?&L=0)￼
+- [Peazip](https://peazip.github.io/)￼
+- [7-Zip](https://www.7-zip.org/download.html)￼
+- [Windows native extraction](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5)￼
+- [Ark for KDE](https://apps.kde.org/ark/)￼
+- [File-Roller for Gnome](https://flathub.org/en/apps/org.gnome.FileRoller)￼
+- [Direct Storage Nupkg](https://www.nuget.org/packages/Microsoft.Direct3D.DirectStorage)￼
+- [dtkit-patch](https://www.nexusmods.com/profile/manshanko/mods?gameId=4943)￼ - manshanko
+- [How to Enable Dlss 4.5 - Huge Visual Upgrade](https://www.youtube.com/watch?v=1lAMbO0saAw)￼ -Benchmark Boy
+- [VFX Swapper](https://www.nexusmods.com/warhammer40kdarktide/mods/678)￼ -tdopz, with original mod credit going to leerH
+- [NoCorpses](https://www.nexusmods.com/warhammer40kdarktide/mods/689)￼ -7878949696
+- [Nvidia Control Panel](https://apps.microsoft.com/detail/9nf8h0h7wmlt?hl=en-US&gl=US)￼ 
+- [How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial](https://www.wagnardsoft.com/content/How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial)￼ 
+- [DDU Download Page.](https://www.guru3d.com/download/display-driver-uninstaller-download/)￼
+- [Vizra's Darktide Configs](https://discord.gg/TE6YwF5sWQ)￼
+- [Darktide Mod Autopatcher](https://www.nexusmods.com/warhammer40kdarktide/mods/709)￼ -manshanko
+- [Digital Foundry](https://www.digitalfoundry.net/features/dlss-4-5-preset-l-tested-how-good-can-a-4k-upscale-from-720p-look)￼
+- [Alf's DMF (Mod Settings) Extensions](https://www.nexusmods.com/warhammer40kdarktide/mods/864)￼
+- [Enemies Improved (Healthbars - Debuffs - Outlines and more)](https://www.nexusmods.com/warhammer40kdarktide/mods/809 )￼ -Alfthebigheaded
+- [Fps_Cleaner_Memory_FpsDoctor_LuaHeapCleaner](https://www.nexusmods.com/warhammer40kdarktide/mods/932)￼ -Artem228337
+- [Clean kills](https://www.nexusmods.com/warhammer40kdarktide/mods/979)￼ -marnhorn
+- [Falcond-gui](https://github.com/PikaOS-Linux/falcond)￼
+- [sched-ext](https://wiki.cachyos.org/configuration/sched-ext/)￼ 
+- [cosmos](https://wiki.cachyos.org/configuration/sched-ext/#scx_cosmos)￼
+- [low_latency_layer.](https://github.com/Korthos-Software/low_latency_layer#low_latency_layer)￼
+- [Darktide Mod Settings Editor](https://www.nexusmods.com/warhammer40kdarktide/mods/989)￼ - iboxful
+- [Tertium Fixes](https://www.nexusmods.com/warhammer40kdarktide/mods/1187)￼ -Chronos
+
+Thank you to everyone on this list, without their hard work and dedication this document would not be possible. 
+shark/Darktide/` 
 	
 2. Find and delete these files from the Darktide roaming directory: 
 	- shader_cache.hans
