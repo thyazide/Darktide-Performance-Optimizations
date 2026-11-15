@@ -42,9 +42,8 @@ It is recommended that you crate a [Nexus Mods Account](https://users.nexusmods.
 
  [Servo-ModQuisitor 2](https://www.nexusmods.com/warhammer40kdarktide/mods/139) - SMQ2 is a mod manager specifically for darktide, if you've used something like `Nexus Mod Manger` in the past to handle other games in the past. This should be right up your alley.  It will handle the installation of `DML` and `DMF` for you, and generate the required mod load order file. You get browser integration for a simple click to download/install. 
  
- From the Nexus description page: 
-
-> **+++ Features**  
+From the Nexus description page: 
+> **Features** 
 > - Check for outdated mods.
 > - Check for malformed folders.
 > - Check for empty folders.
@@ -92,9 +91,7 @@ These instructions are fairly abstract as the programs you can use to extract th
 
 	`*\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods\`
 
-	Tell your archive program to overwrite any existing files, aDescription (short)
-> Experimental Darktide memory patch. Created due to my friend's issues with a constant hit on their Lua memory ceiling and Out of Memory crashes. Reliability benefits are still being tested; in some cases, usage improves by 30%-40 %, though your mod list and usage may vary, and it is not guaranteed to be this high. I still need to figure out the final metrics. Releasing as alpha to see if the rest of the community will see an improvement.  
-> Primarily, it is to combat OOM crashess AML is a patch for DML that enables mods to be automatically loaded by the game on start up. 
+	Tell your archive program to overwrite any existing files, as AML is a patch for DML that enables mods to be automatically loaded by the game on start up. 
 
 5. To enable mods after installing DMF, DML, and AML open the Darktide folder:
 
