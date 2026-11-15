@@ -49,7 +49,7 @@ From the Nexus description page:
 > - Check for empty folders.
 > - Check for conflicts.
 > - Check for missing dependencies.  
-**Mod management:**  
+> - **Mod management:**  
 > - **Easily install mods** from Nexus, by dragging and dropping the archive onto the program window.
 > - Disable a mods in the list by unchecking them.
 > - Delete a mods.
@@ -65,8 +65,7 @@ From the Nexus description page:
 > - Notes on mod usage, such as whether there are any mod fixes
 > - Support for custom lists has been retained: _english_sort_order.txt and russian_sort_order.txt_
 
- 
-[Vortex](https://www.nexusmods.com/about/vortex)- Vortex can be used to install and manage mods. This is the native way of handling mods with the nexus mods site, but [Darktide compatibility](https://www.nexusmods.com/site/mods/684) is provided through a plugin. As I do not use Vortex, this guide is not the best source of instructions for setting up Vortex for Darktide compatibility. There are instructions on the plugin page for setting things up. 
+[Vortex](https://www.nexusmods.com/about/vortex) - Vortex can be used to install and manage mods. This is the native way of handling mods with the nexus mods site, but [Darktide compatibility](https://www.nexusmods.com/site/mods/684) is provided through a plugin. As I do not use Vortex, this guide is not the best source of instructions for setting up Vortex for Darktide compatibility. There are instructions on the plugin page for setting things up. 
 
 ## Manual Mod installation instructions
 
@@ -106,7 +105,6 @@ These instructions are fairly abstract as the programs you can use to extract th
 	They will be automatically sorted and listed in the game's of the mod settings page. 
 
 **AML notes:**
-
 
 If DML is updated at any point after the initial install is finished you will need to download and extract AML into the mods folder to re-enable AML so mods can be loaded automatically. 
 
@@ -395,50 +393,7 @@ Find and replace the `ExeArgs` lines with the settings below:
 
 **Linux - Generating the launcher.exe.config, and shader cache:**
 
-The `Launcher.exe.config` file should be generate
-- [Darktide Mod Framework](https://www.nexusmods.com/warhammer40kdarktide/mods/8)￼ -Aussiemon
-- [Auto Mod Loading and Ordering](https://www.nexusmods.com/warhammer40kdarktide/mods/246)￼ -Altarion
-- [Impact VFX Limiter](https://www.nexusmods.com/warhammer40kdarktide/mods/424)￼ -fugsystem
-- [Less Dot](https://www.nexusmods.com/warhammer40kdarktide/mods/521)￼ -SanctionedPsyker
-- [Clear Smoke](https://www.nexusmods.com/warhammer40kdarktide/mods/517)￼ -leerH
-- [I Wanna See](https://www.nexusmods.com/warhammer40kdarktide/mods/371)￼ -d3fallt
-- [Memory Leak Fix](https://www.nexusmods.com/warhammer40kdarktide/mods/406)￼ -PaimonKawaii
-- [Clean Force Blocking](https://www.nexusmods.com/warhammer40kdarktide/mods/104)￼ -deluxghost
-- [Debuff Indicator](https://www.nexusmods.com/warhammer40kdarktide/mods/137)￼ -Zombine04
-- [Granular Settings](https://www.nexusmods.com/warhammer40kdarktide/mods/38)￼ -Skwuruhl
-- [Zealot Fire Particle Swap](https://www.nexusmods.com/warhammer40kdarktide/mods/230)￼ -JCaleb
-- Direct storage DLL update -pttgo
-- [More Graphics Options - Performance boost](https://www.nexusmods.com/warhammer40kdarktide/mods/236)￼ -yakuzadeso
-- [Winrar](https://www.win-rar.com/download.html?&L=0)￼
-- [Peazip](https://peazip.github.io/)￼
-- [7-Zip](https://www.7-zip.org/download.html)￼
-- [Windows native extraction](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5)￼
-- [Ark for KDE](https://apps.kde.org/ark/)￼
-- [File-Roller for Gnome](https://flathub.org/en/apps/org.gnome.FileRoller)￼
-- [Direct Storage Nupkg](https://www.nuget.org/packages/Microsoft.Direct3D.DirectStorage)￼
-- [dtkit-patch](https://www.nexusmods.com/profile/manshanko/mods?gameId=4943)￼ - manshanko
-- [How to Enable Dlss 4.5 - Huge Visual Upgrade](https://www.youtube.com/watch?v=1lAMbO0saAw)￼ -Benchmark Boy
-- [VFX Swapper](https://www.nexusmods.com/warhammer40kdarktide/mods/678)￼ -tdopz, with original mod credit going to leerH
-- [NoCorpses](https://www.nexusmods.com/warhammer40kdarktide/mods/689)￼ -7878949696
-- [Nvidia Control Panel](https://apps.microsoft.com/detail/9nf8h0h7wmlt?hl=en-US&gl=US)￼ 
-- [How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial](https://www.wagnardsoft.com/content/How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial)￼ 
-- [DDU Download Page.](https://www.guru3d.com/download/display-driver-uninstaller-download/)￼
-- [Vizra's Darktide Configs](https://discord.gg/TE6YwF5sWQ)￼
-- [Darktide Mod Autopatcher](https://www.nexusmods.com/warhammer40kdarktide/mods/709)￼ -manshanko
-- [Digital Foundry](https://www.digitalfoundry.net/features/dlss-4-5-preset-l-tested-how-good-can-a-4k-upscale-from-720p-look)￼
-- [Alf's DMF (Mod Settings) Extensions](https://www.nexusmods.com/warhammer40kdarktide/mods/864)￼
-- [Enemies Improved (Healthbars - Debuffs - Outlines and more)](https://www.nexusmods.com/warhammer40kdarktide/mods/809 )￼ -Alfthebigheaded
-- [Fps_Cleaner_Memory_FpsDoctor_LuaHeapCleaner](https://www.nexusmods.com/warhammer40kdarktide/mods/932)￼ -Artem228337
-- [Clean kills](https://www.nexusmods.com/warhammer40kdarktide/mods/979)￼ -marnhorn
-- [Falcond-gui](https://github.com/PikaOS-Linux/falcond)￼
-- [sched-ext](https://wiki.cachyos.org/configuration/sched-ext/)￼ 
-- [cosmos](https://wiki.cachyos.org/configuration/sched-ext/#scx_cosmos)￼
-- [low_latency_layer.](https://github.com/Korthos-Software/low_latency_layer#low_latency_layer)￼
-- [Darktide Mod Settings Editor](https://www.nexusmods.com/warhammer40kdarktide/mods/989)￼ - iboxful
-- [Tertium Fixes](https://www.nexusmods.com/warhammer40kdarktide/mods/1187)￼ -Chronos
-
-Thank you to everyone on this list, without their hard work and dedication this document would not be possible. 
-d by running the darktide launcher at least once. Use the latest verison of Steam Proton at least once before swapping to another version of proton and the file should appear normally, then it can be edited. 
+The `Launcher.exe.config` file should be generated by running the darktide launcher at least once. Use the latest verison of Steam Proton at least once before swapping to another version of proton and the file should appear normally, then it can be edited. 
 
 The shader cache is also generated at runtime of the launcher. Ensure that you run the launcher at least once before changing to antoher version of Proton. 
 
@@ -449,50 +404,7 @@ Swapping back to Steam Proton will always regenerate the shader cache and `Launc
 At times new shaders are added (Hivescum did this) or crashes might cause the cache to become broken in some way. On linux if you are using something other than Steam Proton the normal launcher maybe being bypassed by your specific proton version (GE-Proton and Proton-CachyOS do this as an example.) If you wish to remove the shader cache and rebuild it from scratch for any reason do the following.
 
 1. Open this directory in your file manager: 
-	`*/users/steamuser/AppData/Roaming/Fat
-- [Darktide Mod Framework](https://www.nexusmods.com/warhammer40kdarktide/mods/8)￼ -Aussiemon
-- [Auto Mod Loading and Ordering](https://www.nexusmods.com/warhammer40kdarktide/mods/246)￼ -Altarion
-- [Impact VFX Limiter](https://www.nexusmods.com/warhammer40kdarktide/mods/424)￼ -fugsystem
-- [Less Dot](https://www.nexusmods.com/warhammer40kdarktide/mods/521)￼ -SanctionedPsyker
-- [Clear Smoke](https://www.nexusmods.com/warhammer40kdarktide/mods/517)￼ -leerH
-- [I Wanna See](https://www.nexusmods.com/warhammer40kdarktide/mods/371)￼ -d3fallt
-- [Memory Leak Fix](https://www.nexusmods.com/warhammer40kdarktide/mods/406)￼ -PaimonKawaii
-- [Clean Force Blocking](https://www.nexusmods.com/warhammer40kdarktide/mods/104)￼ -deluxghost
-- [Debuff Indicator](https://www.nexusmods.com/warhammer40kdarktide/mods/137)￼ -Zombine04
-- [Granular Settings](https://www.nexusmods.com/warhammer40kdarktide/mods/38)￼ -Skwuruhl
-- [Zealot Fire Particle Swap](https://www.nexusmods.com/warhammer40kdarktide/mods/230)￼ -JCaleb
-- Direct storage DLL update -pttgo
-- [More Graphics Options - Performance boost](https://www.nexusmods.com/warhammer40kdarktide/mods/236)￼ -yakuzadeso
-- [Winrar](https://www.win-rar.com/download.html?&L=0)￼
-- [Peazip](https://peazip.github.io/)￼
-- [7-Zip](https://www.7-zip.org/download.html)￼
-- [Windows native extraction](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5)￼
-- [Ark for KDE](https://apps.kde.org/ark/)￼
-- [File-Roller for Gnome](https://flathub.org/en/apps/org.gnome.FileRoller)￼
-- [Direct Storage Nupkg](https://www.nuget.org/packages/Microsoft.Direct3D.DirectStorage)￼
-- [dtkit-patch](https://www.nexusmods.com/profile/manshanko/mods?gameId=4943)￼ - manshanko
-- [How to Enable Dlss 4.5 - Huge Visual Upgrade](https://www.youtube.com/watch?v=1lAMbO0saAw)￼ -Benchmark Boy
-- [VFX Swapper](https://www.nexusmods.com/warhammer40kdarktide/mods/678)￼ -tdopz, with original mod credit going to leerH
-- [NoCorpses](https://www.nexusmods.com/warhammer40kdarktide/mods/689)￼ -7878949696
-- [Nvidia Control Panel](https://apps.microsoft.com/detail/9nf8h0h7wmlt?hl=en-US&gl=US)￼ 
-- [How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial](https://www.wagnardsoft.com/content/How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial)￼ 
-- [DDU Download Page.](https://www.guru3d.com/download/display-driver-uninstaller-download/)￼
-- [Vizra's Darktide Configs](https://discord.gg/TE6YwF5sWQ)￼
-- [Darktide Mod Autopatcher](https://www.nexusmods.com/warhammer40kdarktide/mods/709)￼ -manshanko
-- [Digital Foundry](https://www.digitalfoundry.net/features/dlss-4-5-preset-l-tested-how-good-can-a-4k-upscale-from-720p-look)￼
-- [Alf's DMF (Mod Settings) Extensions](https://www.nexusmods.com/warhammer40kdarktide/mods/864)￼
-- [Enemies Improved (Healthbars - Debuffs - Outlines and more)](https://www.nexusmods.com/warhammer40kdarktide/mods/809 )￼ -Alfthebigheaded
-- [Fps_Cleaner_Memory_FpsDoctor_LuaHeapCleaner](https://www.nexusmods.com/warhammer40kdarktide/mods/932)￼ -Artem228337
-- [Clean kills](https://www.nexusmods.com/warhammer40kdarktide/mods/979)￼ -marnhorn
-- [Falcond-gui](https://github.com/PikaOS-Linux/falcond)￼
-- [sched-ext](https://wiki.cachyos.org/configuration/sched-ext/)￼ 
-- [cosmos](https://wiki.cachyos.org/configuration/sched-ext/#scx_cosmos)￼
-- [low_latency_layer.](https://github.com/Korthos-Software/low_latency_layer#low_latency_layer)￼
-- [Darktide Mod Settings Editor](https://www.nexusmods.com/warhammer40kdarktide/mods/989)￼ - iboxful
-- [Tertium Fixes](https://www.nexusmods.com/warhammer40kdarktide/mods/1187)￼ -Chronos
-
-Thank you to everyone on this list, without their hard work and dedication this document would not be possible. 
-shark/Darktide/` 
+	`*/users/steamuser/AppData/Roaming/Fatshark/Darktide/` 
 	
 2. Find and delete these files from the Darktide roaming directory: 
 	- shader_cache.hans
@@ -805,5 +717,7 @@ Some attributions may not appear within the body of the document as I have time 
 - [low_latency_layer.](https://github.com/Korthos-Software/low_latency_layer#low_latency_layer)
 - [Darktide Mod Settings Editor](https://www.nexusmods.com/warhammer40kdarktide/mods/989) - iboxful
 - [Tertium Fixes](https://www.nexusmods.com/warhammer40kdarktide/mods/1187) -Chronos
-
+- [HeapGuard](https://www.nexusmods.com/warhammer40kdarktide/mods/1546) - LAUR3HTE
+- [HUD Studio](https://www.nexusmods.com/warhammer40kdarktide/mods/1263) - malevhf
+- [Servo-ModQuisitor-2](https://www.nexusmods.com/warhammer40kdarktide/mods/139) - xsSplater
 Thank you to everyone on this list, without their hard work and dedication this document would not be possible. 
