@@ -257,7 +257,6 @@ https://www.nexusmods.com/warhammer40kdarktide/mods/1546
 
 [HeapGuard](https://www.nexusmods.com/warhammer40kdarktide/mods/1546) - This is another layer of protection from crashing that can be applied, and used in conjunction with the in game mods. This is a patch for the Darktide executable itself to attempt to provide better handling of lua heap memory.
 
-> Description (short)
 > Experimental Darktide memory patch. Created due to my friend's issues with a constant hit on their Lua memory ceiling and Out of Memory crashes. Reliability benefits are still being tested; in some cases, usage improves by 30%-40 %, though your mod list and usage may vary, and it is not guaranteed to be this high. I still need to figure out the final metrics. Releasing as alpha to see if the rest of the community will see an improvement.  
 > Primarily, it is to combat OOM crashes
 
