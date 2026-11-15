@@ -50,7 +50,6 @@ It is recommended that you crate a [Nexus Mods Account](https://users.nexusmods.
 > - Check for empty folders.
 > - Check for conflicts.
 > - Check for missing dependencies.  
->     
 > - **Mod management:**  
 > - **Easily install mods** from Nexus, by dragging and dropping the archive onto the program window.
 > - Disable a mods in the list by unchecking them.
