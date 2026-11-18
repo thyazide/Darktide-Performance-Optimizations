@@ -249,8 +249,6 @@ GC step multiple = 5.0
 
 - [Config file export](https://github.com/thyazide/Darktide-Performance-Optimizations/blob/main/modconfigchunks/FpsDoctor.export.config)
 
-https://www.nexusmods.com/warhammer40kdarktide/mods/1546
-
 ## Executable edits 
 
 [HeapGuard](https://www.nexusmods.com/warhammer40kdarktide/mods/1546) - This is another layer of protection from crashing that can be applied, and used in conjunction with the in game mods. This is a patch for the Darktide executable itself to attempt to provide better handling of lua heap memory.
